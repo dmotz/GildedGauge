@@ -2,50 +2,15 @@
   (:require [clojure.string :as str]
             [om.core :as om :include-macros true]
             [om.dom :as dom :include-macros true]
-            [gilded-gauge.data :as data]))
+            [gilded-gauge.state :refer [app]]
+            [gilded-gauge.data :as data]
+            [gilded-gauge.presets :as presets]
+            [gilded-gauge.utils :refer [update-num calc-equiv get-initials
+                                        format-number toggle-person-select
+                                        select-person]]))
+
 
 (enable-console-print!)
-
-(defonce app-state
-  (atom {:current-person     (rand-int (count data/ranked))
-         :net-worth          40000
-         :amount             100
-         :show-person-select false}))
-
-(def net-worth-min 5)
-(def net-worth-max 5e5)
-
-(defn update-num [k e]
-  (let [v (if (number? e)
-            e
-            (-> e
-                (.. -target -value)
-                (str/replace #"\D" "")
-                (js/parseInt 10)))]
-    (when-not (js/isNaN v)
-      (swap! app-state assoc k v))))
-
-
-(defn calc-equiv [rich-worth net-worth amount]
-  (Math/round (* amount (/ (* rich-worth 1e9) net-worth))))
-
-
-(defn get-initials [name]
-  (let [xs (str/split name #" ")]
-    (str (ffirst xs) (first (last xs)))))
-
-
-(defn format-number [n]
-  (-> n
-      Math/round
-      str
-      reverse
-      (->> (apply str))
-      (str/replace #"(\d{3})" "$1,")
-      reverse
-      (->> (drop-while #(= \, %)))
-      (->> (apply str))))
-
 
 (defn stats-component [n net-worth]
   (dom/ul
@@ -57,25 +22,6 @@
           (dom/em nil (format-number (Math.round (/ n v))))
           (str " " k)))
       (assoc data/stats "times your net worth" net-worth))))
-
-
-(defn toggle-person-select []
-  (swap! app-state update :show-person-select not))
-
-
-(defn select-person [i]
-  (swap! app-state assoc :current-person i :show-person-select false))
-
-
-(def amount-presets (->> [1 10 50 100 500 1000 5000]
-                         repeat
-                         (take 2)
-                         (apply zipmap)))
-
-
-(def worth-presets
-  {"median U.S. household income"   data/median-us-income
-   "median global household income" data/median-global-income})
 
 
 (defn preset-list [presets current-amount]
@@ -115,15 +61,8 @@
                          :maxLength "10"}))
                 (dom/div
                   #js {:className "range-slider"}
-                  (preset-list worth-presets net-worth)))
+                  (preset-list presets/worths net-worth)))
               (dom/span nil ", then me spending ")
-              #_
-              (dom/input
-                #js {:type     "range"
-                     :value    net-worth
-                     :onChange #(update-num :net-worth %)
-                     :min      net-worth-min
-                     :max      (max net-worth-max net-worth)})
               (dom/div #js {:className "input-holder"}
                 (dom/span
                   #js {:className "input-wrap"}
@@ -144,7 +83,7 @@
                          :min      0
                          :max      net-worth
                          :step     "10"})
-                  (preset-list amount-presets amount)))
+                  (preset-list presets/amounts amount)))
               (dom/span nil "is the equivalent of…"))
             (dom/div
               #js {:className "column"}
@@ -182,5 +121,5 @@
               (dom/span nil "Put another way:")
               (stats-component equiv net-worth)))))))
 
-  app-state
+  app
   {:target (. js/document (getElementById "app"))})
