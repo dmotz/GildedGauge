@@ -2,6 +2,7 @@
   (:require [clojure.string :as str]
             [om.core :as om :include-macros true]
             [om.dom :as dom :include-macros true]
+            [sablono.core :refer-macros [html]]
             [gilded-gauge.state :refer [app]]
             [gilded-gauge.data :as data]
             [gilded-gauge.presets :as presets]
@@ -13,28 +14,25 @@
 (enable-console-print!)
 
 (defn stats-component [n net-worth]
-  (dom/ul
-    #js {:className "stats"}
+  [:ul.stats
     (map-indexed
       (fn [i [k v]]
-        (dom/li
-          #js {:key i}
-          (dom/em nil (format-number (Math.round (/ n v))))
-          (str " " k)))
-      (assoc data/stats "times your net worth" net-worth))))
+        [:li
+          {:key i}
+          [:em (format-number (Math.round (/ n v)))]
+          (str " " k)])
+      (assoc data/stats "times your net worth" net-worth))])
 
 
 (defn preset-list [presets current-amount]
-  (dom/ul
-    #js {:className "preset-list"}
+  [:ul.preset-list
     (map
       (fn [[k v]]
         (when (not= v current-amount)
-          (dom/li
-            #js {:key     k
-                 :onClick #(update-num :amount v)}
-            (str \$ (format-number v)))))
-      presets)))
+          [:li
+            {:key k :on-click #(update-num :amount v)}
+            (str \$ (format-number v))]))
+      presets)])
 
 
 (om/root
@@ -43,83 +41,72 @@
       (render [_]
         (let [[rich-name rich-worth] (nth data/ranked current-person)
                equiv                 (calc-equiv rich-worth net-worth amount)]
-          (dom/div nil
-            (dom/h1 #js {:id "logo"} "Gilded Gauge")
-            (dom/div
-              #js {:className "column"}
-              (dom/span nil "If I have a net worth of ")
-              (dom/div
-                #js {:className "input-holder"}
-                (dom/span
-                  #js {:className "input-wrap"}
-                  (dom/input
-                    #js {:type      "text"
-                         :id        "net-worth"
-                         :value     (format-number net-worth)
-                         :onChange  #(update-num :net-worth %)
-                         :size      (inc (count (str net-worth)))
-                         :maxLength "10"}))
-                (dom/div
-                  #js {:className "range-slider"}
-                  (preset-list presets/worths net-worth)))
-              (dom/span nil ", then me spending ")
-              (dom/div #js {:className "input-holder"}
-                (dom/span
-                  #js {:className "input-wrap"}
-                  (dom/input
-                    #js {:id        "amount"
-                         :type      "text"
-                         :value     (format-number amount)
-                         :onChange  #(update-num :amount %)
-                         :min       1
-                         :size      (inc (count (str amount)))
-                         :maxLength "10"}))
-                (dom/div
-                  #js {:className "range-slider"}
-                  (dom/input
-                    #js {:type     "range"
-                         :value    amount
-                         :onChange #(update-num :amount %)
-                         :min      0
-                         :max      net-worth
-                         :step     "10"})
-                  (preset-list presets/amounts amount)))
-              (dom/span nil "is the equivalent of…"))
-            (dom/div
-              #js {:className "column"}
-              (let [src (get data/images rich-name)]
-                (dom/div
-                 #js {:id      "portrait"
-                      :style   (when src
-                                 #js {:backgroundImage (str "url(" src ")")})
-                      :onClick toggle-person-select}
-                 (when-not src
-                   (dom/div nil (get-initials rich-name)))))
-              (dom/span
-                #js {:id      "current-person"
-                     :onClick toggle-person-select}
-                (first (nth data/ranked current-person)))
+          (html
+            [:div
+              [:h1 {:id "logo"} "Gilded Gauge"]
 
-              (when show-person-select
-                (dom/ul
-                  #js {:id "person-list"}
-                  (map-indexed
-                    (fn [i [name]]
-                      (when (not= i current-person)
-                        (dom/li
-                          #js {:onClick #(select-person i)
-                               :key     i}
-                          name)))
-                    data/ranked)))
-              (dom/span nil " spending ")
-              (dom/span
-                #js {:className "amount"}
-                (str "$" (format-number equiv)))
-              (dom/span nil ".")
-              (dom/br nil)
-              (dom/br nil)
-              (dom/span nil "Put another way:")
-              (stats-component equiv net-worth)))))))
+              [:div.column
+                [:span "If I have a net worth of "]
+                [:div.input-holder
+                  [:span.input-wrap
+                    [:input
+                      {:type       "text"
+                       :id         "net-worth"
+                       :value      (format-number net-worth)
+                       :on-change  #(update-num :net-worth %)
+                       :size       (inc (count (str net-worth)))
+                       :max-length "10"}]]
+                  [:div.range-slider (preset-list presets/worths net-worth)]]
+
+                [:span ", then me spending "]
+
+                [:div.input-holder
+                  [:span.input-wrap
+                    [:input
+                      {:id         "amount"
+                       :type       "text"
+                       :value      (format-number amount)
+                       :on-change  #(update-num :amount %)
+                       :size       (inc (count (str amount)))
+                       :max-length "10"}]]
+                  [:div.range-slider
+                    [:input
+                      {:type      "range"
+                       :value     amount
+                       :on-change #(update-num :amount %)
+                       :min       0
+                       :max       net-worth
+                       :step      "10"}]
+                    (preset-list presets/amounts amount)]]
+
+                [:span "is the equivalent of…"]]
+
+              [:div.column
+                (let [src (get data/images rich-name)]
+                  [:div#portrait
+                    {:style    (when src {:backgroundImage (str "url(" src ")")})
+                     :on-click toggle-person-select}
+                    (when-not src [:div (get-initials rich-name)])])
+
+                [:span#current-person
+                  {:on-click toggle-person-select}
+                  (first (nth data/ranked current-person))]
+
+                (when show-person-select
+                  [:ul#person-list
+                    (map-indexed
+                      (fn [i [name]]
+                        (when (not= i current-person)
+                          [:li {:key i :on-click #(select-person i)} name]))
+                      data/ranked)])
+
+                [:span " spending "]
+                [:span.amount (str "$" (format-number equiv))]
+                [:span "."]
+                [:br]
+                [:br]
+                [:span "Put another way:"]
+                (stats-component equiv net-worth)]])))))
 
   app
   {:target (. js/document (getElementById "app"))})
