@@ -14,14 +14,11 @@
       (assoc data/stats "times your net worth" net-worth))])
 
 
-(defn preset-list [presets current-amount]
+(defn preset-list [presets key]
   [:ul.preset-list
     (map
       (fn [[k v]]
-        (when (not= v current-amount)
-          [:li
-            {:key k :on-click #(update-num :amount v)}
-            (str \$ (format-number v))]))
+        [:li {:key k :on-click #(update-num key v)} k])
       presets)])
 
 
