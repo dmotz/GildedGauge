@@ -21,3 +21,9 @@
 
 (def net-worth-min 5)
 (def net-worth-max 5e5)
+(def present (.getFullYear (js/Date.) nil))
+
+(def dates
+  {1       nil
+   476     "fall of Rome"
+   present nil})
