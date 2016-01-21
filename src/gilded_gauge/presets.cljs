@@ -1,10 +1,15 @@
 (ns gilded-gauge.presets
-  (:require [gilded-gauge.data :as data]))
+  (:require [gilded-gauge.data :as data]
+            [gilded-gauge.utils :refer [format-number]]))
 
-(def amounts (->> [1 10 50 100 500 1000 5000]
-                  repeat
-                  (take 2)
-                  (apply zipmap)))
+
+(def $format (comp (partial str \$) format-number))
+
+(defn $zip [xs]
+  (zipmap (map $format xs) xs))
+
+
+(def amounts ($zip [1 5 10 50 100 500 1000 5000]))
 
 
 (def worths
