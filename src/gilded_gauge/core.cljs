@@ -5,20 +5,23 @@
             [gilded-gauge.state :refer [app]]
             [gilded-gauge.data :as data]
             [gilded-gauge.presets :as presets]
-            [gilded-gauge.components :refer [stats preset-list input]]
+            [gilded-gauge.components :refer [stats preset-list input
+                                             timeline-point]]
             [gilded-gauge.utils :refer [update-num calc-equiv get-initials
                                         format-number toggle-person-select
-                                        select-person]]))
+                                        select-person calc-year-paid]]))
 
 (enable-console-print!)
 
 (om/root
   (fn [{:keys [current-person net-worth amount show-person-select]} _]
-    (reify om/IRender
+    (reify
+      om/IRender
       (render [_]
         (let [[rich-name
                rich-worth] (nth data/ranked current-person)
-               equiv       (calc-equiv rich-worth net-worth amount)]
+               equiv       (calc-equiv rich-worth net-worth amount)
+               $equiv      (str \$ (format-number equiv))]
           (html
             [:div
               [:h1#logo "Gilded Gauge"]
@@ -29,9 +32,11 @@
                   [:div.input-holder
                     [:span.input-wrap
                       (input :net-worth net-worth)]
-                    [:div.range-slider (preset-list presets/worths :net-worth)]]
+                    [:div.range-slider
+                      (preset-list presets/worths :net-worth)]
+                    [:span ","]]
 
-                  [:span ", then me spending "]
+                  [:span " then me spending "]
 
                   [:div.input-holder
                     [:span.input-wrap
@@ -53,7 +58,8 @@
                     [:div#portrait
                       {:style    (when src {:backgroundImage (str "url(" src ")")})
                        :on-click toggle-person-select}
-                      (when-not src [:div (get-initials rich-name)])])
+                      (when-not src
+                        [:div (get-initials rich-name)])])
 
                   [:span#current-person
                     {:on-click toggle-person-select}
@@ -68,15 +74,39 @@
                         data/ranked)])
 
                   [:span " spending "]
-                  [:span.amount (str "$" (format-number equiv))]
+                  [:span.amount $equiv]
                   [:span "."]
                   [:br]
                   [:br]
                   [:span "Put another way:"]
                   (stats equiv net-worth)]]
 
-              [:div#timeline
-                [:div#baseline]]])))))
+              (let [year-paid (calc-year-paid equiv data/median-global-income)
+                    events    (assoc
+                                presets/dates
+                                year-paid
+                                (str
+                                  "year to have earned "
+                                  $equiv
+                                  " on global median income"))]
+                [:footer
+                  [:div#timeline
+                    [:div#baseline]
+                    (map-indexed
+                      (fn [i t] (timeline-point i year-paid t))
+                      events)]
 
+                  [:div#legend
+                    [:ul
+                      (map-indexed
+                        (fn [i [_ label]]
+                          (when label
+                            [:li
+                              (condp = i
+                                1 "† "
+                                3 "‡ "
+                                "")
+                              label]))
+                        events)]]])])))))
   app
   {:target (. js/document (getElementById "app"))})
