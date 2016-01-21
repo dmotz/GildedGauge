@@ -17,13 +17,19 @@
     "Jim Walton"          40.6
     "Liliane Bettencourt" 40.1]))
 
+(def img-url-root "https://upload.wikimedia.org/wikipedia/commons/thumb/")
+
 (def images
-  {"Bill Gates"     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bill_Gates_June_2015.jpg/440px-Bill_Gates_June_2015.jpg"
-   "Carlos Slim"    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Carlos_Slim_Hel%C3%BA.jpg/440px-Carlos_Slim_Hel%C3%BA.jpg"
-   "Warren Buffett" "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Warren_Buffett_KU_Visit.jpg/440px-Warren_Buffett_KU_Visit.jpg"
-   "Larry Ellison"  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Larry_Elllison_on_stage.jpg/440px-Larry_Elllison_on_stage.jpg"
-   "David Koch"     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/David_Koch_by_Gage_Skidmore.jpg/440px-David_Koch_by_Gage_Skidmore.jpg"
-   "Jim Walton"     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/440px-Jim_Walton_attends_shareholders_meeting.jpg"})
+  (into
+    {}
+    (map
+      (fn [[k v]] [k (str img-url-root v)])
+      {"Bill Gates"     "1/19/Bill_Gates_June_2015.jpg/440px-Bill_Gates_June_2015.jpg"
+       "Carlos Slim"    "d/df/Carlos_Slim_Hel%C3%BA.jpg/440px-Carlos_Slim_Hel%C3%BA.jpg"
+       "Warren Buffett" "5/51/Warren_Buffett_KU_Visit.jpg/440px-Warren_Buffett_KU_Visit.jpg"
+       "Larry Ellison"  "3/3c/Larry_Elllison_on_stage.jpg/440px-Larry_Elllison_on_stage.jpg"
+       "David Koch"     "3/36/David_Koch_by_Gage_Skidmore.jpg/440px-David_Koch_by_Gage_Skidmore.jpg"
+       "Jim Walton"     "b/bb/Jim_Walton_attends_shareholders_meeting.jpg/440px-Jim_Walton_attends_shareholders_meeting.jpg"})))
 
 
 (def median-us-income 53657)
