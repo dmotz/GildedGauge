@@ -1,6 +1,6 @@
 (ns gilded-gauge.components
   (:require [gilded-gauge.data :as data]
-            [gilded-gauge.utils :refer [update-num format-number]]))
+            [gilded-gauge.utils :refer [update-num format-number get-initials]]))
 
 
 (defn stats [n net-worth]
@@ -30,6 +30,14 @@
            :max-length 10}])
 
 
+(defn portrait [name]
+  (let [src (get data/images name)]
+    [:div.portrait
+      (if src
+        {:style {:backgroundImage (str "url(" src ")")}}
+        [:div (get-initials name)])]))
+
+
 (defn timeline-point [i max [year label]]
   (let [pct (* 100 (/ year max))]
     [:div.timeline-point
@@ -37,7 +45,7 @@
                :height (str (+ 5.5 (* i 1.8)) "rem")}}
       [:div.timeline-label
         (if (>= year 1e4) (format-number year) year)
-        (if (zero? i) " A.D.")
+        (when (zero? i) " A.D.")
         (when label
           (condp = i 1 "†" 3 "‡"))]
       [:div.timeline-tick]
