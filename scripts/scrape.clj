@@ -15,7 +15,7 @@
   (/ n 1000))
 
 
-(with-open [w (-> "src/gilded_gauge/rankings.clj" io/file io/writer)]
+(with-open [w (-> "src/gilded_gauge/rankings.cljs" io/file io/writer)]
   (binding [*out* w]
     (let [rankings
           (->>
