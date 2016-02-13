@@ -30,12 +30,11 @@
            :max-length 10}])
 
 
-(defn portrait [name]
-  (let [src (get data/images name)]
-    [:div.portrait
-      (if src
-        {:style {:backgroundImage (str "url(" src ")")}}
-        [:div (get-initials name)])]))
+(defn portrait [{:keys [name img]}]
+  [:div.portrait
+    (if img
+      {:style {:backgroundImage (str "url(" img ")")}}
+      [:div (get-initials name)])])
 
 
 (defn timeline-point [i max [year label]]
