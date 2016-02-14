@@ -6,7 +6,7 @@
             [gilded-gauge.data :as data]
             [gilded-gauge.presets :as presets]
             [gilded-gauge.components :refer [stats preset-list input
-                                             timeline-point]]
+                                             timeline-point portrait]]
             [gilded-gauge.utils :refer [update-num calc-equiv get-initials
                                         format-number toggle-person-select
                                         select-person calc-year-paid]]))
@@ -18,10 +18,11 @@
     (reify
       om/IRender
       (render [_]
-        (let [[rich-name
-               rich-worth] (nth data/ranked current-person)
-               equiv       (calc-equiv rich-worth net-worth amount)
-               $equiv      (str \$ (format-number equiv))]
+        (let [rich-map    (nth data/ranked current-person)
+              rich-name   (:name rich-map)
+              rich-worth  (:worth rich-map)
+              equiv       (calc-equiv rich-worth net-worth amount)
+              $equiv      (str \$ (format-number equiv))]
           (html
             [:div
               [:h1#logo "Gilded Gauge"]
@@ -54,24 +55,25 @@
                   [:span " is the equivalent of…"]]
 
                 [:div.column
-                  (let [src (get data/images rich-name)]
-                    [:div#portrait
-                      {:style    (when src {:backgroundImage (str "url(" src ")")})
-                       :on-click toggle-person-select}
-                      (when-not src
-                        [:div (get-initials rich-name)])])
+                  [:div#main-portrait
+                    {:on-click   toggle-person-select}
+                    (portrait rich-map)]
 
                   [:span#current-person
                     {:on-click toggle-person-select}
-                    (first (nth data/ranked current-person))]
+                    rich-name]
 
-                  (when show-person-select
-                    [:ul#person-list
+                  [:div#person-list
+                    {:class-name (when show-person-select "active")}
+                    [:div.x {:on-click toggle-person-select} \×]
+                    [:ul
                       (map-indexed
-                        (fn [i [name]]
-                          (when (not= i current-person)
-                            [:li {:key i :on-click #(select-person i)} name]))
-                        data/ranked)])
+                        (fn [i m]
+                          [:li
+                            {:key i :on-click #(select-person i)}
+                            (portrait m)
+                            [:div (:name m)]])
+                        data/ranked)]]
 
                   [:span " spending "]
                   [:span.amount $equiv]
@@ -86,7 +88,7 @@
                                 presets/dates
                                 year-paid
                                 (str
-                                  "year to have earned "
+                                  "‡ year to have earned "
                                   $equiv
                                   " on global median income"))]
                 [:footer
@@ -98,15 +100,8 @@
 
                   [:div#legend
                     [:ul
-                      (map-indexed
-                        (fn [i [_ label]]
-                          (when label
-                            [:li
-                              (condp = i
-                                1 "† "
-                                3 "‡ "
-                                "")
-                              label]))
+                      (map
+                        (fn [[_ label]] (when label [:li label]))
                         events)]]])])))))
   app
   {:target (. js/document (getElementById "app"))})
