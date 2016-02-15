@@ -25,6 +25,8 @@
               $equiv      (str \$ (format-number equiv))]
           (html
             [:div
+              [:div#canvas-left.canvas {:ref "canvas-left"}]
+              [:div#canvas-right.canvas {:ref "canvas-right"}]
               [:div#person-list
                 {:class-name (when show-person-select "active")}
                 [:div.x {:on-click toggle-person-select} \×]
