@@ -103,7 +103,7 @@
                   [:div#legend
                     [:ul
                       (map
-                        (fn [[_ label]] (when label [:li label]))
+                        (fn [[_ label]] (when label [:li {:key label} label]))
                         events)]]])])))))
   app
   {:target (. js/document (getElementById "app"))})
