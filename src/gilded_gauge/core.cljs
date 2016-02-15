@@ -73,9 +73,14 @@
                     {:on-click   toggle-person-select}
                     (portrait rich-map)]
 
-                  [:span#current-person
-                    {:on-click toggle-person-select}
-                    rich-name]
+                  [:div#comparative-header
+                    [:span#current-person
+                      {:on-click toggle-person-select}
+                      rich-name]
+
+                    [:span " spending "]
+                    [:span.amount $equiv]
+                    [:span "."]]
 
                   [:span "Put another way:"]
                   (stats equiv net-worth)]]
