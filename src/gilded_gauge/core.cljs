@@ -40,7 +40,7 @@
               [:h1#logo "Gilded Gauge"]
 
               [:div#columns
-                [:div.column
+                [:div#column-left.column
                   [:span "If I have a net worth of "]
                   [:div.input-holder
                     [:span.input-wrap
@@ -66,7 +66,7 @@
 
                   [:span " is the equivalent of…"]]
 
-                [:div.column
+                [:div#column-right.column
                   [:div#main-portrait
                     {:on-click   toggle-person-select}
                     (portrait rich-map)]
