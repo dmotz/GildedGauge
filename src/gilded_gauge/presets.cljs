@@ -16,7 +16,8 @@
   (sort-by
     second
     (merge
-      {"median U.S. household income"   data/median-us-income
+      {"average U.S. net worth"         45000
+       "median U.S. household income"   data/median-us-income
        "median global household income" data/median-global-income}
       ($zip [1e4 5e4 1e5 25e4 5e5 1e6 25e5 5e6]))))
 
@@ -27,5 +28,5 @@
 
 (def dates
   {1       nil
-   476     "fall of Rome"
+   476     "† fall of Rome"
    present nil})
