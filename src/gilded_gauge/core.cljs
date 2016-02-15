@@ -9,13 +9,29 @@
                                              timeline-point portrait]]
             [gilded-gauge.utils :refer [update-num calc-equiv get-initials
                                         format-number toggle-person-select
-                                        select-person calc-year-paid]]))
+                                        select-person calc-year-paid]]
+            [gilded-gauge.emoji :as emoji]))
 
 (enable-console-print!)
 
 (om/root
-  (fn [{:keys [current-person net-worth amount show-person-select]} _]
+  (fn [{:keys [current-person net-worth amount show-person-select]} owner]
     (reify
+      om/IDidMount
+      (did-mount [_]
+        (let [w            (/ (.-innerWidth js/window) 2)
+              h            (.-innerHeight js/window)
+              left-canvas  (emoji/init (om/get-node owner "canvas-left") w h)
+              right-canvas (emoji/init (om/get-node owner "canvas-right") w h)]
+
+          (.addEventListener
+            js/window
+            "resize"
+            (fn []
+              (emoji/resize left-canvas)
+              (emoji/resize right-canvas))
+            false)))
+
       om/IRender
       (render [_]
         (let [rich-map    (nth data/ranked current-person)
