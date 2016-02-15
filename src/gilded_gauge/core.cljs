@@ -25,6 +25,18 @@
               $equiv      (str \$ (format-number equiv))]
           (html
             [:div
+              [:div#person-list
+                {:class-name (when show-person-select "active")}
+                [:div.x {:on-click toggle-person-select} \×]
+                [:ul
+                  (map-indexed
+                    (fn [i m]
+                      [:li
+                        {:key i :on-click #(select-person i)}
+                        (portrait m)
+                        [:div (:name m)]])
+                    data/ranked)]]
+
               [:h1#logo "Gilded Gauge"]
 
               [:div#columns
@@ -63,23 +75,6 @@
                     {:on-click toggle-person-select}
                     rich-name]
 
-                  [:div#person-list
-                    {:class-name (when show-person-select "active")}
-                    [:div.x {:on-click toggle-person-select} \×]
-                    [:ul
-                      (map-indexed
-                        (fn [i m]
-                          [:li
-                            {:key i :on-click #(select-person i)}
-                            (portrait m)
-                            [:div (:name m)]])
-                        data/ranked)]]
-
-                  [:span " spending "]
-                  [:span.amount $equiv]
-                  [:span "."]
-                  [:br]
-                  [:br]
                   [:span "Put another way:"]
                   (stats equiv net-worth)]]
 
