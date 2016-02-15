@@ -18,16 +18,18 @@
   (Math/round (* amount (/ (* rich-worth 1e9) net-worth))))
 
 
-(defn get-initials [name]
-  (let [xs        (str/split name #" ")
-        firstname (first xs)
-        surname   (last xs)]
-    (str
-      (if (= firstname "Prince")
-        (first (second xs))
-        (ffirst xs))
-      (first
-        (if (= surname "Jr.") (last (butlast xs)) surname)))))
+(def get-initials
+  (memoize
+    (fn [name]
+      (let [xs        (str/split name #" ")
+            firstname (first xs)
+            surname   (last xs)]
+        (str
+          (if (= firstname "Prince")
+            (first (second xs))
+            (ffirst xs))
+          (first
+            (if (= surname "Jr.") (last (butlast xs)) surname)))))))
 
 
 (defn format-number [n]
