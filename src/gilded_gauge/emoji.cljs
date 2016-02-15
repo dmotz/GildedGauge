@@ -5,13 +5,10 @@
 
 (def P js/Physics)
 
-
-
 (def Text (.-Text js/PIXI))
 (def Sprite (.-Sprite js/PIXI))
 (def Texture (.-Texture js/PIXI))
 (def Rectangle (.-Rectangle js/PIXI))
-
 (def WebGLRenderer (.-WebGLRenderer js/PIXI))
 
 (def pixi-renderer (WebGLRenderer. 10 10))
@@ -65,7 +62,6 @@
       (fn [k]
         [k (Sprite. (.fromImage Texture (str "/images/" (name k) ".png")))])
       sprite-ks)))
-
 
 
 (defn- behavior
