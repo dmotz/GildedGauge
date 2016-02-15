@@ -1,17 +1,10 @@
-(ns gilded-gauge.emoji
-  (:require [cljs.core.async :refer [<! timeout]])
-  (:require-macros [cljs.core.async.macros :refer [go-loop]]))
+(ns gilded-gauge.emoji)
 
-
-(def P js/Physics)
-
-(def Text (.-Text js/PIXI))
-(def Sprite (.-Sprite js/PIXI))
-(def Texture (.-Texture js/PIXI))
-(def Rectangle (.-Rectangle js/PIXI))
-(def WebGLRenderer (.-WebGLRenderer js/PIXI))
-
-(def pixi-renderer (WebGLRenderer. 10 10))
+(def M js/Matter)
+(def Engine (.-Engine M))
+(def World (.-World M))
+(def Bodies (.-Bodies M))
+(def Composite (.-Composite M))
 
 
 (def objects
@@ -50,87 +43,45 @@
    :yen []})
 
 
-
-
 (def sprite-ks (keys objects))
 
+(defn add [world obj]
+  (.add World world obj))
 
-(def sprites
-  (into
-    {}
-    (map
-      (fn [k]
-        [k (Sprite. (.fromImage Texture (str "/images/" (name k) ".png")))])
-      sprite-ks)))
+(defn init [el w h]
+  (let [engine
+        (.create
+          Engine
+          #js {:render #js {:element el
+                            :controller (.-RenderPixi M)
+                            :options #js {:width w :height h}}})
+        world (.-world engine)
+        add-body
+        (fn [_]
+          (js/setTimeout
+            #(.add World
+              world
+              (.circle Bodies (rand-int w) -100 12 #js {:render #js {:sprite #js {:texture (str "/images/" (name (rand-nth sprite-ks)) ".png")}}}))
+            (rand-int 5000)))]
 
+    ;(set! (.. world -bounds -min -y) h)
 
-(defn- behavior
-  ([type]
-   (.behavior P type))
-  ([type config]
-   (.behavior P type config)))
+    ; floor
+    (.add World world (.rectangle Bodies (/ w 2) (- h 30) w 1 #js {:isStatic true}))
 
+    ; left wall
+    (.add World world (.rectangle Bodies -1 (/ h 2) 1 h #js {:isStatic true}))
 
-(defn- body [config]
-  (.body P "circle" config))
+    ; right wall
+    (.add World world (.rectangle Bodies (inc w) (/ h 2) 1 h #js {:isStatic true}))
 
+    (dorun (map add-body (range 100)))
 
-(defn- add [world obj]
-  (.add world obj))
+    (.run Engine engine)
 
+    #_
+    (js/setTimeout
+      #(.log js/console (.allBodies Composite world))
+      5001)
 
-(defn init [w h]
-  (let [renderer
-        (.renderer P "pixi" #js {:el "canvas-left" :width w :height h :resolution 1 :meta true})
-
-        sprites
-        (into
-          {}
-          (map
-            (fn [k]
-              [k (.createDisplay renderer "sprite" #js {:texture (str "/images/" (name k) ".png")})])
-            sprite-ks))
-
-        make-body
-        (fn [config]
-          (body #js {:x (rand w)
-                     :y (- (rand h))
-                     :radius 15
-                     :mass 2
-                     :restitution 0.5
-                     :view
-                     (.createDisplay renderer "sprite" #js {:texture (str "/images/" (name (rand-nth sprite-ks)) ".png")
-                                                            :anchor #js {:x 0.5 :y 0.5}})}))]
-
-    (P
-      #js {:sleepTimeLimit 500}
-      (fn [world]
-        (->
-          (.. P -util -ticker)
-          (.on #(.step world %))
-          .start)
-
-        (->
-          world
-          (add
-            #js
-            [(behavior
-               "edge-collision-detection"
-               #js {:aabb (.aabb P 0 -50 w (- h 30)) :restitution 0.5 :cof 0.8})
-             (behavior "constant-acceleration" #js {:x 0 :y 0.0004})
-             (behavior "body-impulse-response")
-             (behavior "body-collision-detection")
-             (behavior "sweep-prune")])
-
-          (add renderer)
-          (.on "step" #(.render world)))
-
-        #_
-        (go-loop [bodies (map make-body (range 100))]
-          (<! (timeout (rand-int 200)))
-          (when (seq bodies)
-            (add world (first bodies))
-            (recur (rest bodies))))
-
-        (doseq [body (map make-body (range 100))]
-          (js/setTimeout #(add world body) (rand-int 3000)))))))
+    engine))
