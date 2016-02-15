@@ -19,8 +19,15 @@
 
 
 (defn get-initials [name]
-  (let [xs (str/split name #" ")]
-    (str (ffirst xs) (first (last xs)))))
+  (let [xs        (str/split name #" ")
+        firstname (first xs)
+        surname   (last xs)]
+    (str
+      (if (= firstname "Prince")
+        (first (second xs))
+        (ffirst xs))
+      (first
+        (if (= surname "Jr.") (last (butlast xs)) surname)))))
 
 
 (defn format-number [n]
