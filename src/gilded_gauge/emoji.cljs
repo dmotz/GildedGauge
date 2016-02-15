@@ -85,3 +85,15 @@
       5001)
 
     engine))
+
+
+(defn resize [engine]
+  (let [w      (/ js/innerWidth 2)
+        h      js/innerHeight
+        bounds (.. engine -world -bounds -max)
+        canvas (.. engine -render -canvas)]
+
+    (set! (.-x bounds) w)
+    (set! (.-y bounds) h)
+    (set! (.-width canvas) w)
+    (set! (.-height canvas) h)))
