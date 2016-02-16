@@ -51,6 +51,23 @@
   world)
 
 
+(defn add-body [world w _]
+  (js/setTimeout
+    #(.add World
+      world
+      (.circle
+        Bodies
+        (rand-int w)
+        -100
+        12
+        #js {:render
+             #js {:sprite
+                  #js {:texture (str "/images/"
+                                     (name (rand-nth sprite-ks))
+                                     ".png")}}}))
+    (rand-int 5000)))
+
+
 (defn init [el w h]
   (let [engine (.create
                  Engine
