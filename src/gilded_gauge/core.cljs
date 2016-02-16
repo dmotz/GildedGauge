@@ -39,6 +39,17 @@
               (emoji/resize right))
             false)))
 
+      om/IDidUpdate
+      (did-update [_ _ _]
+        (js/clearTimeout @timeout)
+        (reset!
+          timeout
+          (js/setTimeout
+            #(do
+              (emoji/run @engine-left amount)
+              (emoji/run @engine-right amount))
+            throttle-ms)))
+
       om/IRender
       (render [_]
         (let [rich-map    (nth data/ranked current-person)
@@ -129,4 +140,4 @@
                         (fn [[_ label]] (when label [:li {:key label} label]))
                         events)]]])])))))
   app
-  {:target (. js/document (getElementById "app"))})
+  {:target (.getElementById js/document "app")})
