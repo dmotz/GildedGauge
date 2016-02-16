@@ -45,45 +45,26 @@
 
 (def sprite-ks (keys objects))
 
-(defn add [world obj]
-  (.add World world obj))
+
+(defn add-wall [world x y w h]
+  (.add World world (.rectangle Bodies x y w h #js {:isStatic true}))
+  world)
+
 
 (defn init [el w h]
-  (let [engine
-        (.create
-          Engine
-          #js {:render #js {:element el
-                            :controller (.-RenderPixi M)
-                            :options #js {:width w :height h}}})
-        world (.-world engine)
-        add-body
-        (fn [_]
-          (js/setTimeout
-            #(.add World
-              world
-              (.circle Bodies (rand-int w) -100 12 #js {:render #js {:sprite #js {:texture (str "/images/" (name (rand-nth sprite-ks)) ".png")}}}))
-            (rand-int 5000)))]
-
-    ;(set! (.. world -bounds -min -y) h)
-
-    ; floor
-    (.add World world (.rectangle Bodies (/ w 2) (- h 30) w 1 #js {:isStatic true}))
-
-    ; left wall
-    (.add World world (.rectangle Bodies -1 (/ h 2) 1 h #js {:isStatic true}))
-
-    ; right wall
-    (.add World world (.rectangle Bodies (inc w) (/ h 2) 1 h #js {:isStatic true}))
-
-    (dorun (map add-body (range 100)))
+  (let [engine (.create
+                 Engine
+                 #js {:render
+                      #js {:element    el
+                           :options    #js {:width w :height h}
+                           :controller (.-RenderPixi M)}})]
+    (->
+      (.-world engine)
+      (add-wall (/ w 2) (- h 30) w 1)
+      (add-wall -1 (/ h 2) 1 h)
+      (add-wall (inc w) (/ h 2) 1 h))
 
     (.run Engine engine)
-
-    #_
-    (js/setTimeout
-      #(.log js/console (.allBodies Composite world))
-      5001)
-
     engine))
 
 
