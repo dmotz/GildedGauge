@@ -20,7 +20,7 @@
 (def engine-right (atom))
 
 (om/root
-  (fn [{:keys [current-person net-worth amount show-person-select]} owner]
+  (fn [{:keys [current-person net-worth amount show-person-select] :as props} owner]
     (let [rich-map   (nth data/ranked current-person)
           rich-name  (:name rich-map)
           rich-worth (:worth rich-map)
@@ -46,15 +46,17 @@
               false)))
 
         om/IDidUpdate
-        (did-update [_ _ _]
-          (js/clearTimeout @timeout)
-          (reset!
-            timeout
-            (js/setTimeout
-              #(do
-                (emoji/run @engine-left amount)
-                (emoji/run @engine-right equiv))
-              throttle-ms)))
+        (did-update [_ prev-props _]
+          (when (some #(not= (% prev-props) (% props))
+                      [:net-worth :amount :current-person])
+            (js/clearTimeout @timeout)
+            (reset!
+              timeout
+              (js/setTimeout
+                #(do
+                  (emoji/run @engine-left amount)
+                  (emoji/run @engine-right equiv))
+                throttle-ms))))
 
         om/IRender
         (render [_]
