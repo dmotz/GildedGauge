@@ -40,7 +40,8 @@
 (defn timeline-point [i max [year label]]
   (let [pct (* 100 (/ year max))]
     [:div.timeline-point
-      {:style {:left   (str pct \%)
+      {:key   i
+       :style {:left   (str pct \%)
                :height (str (+ 5.5 (* i 1.8)) "rem")}}
       [:div.timeline-label
         (if (>= year 1e4) (format-number year) year)
