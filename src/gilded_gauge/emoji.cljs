@@ -63,7 +63,8 @@
         12
         #js {:render
              #js {:sprite
-                  #js {:texture (str "/images/"
+                  #js {:yOffset 0.5
+                       :texture (str "/images/"
                                      (name (rand-nth sprite-ks))
                                      ".png")}}}))
     (rand-int 5000)))
