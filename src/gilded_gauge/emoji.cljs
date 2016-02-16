@@ -95,3 +95,10 @@
     (set! (.-y bounds) h)
     (set! (.-width canvas) w)
     (set! (.-height canvas) h)))
+
+
+(defn run [engine amount]
+  (dorun
+    (map
+      (partial add-body (.-world engine) (/ js/innerWidth 2))
+      (range 5))))
