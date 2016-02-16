@@ -21,42 +21,43 @@
 
 (om/root
   (fn [{:keys [current-person net-worth amount show-person-select]} owner]
-    (reify
-      om/IDidMount
-      (did-mount [_]
-        (let [w     (/ (.-innerWidth js/window) 2)
-              h     (.-innerHeight js/window)
-              left  (emoji/init (om/get-node owner "canvas-left") w h)
-              right (emoji/init (om/get-node owner "canvas-right") w h)]
+    (let [rich-map   (nth data/ranked current-person)
+          rich-name  (:name rich-map)
+          rich-worth (:worth rich-map)
+          equiv      (calc-equiv rich-worth net-worth amount)
+          $equiv     (str \$ (format-number equiv))]
 
-          (reset! engine-left left)
-          (reset! engine-right right)
-          (.addEventListener
-            js/window
-            "resize"
-            #(do
-              (emoji/resize left)
-              (emoji/resize right))
-            false)))
+      (reify
+        om/IDidMount
+        (did-mount [_]
+          (let [w     (/ (.-innerWidth js/window) 2)
+                h     (.-innerHeight js/window)
+                left  (emoji/init (om/get-node owner "canvas-left") w h)
+                right (emoji/init (om/get-node owner "canvas-right") w h)]
 
-      om/IDidUpdate
-      (did-update [_ _ _]
-        (js/clearTimeout @timeout)
-        (reset!
-          timeout
-          (js/setTimeout
-            #(do
-              (emoji/run @engine-left amount)
-              (emoji/run @engine-right amount))
-            throttle-ms)))
+            (reset! engine-left left)
+            (reset! engine-right right)
+            (.addEventListener
+              js/window
+              "resize"
+              #(do
+                (emoji/resize left)
+                (emoji/resize right))
+              false)))
 
-      om/IRender
-      (render [_]
-        (let [rich-map    (nth data/ranked current-person)
-              rich-name   (:name rich-map)
-              rich-worth  (:worth rich-map)
-              equiv       (calc-equiv rich-worth net-worth amount)
-              $equiv      (str \$ (format-number equiv))]
+        om/IDidUpdate
+        (did-update [_ _ _]
+          (js/clearTimeout @timeout)
+          (reset!
+            timeout
+            (js/setTimeout
+              #(do
+                (emoji/run @engine-left amount)
+                (emoji/run @engine-right equiv))
+              throttle-ms)))
+
+        om/IRender
+        (render [_]
           (html
             [:div
               [:div#canvas-left.canvas {:ref "canvas-left"}]
