@@ -47,7 +47,8 @@
 
 
 (defn add-wall [world x y w h]
-  (.add World world (.rectangle Bodies x y w h #js {:isStatic true}))
+  (.add World world (.rectangle Bodies x y w h #js {:isStatic true
+                                                    :render #js {:visible false}}))
   world)
 
 
