@@ -14,22 +14,29 @@
 
 (enable-console-print!)
 
+(def throttle-ms  1000)
+(def timeout      (atom))
+(def engine-left  (atom))
+(def engine-right (atom))
+
 (om/root
   (fn [{:keys [current-person net-worth amount show-person-select]} owner]
     (reify
       om/IDidMount
       (did-mount [_]
-        (let [w            (/ (.-innerWidth js/window) 2)
-              h            (.-innerHeight js/window)
-              left-canvas  (emoji/init (om/get-node owner "canvas-left") w h)
-              right-canvas (emoji/init (om/get-node owner "canvas-right") w h)]
+        (let [w     (/ (.-innerWidth js/window) 2)
+              h     (.-innerHeight js/window)
+              left  (emoji/init (om/get-node owner "canvas-left") w h)
+              right (emoji/init (om/get-node owner "canvas-right") w h)]
 
+          (reset! engine-left left)
+          (reset! engine-right right)
           (.addEventListener
             js/window
             "resize"
-            (fn []
-              (emoji/resize left-canvas)
-              (emoji/resize right-canvas))
+            #(do
+              (emoji/resize left)
+              (emoji/resize right))
             false)))
 
       om/IRender
