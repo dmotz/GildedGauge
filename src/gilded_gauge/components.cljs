@@ -1,5 +1,6 @@
 (ns gilded-gauge.components
-  (:require [gilded-gauge.data :as data]
+  (:require [clojure.string :as str]
+            [gilded-gauge.data :as data]
             [gilded-gauge.utils :refer [update-num format-number get-initials]]))
 
 
@@ -7,10 +8,18 @@
   [:ul.stats
     (map-indexed
       (fn [i [k v]]
-        [:li
-          {:key i}
-          [:em (format-number (Math.round (/ n v)))]
-          (str " " k)])
+        (let [words (str/split k #" ")]
+          [:li
+            {:key i}
+            (let [ratio (/ n v)]
+              [:em
+                (str
+                  (if (< ratio 1)
+                    (.toFixed ratio 2)
+                    (format-number (Math.round ratio)))
+                  " "
+                  (first words))])
+            (str " " (apply str (interpose " " (rest words))))]))
       (assoc data/stats "times your net worth" net-worth))])
 
 
