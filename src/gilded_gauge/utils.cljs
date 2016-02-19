@@ -44,7 +44,6 @@
       (->> (apply str))))
 
 
-
 (defn toggle-person-select []
   (swap! app update :show-person-select not))
 
@@ -55,3 +54,7 @@
 
 (defn calc-year-paid [goal income]
   (Math.round (+ (.getFullYear (js/Date.)) (/ goal income))))
+
+
+(defn inflect [s n]
+  (str/replace s #"\?" (if (= 1 n) "" "s")))
