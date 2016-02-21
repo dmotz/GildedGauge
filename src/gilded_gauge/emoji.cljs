@@ -65,8 +65,14 @@
     (set! (.-height canvas) h)))
 
 
-(defn run [engine amount]
-  (dorun
-    (map
-      (partial add-body (.-world engine) (/ js/innerWidth 2))
-      (range 5))))
+(defn run [engine menagerie]
+  (let [world (.-world engine)]
+    (go
+      (.translate Body (aget (.-bodies world) 0) (.create Vector 0 500))
+      (<! (timeout 1500))
+      (.clear Composite world true)
+      (.translate Body (aget (.-bodies world) 0) (.create Vector 0 -500))
+      (dorun
+        (map
+          (partial add-body world (/ js/innerWidth 2))
+          (mapcat (fn [[k v]] (repeat v k)) menagerie))))))
