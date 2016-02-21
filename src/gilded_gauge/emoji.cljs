@@ -1,58 +1,26 @@
-(ns gilded-gauge.emoji)
+(ns gilded-gauge.emoji
+  (:require [gilded-gauge.objects :refer [objects create-menagerie]]
+            [cljs.core.async :refer [<! timeout]])
+  (:require-macros [cljs.core.async.macros :refer [go]]))
+
 
 (def M js/Matter)
 (def Engine (.-Engine M))
 (def World (.-World M))
+(def Body (.-Body M))
 (def Bodies (.-Bodies M))
 (def Composite (.-Composite M))
-
-
-(def objects
-  {:diamond    [5000 0.7]
-   :stack      [100 0.9]
-   :iphone     [600 0.5]
-   :house      []
-   :car        []
-   :helicopter []
-   :purse      []
-   :crown      []
-   :beer []
-   :boat []
-   :burger []
-   :champagne []
-   :cocktail []
-   :coffee []
-   :dress []
-   :euro []
-   :hat []
-   :horse []
-   :jeans []
-   :laptop []
-   :manicure []
-   :motorcycle []
-   :plane []
-   :pound []
-   :racecar []
-   :sailboat []
-   :shoe []
-   :speedboat []
-   :sunglasses []
-   :ticket []
-   :tiger []
-   :yacht []
-   :yen []})
-
-
-(def sprite-ks (keys objects))
+(def Vector (.-Vector M))
 
 
 (defn add-wall [world x y w h]
-  (.add World world (.rectangle Bodies x y w h #js {:isStatic true
-                                                    :render #js {:visible false}}))
+  (.add World
+    world (.rectangle Bodies x y w h #js {:isStatic true
+                                          :render   #js {:visible false}}))
   world)
 
 
-(defn add-body [world w _]
+(defn add-body [world w sprite]
   (js/setTimeout
     #(.add World
       world
@@ -64,9 +32,7 @@
         #js {:render
              #js {:sprite
                   #js {:yOffset 0.5
-                       :texture (str "/images/"
-                                     (name (rand-nth sprite-ks))
-                                     ".png")}}}))
+                       :texture (str "/images/" (name sprite) ".png")}}}))
     (rand-int 5000)))
 
 
