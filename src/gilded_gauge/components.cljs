@@ -1,7 +1,8 @@
 (ns gilded-gauge.components
   (:require [clojure.string :as str]
             [gilded-gauge.data :as data]
-            [gilded-gauge.utils :refer [update-num format-number get-initials]]))
+            [gilded-gauge.utils :refer [update-num format-number get-initials inflect]]
+            [gilded-gauge.objects :refer [objects]]))
 
 
 (defn stats [n net-worth]
@@ -59,3 +60,12 @@
           (condp = i 1 "†" 3 "‡"))]
       [:div.timeline-tick]
       [:div.timeline-dot "•"]]))
+
+
+(defn menagerie-list [menagerie]
+  [:ul
+    (map
+      (fn [[k n]]
+        (let [obj (k objects)]
+          [:li (str n " " (inflect (first obj) n) " ($" (format-number (second obj)) " each)")]))
+      menagerie)])
