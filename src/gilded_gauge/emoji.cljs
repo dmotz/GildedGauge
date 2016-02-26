@@ -20,20 +20,20 @@
   world)
 
 
-(defn add-body [world w sprite]
+(defn add-body [world max-x time sprite]
   (js/setTimeout
     #(.add World
       world
       (.circle
         Bodies
-        (rand-int w)
+        (rand-int max-x)
         -100
         12
         #js {:render
              #js {:sprite
                   #js {:yOffset 0.5
                        :texture (str "/images/" (name sprite) ".png")}}}))
-    (rand-int 5000)))
+    (rand-int time)))
 
 
 (defn init [el w h]
@@ -63,16 +63,20 @@
     (set! (.-y bounds) h)
     (set! (.-width canvas) w)
     (set! (.-height canvas) h)))
+    ; move right wall
+    ;(.translate Body (aget (.-bodies world) 2) (.create Vector 0 0))))
 
 
 (defn run [engine menagerie]
-  (let [world (.-world engine)]
+  (let [world (.-world engine)
+        floor (aget (.-bodies world) 0)
+        time  (-> (count menagerie) Math/log (* 1000) Math/round)]
     (go
-      (.translate Body (aget (.-bodies world) 0) (.create Vector 0 500))
+      (.translate Body floor (.create Vector 0 500))
       (<! (timeout 1500))
       (.clear Composite world true)
-      (.translate Body (aget (.-bodies world) 0) (.create Vector 0 -500))
+      (.translate Body floor (.create Vector 0 -500))
       (dorun
         (map
-          (partial add-body world (/ js/innerWidth 2))
+          (partial add-body world (/ js/innerWidth 2) time)
           (mapcat (fn [[k v]] (repeat v k)) menagerie))))))
