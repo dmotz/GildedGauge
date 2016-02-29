@@ -52,8 +52,9 @@
   (swap! app assoc :current-person i :show-person-select false))
 
 
+(def year-now (.getFullYear (js/Date.)))
 (defn calc-year-paid [goal income]
-  (Math.round (+ (.getFullYear (js/Date.)) (/ goal income))))
+  (Math.round (+ year-now (/ goal income))))
 
 
 (defn inflect [s n]
