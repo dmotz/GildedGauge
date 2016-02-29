@@ -4,6 +4,8 @@
 
 (defonce app
   (atom {:current-person     (rand-int (count data/ranked))
-         :net-worth          40000
+         :net-worth          50000
          :amount             100
-         :show-person-select false}))
+         :show-person-select false
+         :menagerie1         {}
+         :menagerie2         {}}))
