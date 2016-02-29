@@ -49,17 +49,37 @@
 
 (def obj-keys (keys objects))
 
-; fix for small value hunting
+
 (defn create-menagerie [budget]
-  (loop [total 0 budget budget items {}] ; track iteration
+  (loop [total 0 budget-left budget items {} it 0]
     (if (>= total budget)
+      ;[items it]
       items
       (let [key   (rand-nth obj-keys)
             item  (key objects)
             price (second item)]
-        (if (< price budget)
+        (if (<= price budget-left)
           (recur
             (+ total price)
-            (- budget price)
-            (update items key (fnil inc 0)))
-          (recur total budget items))))))
+            (- budget-left price)
+            (update items key (fnil inc 0))
+            (inc it))
+          (recur total budget-left items (inc it)))))))
+
+
+(defn test-m [n b]
+  (dotimes [_ n]
+    (let [[m it] (create-menagerie b)
+          t (reduce (fn [a [k v]] (+ a (* (second (k objects)) v))) 0 m)]
+      ;(prn it)
+      ;(prn t)
+      (prn (reduce + (vals m)))
+      ;(prn (- t b))
+      (prn "--------------"))))
+
+;(test-m 10 500000000)
+;(dotimes [_ 10]
+;  (let [m (create-menagerie 10032452356)]
+;    (prn m)))
+    ;(prn (reduce + (vals m)))
+    ;(prn (mapcat (fn [[k v]] (repeat v k)) m))))
