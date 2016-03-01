@@ -6,10 +6,12 @@
             [gilded-gauge.data :as data]
             [gilded-gauge.presets :as presets]
             [gilded-gauge.components :refer [stats preset-list input
-                                             timeline-point portrait]]
+                                             timeline-point portrait
+                                             menagerie-list]]
             [gilded-gauge.utils :refer [update-num calc-equiv get-initials
                                         format-number toggle-person-select
-                                        select-person calc-year-paid]]
+                                        select-person calc-year-paid
+                                        update-menageries!]]
             [gilded-gauge.emoji :as emoji]))
 
 (enable-console-print!)
@@ -20,7 +22,7 @@
 (def engine-right (atom))
 
 (om/root
-  (fn [{:keys [current-person net-worth amount show-person-select] :as props} owner]
+  (fn [{:keys [current-person net-worth amount show-person-select menagerie1 menagerie2] :as props} owner]
     (let [rich-map   (nth data/ranked current-person)
           rich-name  (:name rich-map)
           rich-worth (:worth rich-map)
@@ -47,16 +49,18 @@
 
         om/IDidUpdate
         (did-update [_ prev-props _]
-          (when (some #(not= (% prev-props) (% props))
-                      [:net-worth :amount :current-person])
-            (js/clearTimeout @timeout)
-            (reset!
-              timeout
-              (js/setTimeout
-                #(do
-                  (emoji/run @engine-left amount)
-                  (emoji/run @engine-right equiv))
-                throttle-ms))))
+          (if (some #(not= (% prev-props) (% props)) [:net-worth :amount :current-person])
+            (do
+              (prn "num changed, clearing timeout")
+              (js/clearTimeout @timeout)
+              (reset!
+                timeout
+                (js/setTimeout #(update-menageries! amount equiv) throttle-ms)))
+
+            (when (not= (:menagerie1 prev-props) (:menagerie1 props))
+              (prn "new menagerie1 detected")
+              (emoji/run @engine-left menagerie1)
+              (emoji/run @engine-right menagerie2))))
 
         om/IRender
         (render [_]
