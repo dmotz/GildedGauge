@@ -63,9 +63,10 @@
 
 
 (defn menagerie-list [menagerie]
-  [:ul
+  (str/join
+    " / "
     (map
       (fn [[k n]]
         (let [obj (k objects)]
-          [:li (str n " " (inflect (first obj) n) " ($" (format-number (second obj)) " each)")]))
-      menagerie)])
+          (str n " " (inflect (first obj) n))))
+      menagerie)))
