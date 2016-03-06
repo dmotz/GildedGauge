@@ -36,12 +36,13 @@
    :racecar    ["Lamborghini?" 2e5]
    :sailboat   ["sailboat?" 5e4]
    :shoe       ["pair? of Christian Louboutin shoes" 700]
-   ;:speedboat []
+   :speedboat  ["luxury speedboat?" 3e5]
    :stack      ["stack? of 10,000 dollars" 1e4]
-   :sunglasses ["pair? of designer sunglasses" 200]
+   :sunglasses ["pair? of Gucci sunglasses" 250]
    :taco       ["taco?" 2]
    :ticket     ["movie ticket?" 10]
    :tiger      ["live tiger?" 5e4]
+   :watch      ["Rolex Oyster Perpetual?" 26500]
    :yacht      ["superyacht?" 275e6]})
 
 (def obj-keys (keys objects))
