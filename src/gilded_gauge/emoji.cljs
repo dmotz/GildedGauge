@@ -31,7 +31,7 @@
         12
         #js {:render
              #js {:sprite
-                  #js {:yOffset 0.5
+                  #js {:yOffset 0
                        :texture (str "/images/" (name sprite) ".png")}}}))
     (rand-int time)))
 
