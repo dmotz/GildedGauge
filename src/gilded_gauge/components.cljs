@@ -64,10 +64,12 @@
 
 
 (defn menagerie-list [menagerie]
-  (str/join
+  (interpose
     " / "
     (map
       (fn [[k n]]
         (let [obj (k objects)]
-          (str n " " (inflect (first obj) n))))
+          [:span.menagerie-item
+            [:span.menagerie-name (str n " " (inflect (first obj) n))]
+            [:span.menagerie-price (str \$ (format-number (* n (second obj))))]]))
       menagerie)))
