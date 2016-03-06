@@ -8,10 +8,10 @@
             [gilded-gauge.components :refer [stats preset-list input
                                              timeline-point portrait
                                              menagerie-list]]
-            [gilded-gauge.utils :refer [update-num calc-equiv get-initials
-                                        format-number toggle-person-select
-                                        select-person calc-year-paid
-                                        update-menageries!]]
+            [gilded-gauge.utils :refer [calc-equiv get-initials format-number
+                                        calc-year-paid]]
+            [gilded-gauge.state :refer [update-num! toggle-person-select!
+                                        select-person! update-menageries!]]
             [gilded-gauge.emoji :as emoji]))
 
 (enable-console-print!)
@@ -70,12 +70,12 @@
               [:div#canvas-right.canvas {:ref "canvas-right"}]
               [:div#person-list
                 {:class-name (when show-person-select "active")}
-                [:div.x {:on-click toggle-person-select} \×]
+                [:div.x {:on-click toggle-person-select!} \×]
                 [:ul
                   (map-indexed
                     (fn [i m]
                       [:li
-                        {:key i :on-click #(select-person i)}
+                        {:key i :on-click #(select-person! i)}
                         (portrait m)
                         [:div (:name m)]])
                     data/ranked)]]
@@ -101,7 +101,7 @@
                       [:input
                         {:type      "range"
                          :value     amount
-                         :on-change #(update-num :amount %)
+                         :on-change #(update-num! :amount %)
                          :min       0
                          :max       net-worth
                          :step      "10"}]
@@ -113,12 +113,12 @@
 
                 [:div#column-right.column
                   [:div#main-portrait
-                    {:on-click   toggle-person-select}
+                    {:on-click toggle-person-select!}
                     (portrait rich-map)]
 
                   [:div#comparative-header
                     [:span#current-person
-                      {:on-click toggle-person-select}
+                      {:on-click toggle-person-select!}
                       rich-name]
 
                     [:span " spending "]

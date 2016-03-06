@@ -1,7 +1,5 @@
 (ns gilded-gauge.utils
-  (:require [clojure.string :as str]
-            [gilded-gauge.state :refer [app]]
-            [gilded-gauge.objects :refer [create-menagerie]]))
+  (:require [clojure.string :as str]))
 
 
 (defn timeout! [ms f]
@@ -12,15 +10,14 @@
   (js/clearTimeout n))
 
 
-(defn update-num [k e]
+(defn parse-event [e]
   (let [v (if (number? e)
             e
             (-> e
                 (.. -target -value)
                 (str/replace #"\D" "")
                 (js/parseInt 10)))]
-    (when-not (js/isNaN v)
-      (swap! app assoc k v))))
+    (if (js/isNaN v) nil v)))
 
 
 (defn calc-equiv [rich-worth net-worth amount]
@@ -53,14 +50,6 @@
       (->> (apply str))))
 
 
-(defn toggle-person-select []
-  (swap! app update :show-person-select not))
-
-
-(defn select-person [i]
-  (swap! app assoc :current-person i :show-person-select false))
-
-
 (def year-now (.getFullYear (js/Date.)))
 (defn calc-year-paid [goal income]
   (Math.round (+ year-now (/ goal income))))
@@ -68,11 +57,3 @@
 
 (defn inflect [s n]
   (str/replace s #"\?" (if (= 1 n) "" "s")))
-
-
-(defn update-menageries! [a1 a2]
-  (swap!
-    app
-    assoc
-    :menagerie1 (create-menagerie a1)
-    :menagerie2 (create-menagerie a2)))

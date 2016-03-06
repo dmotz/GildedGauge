@@ -1,7 +1,8 @@
 (ns gilded-gauge.components
   (:require [clojure.string :as str]
             [gilded-gauge.data :as data]
-            [gilded-gauge.utils :refer [update-num format-number get-initials inflect]]
+            [gilded-gauge.utils :refer [format-number get-initials inflect]]
+            [gilded-gauge.state :refer [update-num!]]
             [gilded-gauge.objects :refer [objects]]))
 
 
@@ -28,13 +29,13 @@
   [:ul.preset-list
     (map
       (fn [[k v]]
-        [:li {:key k :on-click #(update-num key v)} k])
+        [:li {:key k :on-click #(update-num! key v)} k])
       presets)])
 
 
 (defn input [key val]
   [:input {:value      (format-number val)
-           :on-change  #(update-num key %)
+           :on-change  #(update-num! key %)
            :size       (inc (count (str val)))
            :type       "text"
            :max-length 10}])
