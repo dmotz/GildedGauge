@@ -4,6 +4,14 @@
             [gilded-gauge.objects :refer [create-menagerie]]))
 
 
+(defn timeout! [ms f]
+  (js/setTimeout f ms))
+
+
+(defn kill-timeout! [n]
+  (js/clearTimeout n))
+
+
 (defn update-num [k e]
   (let [v (if (number? e)
             e
