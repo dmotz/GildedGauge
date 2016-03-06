@@ -52,7 +52,14 @@
   (loop [total 0 budget-left budget items {} it 0]
     (if (>= total budget)
       ;[items it]
-      items
+      (into
+        (sorted-map-by
+          (fn [k1 k2]
+            (compare
+              [(* (k2 items) (second (k2 objects))) k2]
+              [(* (k1 items) (second (k1 objects))) k1])))
+        items)
+
       (let [key   (rand-nth obj-keys)
             item  (key objects)
             price (second item)]
