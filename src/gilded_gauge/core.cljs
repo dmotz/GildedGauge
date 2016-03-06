@@ -51,14 +51,12 @@
         (did-update [_ prev-props _]
           (if (some #(not= (% prev-props) (% props)) [:net-worth :amount :current-person])
             (do
-              (prn "num changed, clearing timeout")
               (js/clearTimeout @timeout)
               (reset!
                 timeout
                 (js/setTimeout #(update-menageries! amount equiv) throttle-ms)))
 
             (when (not= (:menagerie1 prev-props) (:menagerie1 props))
-              (prn "new menagerie1 detected")
               (emoji/run @engine-left menagerie1)
               (emoji/run @engine-right menagerie2))))
 
