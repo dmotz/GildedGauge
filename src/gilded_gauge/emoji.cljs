@@ -40,9 +40,10 @@
   (let [engine (.create
                  Engine
                  #js {:render
-                      #js {:element    el
-                           :options    #js {:width w :height h}
-                           :controller (.-RenderPixi M)}})]
+                      #js {:element     el
+                           :options     #js {:width w :height h}
+                           :controller  (.-RenderPixi M)
+                           :pixiOptions #js {:transparent true}}})]
     (->
       (.-world engine)
       (add-wall (/ w 2) (- h 30) w 1)
