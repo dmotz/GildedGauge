@@ -47,6 +47,7 @@
 
 (def obj-keys (keys objects))
 
+(def threshold 0.0125)
 
 (defn create-menagerie [budget]
   (loop [total 0 budget-left budget items {} it 0]
@@ -63,7 +64,7 @@
       (let [key   (rand-nth obj-keys)
             item  (key objects)
             price (second item)]
-        (if (<= price budget-left)
+        (if (and (>= (/ price budget-left) threshold) (<= price budget-left))
           (recur
             (+ total price)
             (- budget-left price)
