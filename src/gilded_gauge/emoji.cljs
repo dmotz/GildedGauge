@@ -28,7 +28,7 @@
         Bodies
         (rand-int max-x)
         -100
-        12
+        14
         #js {:restitution 0.5
              :render
              #js {:sprite
