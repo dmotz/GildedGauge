@@ -106,7 +106,7 @@
                       (preset-list presets/amounts :amount)]]
 
                   [:span " is the equivalent of…"]
-                  [:div.object-stats (menagerie-list menagerie1)]]
+                  [:div.menagerie-list (menagerie-list menagerie1)]]
 
 
                 [:div#column-right.column
@@ -125,7 +125,7 @@
 
                   [:span "Put another way:"]
                   (stats equiv net-worth)
-                  [:div.object-stats (menagerie-list menagerie2)]]]
+                  [:div.menagerie-list (menagerie-list menagerie2)]]]
 
               (let [year-paid (calc-year-paid equiv data/median-global-income)
                     events    (assoc
