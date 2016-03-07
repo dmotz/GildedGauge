@@ -29,7 +29,8 @@
         (rand-int max-x)
         -100
         12
-        #js {:render
+        #js {:restitution 0.5
+             :render
              #js {:sprite
                   #js {:yOffset 0
                        :texture (str "/images/" (name sprite) ".png")}}}))
