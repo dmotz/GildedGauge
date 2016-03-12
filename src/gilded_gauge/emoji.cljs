@@ -1,8 +1,6 @@
 (ns gilded-gauge.emoji
   (:require [gilded-gauge.objects :refer [objects create-menagerie]]
-            [gilded-gauge.utils :refer [set-timeout!]]
-            [cljs.core.async :refer [<! timeout]])
-  (:require-macros [cljs.core.async.macros :refer [go]]))
+            [gilded-gauge.utils :refer [set-timeout!]]))
 
 
 (def M js/Matter)
@@ -74,12 +72,13 @@
   (let [world (.-world engine)
         floor (aget (.-bodies world) 0)
         time  (-> (count menagerie) Math/log (* 1000) Math/round)]
-    (go
-      (.translate Body floor (.create Vector 0 500))
-      (<! (timeout 1500))
-      (.clear Composite world true)
-      (.translate Body floor (.create Vector 0 -500))
-      (dorun
-        (map
-          (partial add-body world (/ js/innerWidth 2) time)
-          (mapcat (fn [[k v]] (repeat v k)) menagerie))))))
+    (.translate Body floor (.create Vector 0 500))
+    (set-timeout!
+      1500
+      #(do
+        (.clear Composite world true)
+        (.translate Body floor (.create Vector 0 -500))
+        (dorun
+          (map
+            (partial add-body world (/ js/innerWidth 2) time)
+            (mapcat (fn [[k v]] (repeat v k)) menagerie)))))))
