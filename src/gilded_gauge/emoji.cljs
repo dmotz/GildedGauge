@@ -2,6 +2,7 @@
   (:require [gilded-gauge.objects :refer [objects create-menagerie]]
             [gilded-gauge.utils :refer [set-timeout!]]))
 
+(def body-radius 14)
 
 (def M js/Matter)
 (def Engine (.-Engine M))
@@ -28,7 +29,7 @@
         Bodies
         (rand-int max-x)
         -100
-        14
+        body-radius
         #js {:restitution 0.5
              :render
              #js {:sprite
