@@ -1,5 +1,6 @@
 (ns gilded-gauge.emoji
   (:require [gilded-gauge.objects :refer [objects create-menagerie]]
+            [gilded-gauge.utils :refer [set-timeout!]]
             [cljs.core.async :refer [<! timeout]])
   (:require-macros [cljs.core.async.macros :refer [go]]))
 
@@ -21,7 +22,8 @@
 
 
 (defn add-body [world max-x time sprite]
-  (js/setTimeout
+  (set-timeout!
+    (rand-int time)
     #(.add World
       world
       (.circle
@@ -33,8 +35,7 @@
              :render
              #js {:sprite
                   #js {:yOffset 0
-                       :texture (str "/images/" (name sprite) ".png")}}}))
-    (rand-int time)))
+                       :texture (str "/images/" (name sprite) ".png")}}}))))
 
 
 (defn init [el w h]

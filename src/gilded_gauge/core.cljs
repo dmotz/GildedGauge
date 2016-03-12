@@ -9,7 +9,7 @@
                                              timeline-point portrait
                                              menagerie-list]]
             [gilded-gauge.utils :refer [calc-equiv get-initials format-number
-                                        calc-year-paid]]
+                                        calc-year-paid set-timeout! kill-timeout!]]
             [gilded-gauge.state :refer [update-num! toggle-person-select!
                                         select-person! update-menageries!]]
             [gilded-gauge.emoji :as emoji]))
@@ -51,10 +51,10 @@
         (did-update [_ prev-props _]
           (if (some #(not= (% prev-props) (% props)) [:net-worth :amount :current-person])
             (do
-              (js/clearTimeout @timeout)
+              (kill-timeout! @timeout)
               (reset!
                 timeout
-                (js/setTimeout #(update-menageries! amount equiv) throttle-ms)))
+                (set-timeout! throttle-ms #(update-menageries! amount equiv))))
 
             (when (not= (:menagerie1 prev-props) (:menagerie1 props))
               (emoji/run @engine-left menagerie1)

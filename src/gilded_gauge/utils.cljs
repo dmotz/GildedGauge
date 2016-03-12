@@ -2,7 +2,7 @@
   (:require [clojure.string :as str]))
 
 
-(defn timeout! [ms f]
+(defn set-timeout! [ms f]
   (js/setTimeout f ms))
 
 
