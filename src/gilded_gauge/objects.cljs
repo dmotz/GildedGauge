@@ -1,11 +1,9 @@
 (ns gilded-gauge.objects)
 
-
 (def objects
   {:apple      ["apple?" 0.5]
    :banana     ["banana?" 0.5]
    :beer       ["beer?" 6]
-   ;:boat []
    :burger     ["cheeseburger?" 5]
    :burrito    ["burrito?" 7]
    :car        ["new car?" 33560]
@@ -13,12 +11,8 @@
    :cheese     ["pound? of Beaufort d’été cheese" 35]
    :cocktail   ["martini?" 10]
    :coffee     ["cup? of coffee" 4]
-   ;:crown []
    :diamond    ["Hope Diamond?" 25e7]
    :donut      ["donut?" 0.5]
-   ;:dress []
-   ;:drink []
-   ;:hat []
    :helicopter ["helicopter?" 5e5]
    :horse      ["racehorse?" 1e5]
    :hotdog     ["hotdog?" 3]
