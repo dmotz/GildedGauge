@@ -1,0 +1,542 @@
+@import 'nib'
+
+$sans     = 'Helvetica Neue', Helvetica, Arial, sans-serif
+$serif    = Georgia, Times, 'Times New Roman', serif
+$playfair = 'Playfair Display', $serif
+$gold     = #e3ba7a
+$teal     = #35d2d8
+$red      = #ff7171
+$gray     = #ddd
+
+::-moz-selection
+  background #444
+  color #fff
+  text-shadow none
+
+
+::selection
+  background #444
+  color #fff
+  text-shadow none
+
+
+html
+  font-family $sans
+  font-size 7px
+  text-rendering optimizeLegibility
+  font-smoothing antialiased
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+
+body
+  margin 0
+  background-color #222
+  border 2.4rem solid $gold
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  right 0
+  padding 3rem
+  font-family $playfair
+  color $gray
+  min-width 100rem
+  min-height 100rem
+  overflow hidden
+
+
+#logo
+  color $gray
+  text-transform uppercase
+  border 4px solid $gray
+  padding 2rem
+  display inline-block
+  font-family $playfair
+  font-size 4rem
+  line-height 1
+  margin-bottom 2rem
+
+#columns
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  right 0
+  overflow: hidden;
+
+
+.column
+  width 50%
+  height 100%
+  display inline-block
+  float left
+  padding 2rem 3rem
+  padding-top 15rem
+  position absolute
+
+  span
+    font-size 4rem
+    font-family $playfair
+    line-height 2
+
+    &.amount
+      color $teal
+      font-family $sans
+      font-weight bold
+      font-size 4.5rem
+      line-height 1
+
+
+#column-left
+  padding-left 3rem
+
+#column-right
+  padding-right 2rem
+  right 0
+
+
+input[type='text']
+  border none
+  background-color transparent
+  border-bottom 3px dotted #ccc
+  font-size 4.5rem
+  font-family $sans
+  text-align center
+  outline none
+  color $gold
+  font-weight bold
+  padding-right 0
+
+
+.input-wrap
+  white-space nowrap
+  &::before
+    content '$'
+    font-size 2.4rem
+    position relative
+    top -2rem
+
+
+.input-holder
+  display inline-block
+  position relative
+
+  &:hover
+    .range-slider
+      display block
+
+.range-slider
+  display none
+  position absolute
+  padding-left 1.1rem
+  width 100%
+  margin-top -1rem
+
+  input
+    position: absolute;
+
+  .preset-list
+    top 0.4em
+
+
+.preset-list
+  display inline-block
+  background-color rgba(255, 255, 255, .9)
+  color #222
+  list-style none
+  font-size 2.2em
+  font-weight bold
+  font-family $sans
+  position absolute
+  z-index 1
+  top 0.2em
+  width 30rem
+
+  li
+    font-weight bold
+    cursor pointer
+    padding 1rem 1rem
+
+    &:hover
+      background-color $teal
+      color #fff
+
+
+#person-header
+  position relative
+
+
+#current-person
+  color $teal
+  cursor pointer
+  font-family $sans
+  font-weight bold
+  font-size 4.5rem
+  border-bottom 3px dotted #ccc
+  line-height 1.7
+
+  &:hover
+    color #444
+
+  &::after
+    content '▼'
+    color #ccc
+    font-size 1.6rem
+    position relative
+    margin-left 0.5rem
+    top -0.5rem
+
+
+#person-list
+  position absolute
+  right 0
+  left 0
+  bottom 0
+  top 0
+  overflow hidden
+  background-color rgba(0, 0, 0, 0.85)
+  list-style none
+  color #fff
+  padding 2rem 0
+  font-family $playfair
+  z-index 99
+  text-align center
+  transition opacity .25s
+  opacity 0
+  pointer-events none
+
+  &.active
+    opacity 1
+    pointer-events auto
+
+  .x
+    position absolute
+    font-size 10rem
+    font-style normal
+    right .5rem
+    top -4rem
+    cursor pointer
+    transition opacity .2s
+    z-index 10
+
+    &:hover
+      opacity .5
+
+  ul
+    position absolute
+    overflow auto
+    top 0
+    bottom 0
+    left 0
+    right 1rem
+    padding-top 1rem
+
+  li
+    cursor pointer
+    text-align center
+    display inline-block
+    margin 2rem 2rem
+    width 14rem
+    height 15rem
+    vertical-align middle
+    font-family $sans
+    font-weight bold
+    letter-spacing -0.5px
+
+    .portrait
+      transition transform .2s
+      transform scale(1)
+      margin-bottom 1rem
+      background-color $gold
+      border none
+
+      div
+        font-size 4rem
+        color #222
+
+    div
+      text-align center
+      font-size 2.2rem
+
+    &:hover
+      color $gold
+
+      .portrait
+        transform scale(1.2)
+
+
+.portrait
+  margin 0 auto
+  cursor pointer
+  width 8rem
+  height 8rem
+  background-color #ddd
+  border-radius 50%
+  color #444
+  text-align center
+  overflow hidden
+  background-size cover
+
+  div
+    position relative
+    top 50%
+    transform translateY(-50%)
+    font-size 3rem
+    font-family $playfair
+    letter-spacing -0.2rem
+    font-style italic
+
+
+#main-portrait
+  position absolute
+  right -1rem
+  margin-right 2rem
+  transform scale(0.8)
+  transition transform .2s
+
+  &:hover
+    transform scale(1)
+
+  .portrait
+    width 12rem
+    height 12rem
+    border-width 1rem
+    background-color #444
+    color #eee
+
+    div
+      font-size 4rem
+
+#comparative-header
+  width calc(100% - 15rem)
+  margin-bottom 2rem
+
+
+.stats
+  margin-top 1rem
+  list-style none
+  line-height 2
+
+  span, em
+    font-size 2.6rem
+
+  em
+    font-style normal
+    font-family $sans
+    font-weight bold
+    font-size 3.3rem
+    color $teal
+
+
+.menagerie-list
+  color: #444
+  font-weight: bold
+  margin-top: 2rem
+
+  span
+    font-family $sans
+    line-height: 1.4
+    user-select none
+    font-size: 3.4rem
+
+
+.menagerie-price
+  display none
+  top 0
+  left 0
+  background-color: #ccc
+  color: #222
+
+.menagerie-item
+  position relative
+  cursor pointer
+
+  &:hover
+    .menagerie-name
+      color #ccc
+
+  &:active
+    .menagerie-price
+      display inline
+      padding 0 1rem
+      margin-left 1rem
+
+
+footer
+  position absolute
+  bottom 0
+  left 5rem
+  right 5rem
+
+
+#timeline
+  position relative
+
+
+#baseline
+  border-top 1px solid #444
+  position absolute
+  left 0
+  right 0
+  top -1.28rem
+  opacity .4
+
+
+.timeline-point
+  position absolute
+  bottom 0
+  transition left .2s
+  font-size 2rem
+  text-align center
+  width 8rem
+  transform translateX(-50%)
+
+  div
+    font-size 3rem
+
+.timeline-label
+  font-size 2.2rem !important
+  position relative
+  top -0.5rem
+  background-color rgba(0, 0, 0, .8)
+  line-height 2
+  color #fff
+  text-align center
+
+
+.timeline-tick
+  border-right 1px solid #444
+  position absolute
+  bottom 1.1rem
+  opacity .4
+  top 2.5rem
+  left 50%
+  transform translateX(-1px)
+
+
+.timeline-dot
+  position absolute
+  bottom -0.3rem
+  left 50%
+  transform translateX(-50%)
+
+
+#legend
+  padding-bottom 3rem
+  line-height 2
+  font-size 1.8rem
+  text-align right
+
+  ul
+    list-style none
+
+
+.canvas
+  position absolute
+  top 0
+  bottom 0
+  width 50%
+  z-index 1
+  overflow hidden
+  pointer-events none
+
+#canvas-left
+  left 0
+  border-right 1px solid rgba(255, 255, 255, 0.2)
+
+#canvas-right
+  right 0
+
+
+.info-link
+  width 6.5rem
+  height 6.5rem
+  text-align: center;
+  position fixed
+  bottom: 3rem
+  left 3rem
+  line-height: 1.7
+  background-color: #fff
+  border-radius: 50%
+  font-size: 4rem
+  color #111
+  cursor: pointer;
+  z-index: 9999
+  opacity: .85
+  transition: opacity .2s
+
+  &:hover
+    opacity: 1
+
+
+input[type='range']
+  width 100%
+  -webkit-appearance none
+
+
+input[type='range']:focus
+  outline none
+  border 0
+
+
+input[type='range']::-webkit-slider-thumb
+  -webkit-appearance none
+  height 16px
+  width 16px
+  border-radius 100%
+  border 1px solid #bbb
+  background #fff
+  cursor ew-resize
+  margin-top -8px
+
+
+input[type='range']::-moz-range-thumb
+  height 16px
+  width 16px
+  border-radius 100%
+  border 1px solid #bbb
+  background #fff
+  cursor ew-resize
+  margin-top -8px
+
+
+input[type='range']::-ms-thumb
+  height 16px
+  width 16px
+  border-radius 100%
+  border 1px solid #bbb
+  background #fff
+  cursor ew-resize
+  margin-top -8px
+
+
+input[type='range']::-webkit-slider-runnable-track
+  width 100%
+  height 1px
+  cursor pointer
+  background #bbb
+
+
+input[type='range']::-moz-range-track
+  width 100%
+  height 1px
+  cursor pointer
+  background #bbb
+  border 0
+
+
+input[type='range']::-ms-track
+  width 100%
+  height 1px
+  cursor pointer
+  background transparent
+  border-color transparent
+  border-width 16px 0
+  color transparent
+
+
+input[type='range']::-ms-fill-lower
+  background #bbb
