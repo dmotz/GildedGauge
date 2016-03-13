@@ -64,12 +64,14 @@
 
 
 (defn menagerie-list [menagerie]
-  (interpose
-    " / "
-    (map
-      (fn [[k n]]
-        (let [obj (k objects)]
-          [:span.menagerie-item
-            [:span.menagerie-name (str n " " (inflect (first obj) n))]
-            [:span.menagerie-price (str \$ (format-number (* n (second obj))))]]))
-      menagerie)))
+  [:div
+    {:class-name (str "menagerie-list" (when (empty? menagerie) " faded"))}
+    (interpose
+      " / "
+      (map
+        (fn [[k n]]
+          (let [obj (k objects)]
+            [:span.menagerie-item
+              [:span.menagerie-name (str n " " (inflect (first obj) n))]
+              [:span.menagerie-price (str \$ (format-number (* n (second obj))))]]))
+        menagerie))])
