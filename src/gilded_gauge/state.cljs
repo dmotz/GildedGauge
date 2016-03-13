@@ -3,7 +3,6 @@
             [gilded-gauge.utils :refer [parse-event]]
             [gilded-gauge.objects :refer [create-menagerie]]))
 
-
 (defonce app
   (atom {:current-person     (rand-int (count data/ranked))
          :net-worth          50000
@@ -23,7 +22,11 @@
 
 (defn update-num! [k e]
   (if-let [v (parse-event e)]
-    (swap! app assoc k v)))
+    (when (case k
+            :amount    (<= v (:net-worth @app))
+            :net-worth (>= v (:amount @app))
+            true)
+      (swap! app assoc k v))))
 
 
 (defn update-menageries! [a1 a2]
