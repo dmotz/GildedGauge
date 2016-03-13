@@ -10,7 +10,9 @@
   ["Warren Buffett"
    72.7
    "5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
-  ["Amancio Ortega" 64.5]
+  ["Amancio Ortega"
+   64.5
+   "1/18/Amancio_Ortega_Gaona_signature.png/150px-Amancio_Ortega_Gaona_signature.png"]
   ["Larry Ellison"
    54.3
    "3/3c/Larry_Elllison_on_stage.jpg/220px-Larry_Elllison_on_stage.jpg"]
@@ -26,7 +28,7 @@
    "b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
   ["Liliane Bettencourt"
    40.1
-   "1/17/Liliane_Bettencourt.jpg/150px-Liliane_Bettencourt.jpg"]
+   "1/17/Liliane_Bettencourt.jpg/220px-Liliane_Bettencourt.jpg"]
   ["Alice Walton"
    39.4
    "e/e1/Alice_Walton_%28cropped%29.jpg/240px-Alice_Walton_%28cropped%29.jpg"]
