@@ -41,7 +41,7 @@
 
 (def obj-keys (keys objects))
 
-(def threshold 0.0125)
+(def threshold 0.0033)
 
 (defn create-menagerie [budget]
   (loop [total 0 budget-left budget items {} it 0]
