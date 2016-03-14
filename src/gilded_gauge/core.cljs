@@ -21,6 +21,13 @@
 (def engine-left  (atom))
 (def engine-right (atom))
 
+(defn rain! [amount equiv]
+  (kill-timeout! @timeout)
+  (reset!
+    timeout
+    (set-timeout! throttle-ms #(update-menageries! amount equiv))))
+
+
 (om/root
   (fn [{:keys [current-person net-worth amount show-person-select menagerie1 menagerie2] :as props} owner]
     (let [rich-map   (nth data/ranked current-person)
@@ -45,17 +52,13 @@
               #(do
                 (emoji/resize left)
                 (emoji/resize right))
-              false)))
+              false)
+            (rain! amount equiv)))
 
         om/IDidUpdate
         (did-update [_ prev-props _]
           (if (some #(not= (% prev-props) (% props)) [:net-worth :amount :current-person])
-            (do
-              (kill-timeout! @timeout)
-              (reset!
-                timeout
-                (set-timeout! throttle-ms #(update-menageries! amount equiv))))
-
+            (rain! amount equiv)
             (when (not= (:menagerie1 prev-props) (:menagerie1 props))
               (emoji/run @engine-left menagerie1)
               (emoji/run @engine-right menagerie2))))
