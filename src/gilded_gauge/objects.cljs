@@ -48,9 +48,8 @@
 (def threshold 0.0033)
 
 (defn create-menagerie [budget]
-  (loop [total 0 budget-left budget items {} it 0]
+  (loop [total 0 budget-left budget items {}]
     (if (>= total budget)
-      ;[items it]
       (into
         (sorted-map-by
           (fn [k1 k2]
@@ -66,24 +65,5 @@
           (recur
             (+ total price)
             (- budget-left price)
-            (update items key (fnil inc 0))
-            (inc it))
-          (recur total budget-left items (inc it)))))))
-
-
-(defn test-m [n b]
-  (dotimes [_ n]
-    (let [[m it] (create-menagerie b)
-          t (reduce (fn [a [k v]] (+ a (* (second (k objects)) v))) 0 m)]
-      ;(prn it)
-      ;(prn t)
-      (prn (reduce + (vals m)))
-      ;(prn (- t b))
-      (prn "--------------"))))
-
-;(test-m 10 500000000)
-;(dotimes [_ 10]
-;  (let [m (create-menagerie 10032452356)]
-;    (prn m)))
-    ;(prn (reduce + (vals m)))
-    ;(prn (mapcat (fn [[k v]] (repeat v k)) m))))
+            (update items key (fnil inc 0)))
+          (recur total budget-left items))))))
