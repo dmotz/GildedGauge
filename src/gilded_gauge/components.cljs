@@ -29,7 +29,7 @@
   [:ul.preset-list
     (map
       (fn [[k v]]
-        [:li {:key k :on-click #(update-num! key v)} k])
+        [:li {:key k :on-click #(update-num! key k)} v])
       presets)])
 
 

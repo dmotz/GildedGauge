@@ -6,10 +6,10 @@
 (def $format (comp (partial str \$) format-number))
 
 (defn $zip [xs]
-  (zipmap (map $format xs) xs))
+  (into (sorted-map) (zipmap xs (map $format xs))))
 
 
-(def amounts ($zip [1 5 10 50 100 500 1000 5000]))
+(def amounts ($zip [1 5 10 20 50 100 500 1000 5000]))
 
 
 (def worths
