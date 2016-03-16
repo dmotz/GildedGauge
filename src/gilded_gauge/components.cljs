@@ -36,7 +36,7 @@
 (defn input [key val]
   [:input {:value      (format-number val)
            :on-change  #(update-num! key %)
-           :size       (inc (count (str val)))
+           :size       (count (str val))
            :type       "text"
            :max-length 10}])
 
@@ -44,7 +44,7 @@
 (defn portrait [{:keys [name img]}]
   [:div.portrait
     (if img
-      {:style {:backgroundImage (str "url(" img ")")}}
+      {:style {:background-image (str "url(" img ")")}}
       [:div (get-initials name)])])
 
 
