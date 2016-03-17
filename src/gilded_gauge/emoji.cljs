@@ -3,6 +3,8 @@
             [gilded-gauge.utils :refer [set-timeout!]]))
 
 (def body-radius 14)
+(def min-width 700)
+(def min-height 700)
 
 (def M js/Matter)
 (def Engine (.-Engine M))
@@ -57,8 +59,8 @@
 (def last-size (atom [(/ js/innerWidth 2) js/innerHeight]))
 
 (defn resize! [left right]
-  (let [w (/ js/innerWidth 2)
-        h js/innerHeight
+  (let [w (/ (Math/max js/innerWidth min-width) 2)
+        h (Math/max js/innerHeight min-height)
         [last-w last-h] @last-size]
 
     (doseq [engine [left right]]
