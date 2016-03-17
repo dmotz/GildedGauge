@@ -54,19 +54,20 @@
     (.run Engine engine)
     engine))
 
+(def last-size (atom [(/ js/innerWidth 2) js/innerHeight]))
 
-(defn resize [engine]
-  (let [w      (/ js/innerWidth 2)
-        h      js/innerHeight
-        bounds (.. engine -world -bounds -max)
-        canvas (.. engine -render -canvas)]
+(defn resize! [left right]
+  (let [w (/ js/innerWidth 2)
+        h js/innerHeight
+        [last-w last-h] @last-size]
 
-    (set! (.-x bounds) w)
-    (set! (.-y bounds) h)
-    (set! (.-width canvas) w)
-    (set! (.-height canvas) h)))
-    ; move right wall
-    ;(.translate Body (aget (.-bodies world) 2) (.create Vector 0 0))))
+    (doseq [engine [left right]]
+      (let [bodies  (.. engine -world -bodies)]
+        (.translate Body (aget bodies 0) (.create Vector 0 (- h last-h)))
+        (.translate Body (aget bodies 2) (.create Vector (- w last-w) 0))
+        (.resize (.. engine -render -renderer) w h)))
+
+    (reset! last-size [w h])))
 
 
 (defn run [engine menagerie]
