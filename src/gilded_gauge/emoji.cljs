@@ -47,9 +47,9 @@
                            :pixiOptions #js {:transparent true}}})]
     (->
       (.-world engine)
-      (add-wall (/ w 2) (- h 30) w 1)
-      (add-wall -1 (/ h 2) 1 h)
-      (add-wall (inc w) (/ h 2) 1 h))
+      (add-wall (/ w 2) (+ h 20) 10000 100)
+      (add-wall -50 (- (/ h 2) 50) 100 (+ h 100))
+      (add-wall (+ w 50) (- (/ h 2) 50) 100 (+ h 100)))
 
     (.run Engine engine)
     engine))
