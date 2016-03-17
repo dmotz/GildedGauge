@@ -16,10 +16,11 @@
 
 (enable-console-print!)
 
-(def throttle-ms  1000)
-(def timeout      (atom))
-(def engine-left  (atom))
-(def engine-right (atom))
+(def throttle-ms    1000)
+(def timeout        (atom))
+(def engine-left    (atom))
+(def engine-right   (atom))
+(def resize-timeout (atom))
 
 (defn rain! [amount equiv]
   (kill-timeout! @timeout)
@@ -49,9 +50,9 @@
             (.addEventListener
               js/window
               "resize"
-              #(do
-                (emoji/resize left)
-                (emoji/resize right))
+              (fn []
+                (kill-timeout! @resize-timeout)
+                (reset! resize-timeout (set-timeout! 100 #(emoji/resize! left right))))
               false)
             (rain! amount equiv)))
 
