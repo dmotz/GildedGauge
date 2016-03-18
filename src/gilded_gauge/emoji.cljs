@@ -13,6 +13,18 @@
 (def Bodies (.-Bodies M))
 (def Composite (.-Composite M))
 (def Vector (.-Vector M))
+#_
+(def Texture (.-Texture js/PIXI))
+
+#_
+(def textures
+  (into
+    {}
+    (doall
+      (map
+        (fn [[k]]
+          [k (.fromImage Texture (str "/images/" (name k) ".png"))])
+        objects))))
 
 
 (defn add-wall [world x y w h]
