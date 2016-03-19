@@ -7,8 +7,11 @@
                  [org.omcljs/om "0.9.0"]
                  [cljsjs/react-dom "0.14.3-1"]
                  [cljsjs/react-dom-server "0.14.3-0"]
+                 [cljsjs/pixi "3.0.10-0"]
+                 [cljsjs/matter "0.9.1-0"]
                  [org.clojure/data.json "0.2.6"]
                  [enlive "1.1.6"]]
+
 
   :plugins [[lein-cljsbuild "1.1.3"]
             [lein-figwheel "0.5.0-6"]]
