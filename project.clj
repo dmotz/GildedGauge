@@ -1,7 +1,7 @@
 (defproject gilded-gauge "0.1.0-SNAPSHOT"
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.7.228"]
+                 [org.clojure/clojurescript "1.8.34"]
                  [org.clojure/core.async "0.2.374"]
                  [sablono "0.6.2"]
                  [org.omcljs/om "0.9.0"]
