@@ -35,19 +35,23 @@
             (first (second xs))
             (ffirst xs))
           (first
-            (if (= surname "Jr.") (last (butlast xs)) surname)))))))
+            (if (= surname "Jr.")
+              (last (butlast xs))
+              surname)))))))
 
 
 (defn format-number [n]
-  (-> n
-      Math/round
-      str
-      reverse
-      (->> (apply str))
-      (str/replace #"(\d{3})" "$1,")
-      reverse
-      (->> (drop-while #(= \, %)))
-      (->> (apply str))))
+  (if (< n 1)
+    (.toFixed n 2)
+    (-> n
+        Math/round
+        str
+        reverse
+        (->> (apply str))
+        (str/replace #"(\d{3})" "$1,")
+        reverse
+        (->> (drop-while #(= \, %)))
+        (->> (apply str)))))
 
 
 (def year-now (.getFullYear (js/Date.)))
