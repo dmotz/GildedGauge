@@ -30,7 +30,9 @@
 
 
 (om/root
-  (fn [{:keys [current-person net-worth amount show-person-select menagerie1 menagerie2] :as props} owner]
+  (fn [{:keys [current-person net-worth amount show-person-select
+               menagerie1 menagerie2] :as props} owner]
+
     (let [rich-map   (nth data/ranked current-person)
           rich-name  (:name rich-map)
           rich-worth (:worth rich-map)
@@ -82,36 +84,42 @@
                         [:div (:name m)]])
                     data/ranked)]]
 
-              [:h1#logo "Gilded Gauge"]
+              [:h1#logo "Gilded Gauge."]
+
+              (let [year-paid (calc-year-paid equiv data/median-global-income)]
+                [:div#timeline
+                  [:div#baseline]
+                  (map-indexed
+                    (fn [i t] (timeline-point i year-paid t))
+                    (assoc
+                      presets/dates
+                      year-paid
+                      (str
+                        "year to have earned "
+                        $equiv
+                        " on global median income")))])
 
               [:div#columns
                 [:div#column-left.column
-                  [:span "If I have a net worth of "]
+                  [:span "I have a net worth of "]
                   [:div.input-holder
                     [:span.input-wrap
                       (input :net-worth net-worth)]
                     [:div.range-slider
                       (preset-list presets/worths :net-worth)]
-                    [:span ","]]
+                    [:span "."]]
 
-                  [:span " then me spending "]
-
+                  [:br]
+                  [:span "When I spend "]
                   [:div.input-holder
                     [:span.input-wrap
                       (input :amount amount)]
+
                     [:div.range-slider
-                      [:input
-                        {:type      "range"
-                         :value     amount
-                         :on-change #(update-num! :amount %)
-                         :min       0
-                         :max       net-worth
-                         :step      "10"}]
                       (preset-list presets/amounts :amount)]]
 
-                  [:span \.]
+                  [:span "…"]
                   (menagerie-list menagerie1)]
-
 
                 [:div#column-right.column
                   [:div#main-portrait
@@ -119,6 +127,7 @@
                     (portrait rich-map)]
 
                   [:div#comparative-header
+                    [:span "That’s the equivalent of "]
                     [:span#current-person
                       {:on-click toggle-person-select!}
                       rich-name]
@@ -127,29 +136,7 @@
                     [:span.amount $equiv]
                     [:span "."]]
 
-                  [:span "Put another way:"]
                   (stats equiv net-worth)
-                  (menagerie-list menagerie2)]]
-
-              (let [year-paid (calc-year-paid equiv data/median-global-income)
-                    events    (assoc
-                                presets/dates
-                                year-paid
-                                (str
-                                  "‡ year to have earned "
-                                  $equiv
-                                  " on global median income"))]
-                [:footer
-                  [:div#timeline
-                    [:div#baseline]
-                    (map-indexed
-                      (fn [i t] (timeline-point i year-paid t))
-                      events)]
-
-                  [:div#legend
-                    [:ul
-                      (map
-                        (fn [[_ label]] (when label [:li {:key label} label]))
-                        events)]]])])))))
+                  (menagerie-list menagerie2)]]])))))
   app
   {:target (.getElementById js/document "app")})
