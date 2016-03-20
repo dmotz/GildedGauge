@@ -80,7 +80,7 @@
                     (fn [i m]
                       [:li
                         {:key i :on-click #(select-person! i)}
-                        (portrait m)
+                        (when (:img m) (portrait m))
                         [:div (:name m)]])
                     data/ranked)]]
 
