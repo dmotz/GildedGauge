@@ -11,7 +11,8 @@
             [gilded-gauge.utils :refer [calc-equiv get-initials format-number
                                         calc-year-paid set-timeout! kill-timeout!]]
             [gilded-gauge.state :refer [update-num! toggle-person-select!
-                                        select-person! update-menageries!]]
+                                        select-person! update-menageries!
+                                        toggle-about-view!]]
             [gilded-gauge.emoji :as emoji]))
 
 (enable-console-print!)
@@ -31,7 +32,7 @@
 
 (om/root
   (fn [{:keys [current-person net-worth amount show-person-select
-               menagerie1 menagerie2] :as props} owner]
+               show-about-view menagerie1 menagerie2] :as props} owner]
 
     (let [rich-map   (nth data/ranked current-person)
           rich-name  (:name rich-map)
@@ -84,7 +85,20 @@
                         [:div (:name m)]])
                     data/ranked)]]
 
-              [:h1#logo "Gilded Gauge."]
+              [:div#about-view
+                {:class-name (when show-about-view "active")}
+                [:div.x {:on-click toggle-about-view!} \×]
+                [:div.content
+                  [:p
+                    "Gilded Gauge was built by "
+                    [:a {:href "http://oxism.com"} "Dan Motzenbecker"]
+                    " and is "
+                    [:a {:href "https://github.com/dmotz/gilded-gauge"} "open source"]
+                    "."]]]
+
+              [:h1#logo
+                {:on-click toggle-about-view!}
+                "Gilded Gauge."]
 
               (let [year-paid (calc-year-paid equiv data/median-global-income)]
                 [:div#timeline
