@@ -7,7 +7,7 @@
 
 (defonce app
   (atom {:current-person     (rand-nth preset-indices)
-         :net-worth          50000
+         :net-worth          45000
          :amount             50
          :show-person-select false
          :show-about-view    false
