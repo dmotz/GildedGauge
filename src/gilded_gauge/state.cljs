@@ -10,12 +10,17 @@
          :net-worth          50000
          :amount             50
          :show-person-select false
+         :show-about-view    false
          :menagerie1         {}
          :menagerie2         {}}))
 
 
 (defn toggle-person-select! []
   (swap! app update :show-person-select not))
+
+
+(defn toggle-about-view! []
+  (swap! app update :show-about-view not))
 
 
 (defn select-person! [i]
