@@ -57,8 +57,7 @@
       [:div.timeline-label
         (if (>= year 1e4) (format-number year) year)
         (when (zero? i) " A.D.")
-        (when label
-          (condp = i 1 "†" 3 "‡"))]
+        (when label [:span.info-text label])]
       [:div.timeline-tick]
       [:div.timeline-dot "•"]]))
 
