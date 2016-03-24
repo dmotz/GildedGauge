@@ -91,9 +91,13 @@
                 [:div.content
                   [:p
                     "Gilded Gauge was built by "
-                    [:a {:href "http://oxism.com"} "Dan Motzenbecker"]
+                    [:a
+                      {:href "http://oxism.com" :tab-index -1}
+                      "Dan Motzenbecker"]
                     " and is "
-                    [:a {:href "https://github.com/dmotz/gilded-gauge"} "open source"]
+                    [:a
+                      {:href "https://github.com/dmotz/gilded-gauge" :tab-index -1}
+                      "open source"]
                     "."]]]
 
               [:h1#logo
