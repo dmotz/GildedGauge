@@ -17,7 +17,7 @@
 
 (enable-console-print!)
 
-(def throttle-ms    1000)
+(def throttle-ms    100)
 (def timeout        (atom))
 (def engine-left    (atom))
 (def engine-right   (atom))
