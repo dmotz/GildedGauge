@@ -63,7 +63,9 @@
         (did-update [_ prev-props _]
           (if (some #(not= (% prev-props) (% props)) [:net-worth :amount :current-person])
             (rain! amount equiv)
-            (when (not= (:menagerie1 prev-props) (:menagerie1 props))
+            (when (or
+                    (not= (:menagerie1 prev-props) (:menagerie1 props))
+                    (not= (:menagerie2 prev-props) (:menagerie2 props)))
               (emoji/run @engine-left menagerie1)
               (emoji/run @engine-right menagerie2))))
 
