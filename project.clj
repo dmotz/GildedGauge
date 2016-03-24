@@ -12,7 +12,6 @@
                  [org.clojure/data.json "0.2.6"]
                  [enlive "1.1.6"]]
 
-
   :plugins [[lein-cljsbuild "1.1.3"]
             [lein-figwheel "0.5.1"]]
 
@@ -33,7 +32,7 @@
                            :source-map-timestamp true}}
                {:id "min"
                 :source-paths ["src"]
-                :compiler {:output-to "resources/public/js/compiled/gilded_gauge.js"
+                :compiler {:output-to "gilded-gauge.min.js"
                            :main gilded-gauge.core
                            :optimizations :advanced
                            :pretty-print false}}]}
