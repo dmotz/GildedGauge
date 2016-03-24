@@ -3,7 +3,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.8.34"]
                  [org.clojure/core.async "0.2.374"]
-                 [sablono "0.6.2"]
+                 [sablono "0.6.3"]
                  [org.omcljs/om "0.9.0"]
                  [cljsjs/react-dom "0.14.3-1"]
                  [cljsjs/react-dom-server "0.14.3-0"]
@@ -14,7 +14,7 @@
 
 
   :plugins [[lein-cljsbuild "1.1.3"]
-            [lein-figwheel "0.5.0-6"]]
+            [lein-figwheel "0.5.1"]]
 
   :source-paths ["src"]
 
