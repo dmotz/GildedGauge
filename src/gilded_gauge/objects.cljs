@@ -67,3 +67,7 @@
             (- budget-left price)
             (update items key (fnil inc 0)))
           (recur total budget-left items))))))
+
+
+(doseq [k obj-keys]
+  (set! (.-src (js/Image.)) (str "/images/" (name k) ".png")))
