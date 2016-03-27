@@ -12,7 +12,8 @@
          :show-person-select false
          :show-about-view    false
          :menagerie1         {}
-         :menagerie2         {}}))
+         :menagerie2         {}
+         :iterations         0}))
 
 
 (defn toggle-person-select! []
@@ -41,4 +42,5 @@
     app
     assoc
     :menagerie1 (create-menagerie a1)
-    :menagerie2 (create-menagerie a2)))
+    :menagerie2 (create-menagerie a2))
+  (swap! app update :iterations inc))

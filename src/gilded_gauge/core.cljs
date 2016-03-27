@@ -32,7 +32,7 @@
 
 (om/root
   (fn [{:keys [current-person net-worth amount show-person-select
-               show-about-view menagerie1 menagerie2] :as props} owner]
+               show-about-view menagerie1 menagerie2 iterations] :as props} owner]
 
     (let [rich-map   (nth data/ranked current-person)
           rich-name  (:name rich-map)
@@ -103,7 +103,8 @@
                     "."]]]
 
               [:h1#logo
-                {:on-click toggle-about-view!}
+                {:on-click toggle-about-view!
+                 :class-name (when (= 5 iterations) "glimmer")}
                 "Gilded Gauge."]
 
               (let [year-paid (calc-year-paid equiv data/median-global-income)]
