@@ -11,13 +11,13 @@
   font-style normal
 
 
-$sans     = 'Helvetica Neue', Helvetica, Arial, sans-serif
-$serif    = Georgia, Times, 'Times New Roman', serif
-$young    = 'young-serif', $serif
-$gold     = #e3ba7a
-$teal     = #35d2d8
-$red      = #ff7171
-$gray     = #ddd
+$sans  = 'Helvetica Neue', Helvetica, Arial, sans-serif
+$serif = Georgia, Times, 'Times New Roman', serif
+$young = 'young-serif', $serif
+$gold  = #e3ba7a
+$teal  = #35d2d8
+$red   = #ff7171
+$gray  = #ddd
 
 ::-moz-selection
   background #444
@@ -80,7 +80,10 @@ body
   cursor pointer
   position absolute
   z-index 1
-  transition color .2s ease-out, border-color .2s ease-out
+  transition color .2s ease-out, border-color .2s ease-out, background-color .2s ease-out
+
+  &.glimmer
+    animation glimmer 3s
 
   &:hover
     color #fff
@@ -148,7 +151,6 @@ input[type='text']
     position relative
     top -2rem
     margin-right 0.8rem
-
 
 .input-holder
   display inline-block
@@ -562,3 +564,14 @@ footer
 
   &:hover
     opacity 1
+
+
+@keyframes glimmer
+  for i in 0..4
+    {25% * i}
+      if i % 2
+        background-color $gold
+        color #222
+      else
+        background-color transparent
+        color $gold
