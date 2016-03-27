@@ -7,7 +7,7 @@
             [gilded-gauge.presets :as presets]
             [gilded-gauge.components :refer [stats preset-list input
                                              timeline-point portrait
-                                             menagerie-list]]
+                                             menagerie-list link]]
             [gilded-gauge.utils :refer [calc-equiv get-initials format-number
                                         calc-year-paid set-timeout! kill-timeout!]]
             [gilded-gauge.state :refer [update-num! toggle-person-select!
@@ -93,19 +93,13 @@
                 [:div.content
                   [:p
                     "Gilded Gauge was built by "
-                    [:a
-                      {:href "http://oxism.com" :tab-index -1}
-                      "Dan Motzenbecker"]
+                    (link "http://oxism.com" "Dan Motzenbecker")
                     " and is "
-                    [:a
-                      {:href "https://github.com/dmotz/GildedGauge" :tab-index -1}
-                      "open source"]
+                    (link "https://github.com/dmotz/GildedGauge" "open source")
                     "."
                     [:br]
                     [:br]
-                    [:a
-                      {:href "https://twitter.com/dcmotz" :tab-index -1}
-                      "@dcmotz"]]]]
+                    (link "https://twitter.com/dcmotz" "@dcmotz")]]]
 
               [:h1#logo
                 {:on-click toggle-about-view!

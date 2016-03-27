@@ -74,3 +74,7 @@
               [:span.menagerie-name (str n " " (inflect (first obj) n))]
               [:span.menagerie-price (str \$ (format-number (* n (second obj))))]]))
         menagerie))])
+
+
+(defn link [href text]
+  [:a {:href href :tab-index -1} text])
