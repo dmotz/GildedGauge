@@ -98,9 +98,14 @@
                       "Dan Motzenbecker"]
                     " and is "
                     [:a
-                      {:href "https://github.com/dmotz/gilded-gauge" :tab-index -1}
+                      {:href "https://github.com/dmotz/GildedGauge" :tab-index -1}
                       "open source"]
-                    "."]]]
+                    "."
+                    [:br]
+                    [:br]
+                    [:a
+                      {:href "https://twitter.com/dcmotz" :tab-index -1}
+                      "@dcmotz"]]]]
 
               [:h1#logo
                 {:on-click toggle-about-view!
