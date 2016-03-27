@@ -69,7 +69,8 @@
       (let [bodies  (.. engine -world -bodies)]
         (.translate Body (aget bodies 0) (.create Vector 0 (- h last-h)))
         (.translate Body (aget bodies 2) (.create Vector (- w last-w) 0))
-        (.resize (.. engine -render -renderer) w h)))
+        ; advanced compilation hack
+        (.resize (aget (.-render engine) "renderer") w h)))
 
     (reset! last-size [w h])))
 
