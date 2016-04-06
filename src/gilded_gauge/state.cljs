@@ -30,11 +30,12 @@
 
 (defn update-num! [k e]
   (if-let [v (parse-event e)]
-    (when (case k
-            :amount    (<= v (:net-worth @app))
-            :net-worth (>= v (:amount @app))
-            true)
-      (swap! app assoc k v))))
+    (let [a @app]
+      (when (case k
+              :amount    (<= v (:net-worth a))
+              :net-worth (>= v (:amount a))
+              true)
+        (swap! app assoc k v)))))
 
 
 (defn update-menageries! [a1 a2]
