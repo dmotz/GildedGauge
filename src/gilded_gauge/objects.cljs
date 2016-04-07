@@ -34,6 +34,7 @@
    :racecar    ["Lamborghini?" 2e5]
    :sailboat   ["sailboat?" 5e4]
    :shoe       ["pair? of Christian Louboutin shoes" 700]
+   :skis       ["pair? of skis" 300]
    :speedboat  ["luxury speedboat?" 3e5]
    :stack      ["stack? of 10,000 dollars" 1e4]
    :sunglasses ["pair? of Gucci sunglasses" 250]
