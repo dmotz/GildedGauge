@@ -32,6 +32,7 @@
    :pizza      ["slice? of pizza" 3]
    :plane      ["private jet?" 3e7]
    :racecar    ["Lamborghini?" 2e5]
+   :ring       ["engagement ring?" 5855]
    :sailboat   ["sailboat?" 5e4]
    :shoe       ["pair? of Christian Louboutin shoes" 700]
    :skis       ["pair? of skis" 300]
