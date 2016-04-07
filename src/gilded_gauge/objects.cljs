@@ -24,6 +24,7 @@
    :jeans      ["pair? of designer jeans" 100]
    :key        ["annual key? to Gramercy Park" 350]
    :laptop     ["laptop?" 2000]
+   :lipstick   ["tube? of lipstick" 25]
    :manicure   ["manicure?" 15]
    :motorcycle ["motorcycle?" 15e3]
    :orange     ["orange?" 0.5]
