@@ -61,8 +61,8 @@
 (def last-size (atom [(/ js/innerWidth 2) js/innerHeight]))
 
 (defn resize! [left right]
-  (let [w (/ (Math/max js/innerWidth min-width) 2)
-        h (Math/max js/innerHeight min-height)
+  (let [w (/ (max js/innerWidth min-width) 2)
+        h (max js/innerHeight min-height)
         [last-w last-h] @last-size]
 
     (doseq [engine [left right]]
