@@ -3,7 +3,7 @@
             [gilded-gauge.utils :refer [parse-event]]
             [gilded-gauge.objects :refer [create-menagerie]]))
 
-(def preset-indices [0 1 2 4 6 7 8 9 10 11 14 15 17 18 19 28 32 34 35])
+(def preset-indices [0 2 3 4 5 6 9 10 11 12 13 14 15 16 17 18 19 21 22 23 25])
 
 (defonce app
   (atom {:current-person     (rand-nth preset-indices)
