@@ -3,7 +3,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.8.40"]
                  [org.clojure/core.async "0.2.374"]
-                 [sablono "0.6.3"]
+                 [sablono "0.7.0"]
                  [org.omcljs/om "0.9.0"]
                  [cljsjs/react-dom "15.0.0-0"]
                  [cljsjs/react-dom-server "15.0.0-0"]
