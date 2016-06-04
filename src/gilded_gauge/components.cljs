@@ -66,7 +66,7 @@
   [:div
     {:class-name (str "menagerie-list" (when (empty? menagerie) " faded"))}
     (interpose
-      " / "
+      " + "
       (map
         (fn [[k n]]
           (let [obj (k objects)]
