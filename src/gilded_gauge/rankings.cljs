@@ -81,7 +81,9 @@
   ["Mukesh Ambani"
    19.3
    "6/69/Mukesh_Ambani.jpg/220px-Mukesh_Ambani.jpg"]
-  ["Leonardo Del Vecchio" 18.7]
+  ["Leonardo Del Vecchio"
+   18.7
+   "5/58/Leonardo_Del_Vecchio%2C_2011.jpeg/220px-Leonardo_Del_Vecchio%2C_2011.jpeg"]
   ["Susanne Klatten" 18.5]
   ["Georg Schaeffler" 18.1]
   ["Paul Allen" 17.5 "c/c4/Paul_G._Allen.jpg/220px-Paul_G._Allen.jpg"]
