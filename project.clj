@@ -10,7 +10,8 @@
                  [cljsjs/pixi "3.0.10-0"]
                  [cljsjs/matter "0.9.1-0"]
                  [org.clojure/data.json "0.2.6"]
-                 [enlive "1.1.6"]]
+                 [enlive "1.1.6"]
+                 [proto-repl "0.3.1"]]
 
   :plugins [[lein-cljsbuild "1.1.3"]
             [lein-figwheel "0.5.4-7"]]
