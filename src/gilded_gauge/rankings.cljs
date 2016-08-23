@@ -67,7 +67,9 @@
   ["Steve Ballmer"
    23.5
    "2/21/Steve_Ballmer_at_CES_2010_cropped.jpg/220px-Steve_Ballmer_at_CES_2010_cropped.jpg"]
-  ["Forrest Mars, Jr." 23.4]
+  ["Forrest Mars, Jr."
+   23.4
+   "Forrest_Mars_Jr_undated_photo_by_Mars_Inc.jpg/220px-Forrest_Mars_Jr_undated_photo_by_Mars_Inc.jpg"]
   ["Jacqueline Mars" 23.4]
   ["John Mars" 23.4]
   ["Maria Franca Fissolo" 22.1]
