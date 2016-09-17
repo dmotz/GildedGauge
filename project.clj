@@ -1,9 +1,9 @@
 (defproject gilded-gauge "0.1.0-SNAPSHOT"
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.93"]
-                 [org.clojure/core.async "0.2.385"]
-                 [sablono "0.7.3"]
+                 [org.clojure/clojurescript "1.9.229"]
+                 [org.clojure/core.async "0.2.391"]
+                 [sablono "0.7.2"]
                  [org.omcljs/om "0.9.0"]
                  [cljsjs/react-dom "15.2.1-1"]
                  [cljsjs/react-dom-server "15.2.1-1"]
@@ -13,8 +13,8 @@
                  [enlive "1.1.6"]
                  [proto-repl "0.3.1"]]
 
-  :plugins [[lein-cljsbuild "1.1.3"]
-            [lein-figwheel "0.5.4-7"]]
+  :plugins [[lein-cljsbuild "1.1.4"]
+            [lein-figwheel "0.5.7"]]
 
   :source-paths ["src"]
 
