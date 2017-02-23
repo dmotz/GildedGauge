@@ -12,7 +12,7 @@
                                         calc-year-paid set-timeout! kill-timeout!]]
             [gilded-gauge.state :refer [update-num! toggle-person-select!
                                         select-person! update-menageries!
-                                        toggle-about-view!]]
+                                        toggle-about-view! hide-person-select!]]
             [gilded-gauge.emoji :as emoji]))
 
 (enable-console-print!)
@@ -160,3 +160,7 @@
                   (menagerie-list menagerie2)]]])))))
   app
   {:target (.getElementById js/document "app")})
+
+
+(.addEventListener js/window "keydown"
+  #(when (= (.-keyCode %) 27) (hide-person-select!)))
