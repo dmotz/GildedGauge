@@ -4,9 +4,7 @@
  [["Bill Gates"
    75.0
    "commons/thumb/1/19/Bill_Gates_June_2015.jpg/220px-Bill_Gates_June_2015.jpg"]
-  ["Amancio Ortega"
-   67.0
-   "commons/thumb/6/68/Amancio_ortega_%E0%A4%85%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%B8%E0%A5%80%E0%A4%93_%E0%A4%93%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%97%E0%A4%BE.jpg/220px-Amancio_ortega_%E0%A4%85%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%B8%E0%A5%80%E0%A4%93_%E0%A4%93%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%97%E0%A4%BE.jpg"]
+  ["Amancio Ortega" 67.0]
   ["Warren Buffett"
    60.8
    "commons/thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
@@ -21,11 +19,9 @@
    "commons/thumb/f/fe/Mark_Zuckerberg_em_setembro_de_2014.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014.jpg"]
   ["Larry Ellison"
    43.6
-   "commons/thumb/3/3c/Larry_Elllison_on_stage.jpg/220px-Larry_Elllison_on_stage.jpg"]
+   "commons/thumb/d/d9/Larry_Ellison_on_stage.jpg/220px-Larry_Ellison_on_stage.jpg"]
   ["Michael Bloomberg" 40.0]
-  ["Charles Koch"
-   39.6
-   "commons/thumb/1/11/Charles_Koch.jpg/220px-Charles_Koch.jpg"]
+  ["Charles Koch" 39.6]
   ["David Koch"
    39.6
    "commons/thumb/3/36/David_Koch_by_Gage_Skidmore.jpg/220px-David_Koch_by_Gage_Skidmore.jpg"]
@@ -49,7 +45,7 @@
    "commons/thumb/e/e1/Alice_Walton_%28cropped%29.jpg/240px-Alice_Walton_%28cropped%29.jpg"]
   ["S. Robson Walton"
    31.9
-   "commons/thumb/9/9d/S._Robson_Walton.jpg/220px-S._Robson_Walton.jpg"]
+   "commons/thumb/b/b1/S._Robson_Walton_by_Gage_Skidmore.jpg/220px-S._Robson_Walton_by_Gage_Skidmore.jpg"]
   ["Wang Jianlin"
    28.7
    "commons/thumb/9/9f/Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg/220px-Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg"]
@@ -103,7 +99,9 @@
    "commons/thumb/c/c4/Paul_G._Allen.jpg/220px-Paul_G._Allen.jpg"]
   ["Prince Alwaleed Bin Talal Alsaud" 17.3]
   ["Joseph Safra" 17.2]
-  ["Carl Icahn" 17.0]
+  ["Carl Icahn"
+   17.0
+   "commons/thumb/e/ee/Carl_Icahn_signature.png/150px-Carl_Icahn_signature.png"]
   ["Laurene Powell Jobs"
    16.7
    "commons/thumb/9/97/Laurene_Powell_Jobs.jpg/220px-Laurene_Powell_Jobs.jpg"]
@@ -116,4 +114,4 @@
    "commons/thumb/8/81/Blickachsen-10-Eroeffnung-Stefan-Quandt-2015-HG-789.jpg/220px-Blickachsen-10-Eroeffnung-Stefan-Quandt-2015-HG-789.jpg"]
   ["James Simons"
    15.5
-   "commons/thumb/b/b4/James_Simons_2007.jpg/250px-James_Simons_2007.jpg"]])
+   "commons/thumb/b/b4/James_Simons_2007.jpg/220px-James_Simons_2007.jpg"]])
