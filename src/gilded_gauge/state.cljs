@@ -20,6 +20,10 @@
   (swap! app update :show-person-select not))
 
 
+(defn hide-person-select! []
+  (swap! app assoc :show-person-select false))
+
+
 (defn toggle-about-view! []
   (swap! app update :show-about-view not))
 
