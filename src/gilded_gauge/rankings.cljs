@@ -99,9 +99,7 @@
    "commons/thumb/c/c4/Paul_G._Allen.jpg/220px-Paul_G._Allen.jpg"]
   ["Prince Alwaleed Bin Talal Alsaud" 17.3]
   ["Joseph Safra" 17.2]
-  ["Carl Icahn"
-   17.0
-   "commons/thumb/e/ee/Carl_Icahn_signature.png/150px-Carl_Icahn_signature.png"]
+  ["Carl Icahn" 17.0]
   ["Laurene Powell Jobs"
    16.7
    "commons/thumb/9/97/Laurene_Powell_Jobs.jpg/220px-Laurene_Powell_Jobs.jpg"]
