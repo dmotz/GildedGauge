@@ -274,17 +274,14 @@ input[type='text']
 
 #person-list
   list-style none
-  padding 2rem 0
+  display flex
+  align-items center
 
   ul
-    position absolute
-    overflow auto
-    top 0
-    bottom 0
-    left 0
-    right 1rem
     padding 1rem 3rem
     text-align center
+    max-height 100%
+    overflow scroll
 
   li
     cursor pointer
