@@ -1,0 +1,15 @@
+preview: true
+
+tasks:
+  lein cljsbuild once min:
+    - gilded-gauge.min.js
+    - js/gilded-gauge.min.js
+
+  stylus -u nib -c resources/public/css/style.styl:
+    - resources/public/css/style.css
+    - css/gilded-gauge.css
+
+hashing:
+  index.html:
+    - js/gilded-gauge.min.js
+    - css/gilded-gauge.css
