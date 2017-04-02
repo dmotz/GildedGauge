@@ -50,6 +50,8 @@
 
 (def threshold 0.0033)
 
+(def inc' (fnil inc 0))
+
 (defn create-menagerie [budget]
   (loop [total 0 budget-left budget items {}]
     (if (>= total budget)
@@ -68,7 +70,7 @@
           (recur
             (+ total price)
             (- budget-left price)
-            (update items key (fnil inc 0)))
+            (update items key inc'))
           (recur total budget-left items))))))
 
 
