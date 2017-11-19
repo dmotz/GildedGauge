@@ -27,16 +27,14 @@
   ["Michael Bloomberg" 47.5]
   ["Bernard Arnault"
    41.5
-   "commons/thumb/5/5d/Bernard_Arnault.jpg/220px-Bernard_Arnault.jpg"]
+   "commons/thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Larry Page"
    40.7
    "commons/thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Sergey Brin"
    39.8
    "commons/thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
-  ["Liliane Bettencourt"
-   39.5
-   "commons/thumb/1/17/Liliane_Bettencourt.jpg/220px-Liliane_Bettencourt.jpg"]
+  ["Liliane Bettencourt" 39.5]
   ["S. Robson Walton"
    34.1
    "commons/thumb/b/b1/S._Robson_Walton_by_Gage_Skidmore.jpg/220px-S._Robson_Walton_by_Gage_Skidmore.jpg"]
