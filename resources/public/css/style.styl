@@ -444,15 +444,10 @@ footer
   right 8rem
   left 47rem
   top 3rem
-  color #444
+  color $gray
   z-index 1
   height 9.1rem
 
-  &:hover
-    color $gray !important
-
-    .timeline-tick
-      border-color $gray
 
 #baseline
   border-top 1px solid #888
@@ -474,6 +469,9 @@ footer
   div
     font-size 3rem
 
+  &:last-child .info-text
+    transform translateX(-40%)
+
 .timeline-label
   font-size 2.1rem !important
   position relative
@@ -482,22 +480,26 @@ footer
   text-align center
   transition color .25s ease-out
   z-index 99
+  cursor default
 
   .info-text
-    display none
-    background-color rgba(0,0,0,.9)
+    display block
+    opacity 0
+    pointer-events none
+    background-color rgba(0, 0, 0, .9)
     line-height 1.4
     padding 1rem
     position absolute
     width 250%
     transform translateX(-30%)
+    transition opacity .2s ease-out
 
   &:hover .info-text
-    display block
+    opacity 1
 
 
 .timeline-tick
-  border-right 1px solid #444
+  border-right 1px solid $gray
   position absolute
   bottom 1.2rem
   opacity .4
