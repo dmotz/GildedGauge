@@ -408,7 +408,7 @@ input[type='text']
 
 
 .menagerie-price
-  display none
+  opacity 0
   top 0
   left 0
   background-color $gold
@@ -416,7 +416,11 @@ input[type='text']
   position absolute
   padding 0 1rem
   transform translateY(-100%)
+  transition opacity .2s ease-out
+  pointer-events none
 
+.menagerie-name
+  transition color .2s ease-out
 
 .menagerie-item
   position relative
@@ -426,7 +430,7 @@ input[type='text']
       color #ccc
 
     .menagerie-price
-      display inline
+      opacity 1
 
 footer
   position absolute
