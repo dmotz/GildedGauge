@@ -411,23 +411,22 @@ input[type='text']
   display none
   top 0
   left 0
-  background-color #ccc
+  background-color $gold
   color #222
+  position absolute
+  padding 0 1rem
+  transform translateY(-100%)
+
 
 .menagerie-item
   position relative
-  cursor pointer
 
   &:hover
     .menagerie-name
       color #ccc
 
-  &:active
     .menagerie-price
       display inline
-      padding 0 1rem
-      margin-left 1rem
-
 
 footer
   position absolute
