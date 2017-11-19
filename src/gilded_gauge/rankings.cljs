@@ -9,10 +9,8 @@
    "commons/thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
   ["Jeff Bezos"
    72.8
-   "commons/thumb/6/6b/Jeff_Bezos%27_iconic_laugh.jpg/220px-Jeff_Bezos%27_iconic_laugh.jpg"]
-  ["Amancio Ortega"
-   71.3
-   "commons/thumb/1/18/Amancio_Ortega_Gaona_signature.png/150px-Amancio_Ortega_Gaona_signature.png"]
+   "commons/thumb/3/33/Jeff_Bezos_2016.jpg/220px-Jeff_Bezos_2016.jpg"]
+  ["Amancio Ortega" 71.3]
   ["Mark Zuckerberg"
    56.0
    "commons/thumb/f/fe/Mark_Zuckerberg_em_setembro_de_2014.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014.jpg"]
@@ -21,7 +19,7 @@
    "commons/thumb/f/f6/Carlos_Slim_2012.jpg/220px-Carlos_Slim_2012.jpg"]
   ["Larry Ellison"
    52.2
-   "commons/thumb/d/d9/Larry_Ellison_on_stage.jpg/220px-Larry_Ellison_on_stage.jpg"]
+   "commons/thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Charles Koch" 48.3]
   ["David Koch"
    48.3
@@ -65,7 +63,7 @@
    "commons/thumb/7/7e/Jorge_Paulo_Lemann_em_fevereiro_de_2012.png/220px-Jorge_Paulo_Lemann_em_fevereiro_de_2012.png"]
   ["Jack Ma"
    28.3
-   "commons/thumb/3/38/Jack_Ma_2008.jpg/230px-Jack_Ma_2008.jpg"]
+   "commons/thumb/e/ec/Ma_Yun_%282017-10-19%29_-1.jpg/220px-Ma_Yun_%282017-10-19%29_-1.jpg"]
   ["Beate Heister & Karl Albrecht Jr." 27.2]
   ["David Thomson" 27.2]
   ["Jacqueline Mars" 27.0]
@@ -93,7 +91,9 @@
   ["Michael Dell"
    20.4
    "commons/thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
-  ["Susanne Klatten" 20.4]
+  ["Susanne Klatten"
+   20.4
+   "commons/thumb/9/9c/2017-09-12_IAA_2017_Susanne_Klatten_bei_BMW_by_Olaf_Kosinsky-10.jpg/220px-2017-09-12_IAA_2017_Susanne_Klatten_bei_BMW_by_Olaf_Kosinsky-10.jpg"]
   ["Len Blavatnik" 20.0]
   ["Laurene Powell Jobs"
    20.0
