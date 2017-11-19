@@ -10,7 +10,7 @@
 (def output-path  "src/gilded_gauge/rankings.cljs")
 (def ranking-url  "https://www.forbes.com/ajax/list/data?year=2017&uri=billionaires&type=person")
 (def wiki-url     "https://en.wikipedia.org/wiki/")
-(def thumb-prefix "//upload.wikimedia.org/wikipedia/")
+(def thumb-prefix "//upload.wikimedia.org/wikipedia/commons/thumb/")
 
 (def prefix-n (count thumb-prefix))
 (def take-n   50)

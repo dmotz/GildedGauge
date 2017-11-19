@@ -3,115 +3,109 @@
  rankings
  [["Bill Gates"
    86.0
-   "commons/thumb/1/19/Bill_Gates_June_2015.jpg/220px-Bill_Gates_June_2015.jpg"]
+   "1/19/Bill_Gates_June_2015.jpg/220px-Bill_Gates_June_2015.jpg"]
   ["Warren Buffett"
    75.6
-   "commons/thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
+   "5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
   ["Jeff Bezos"
    72.8
-   "commons/thumb/3/33/Jeff_Bezos_2016.jpg/220px-Jeff_Bezos_2016.jpg"]
+   "3/33/Jeff_Bezos_2016.jpg/220px-Jeff_Bezos_2016.jpg"]
   ["Amancio Ortega" 71.3]
   ["Mark Zuckerberg"
    56.0
-   "commons/thumb/f/fe/Mark_Zuckerberg_em_setembro_de_2014.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014.jpg"]
+   "f/fe/Mark_Zuckerberg_em_setembro_de_2014.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014.jpg"]
   ["Carlos Slim Helu"
    54.5
-   "commons/thumb/f/f6/Carlos_Slim_2012.jpg/220px-Carlos_Slim_2012.jpg"]
+   "f/f6/Carlos_Slim_2012.jpg/220px-Carlos_Slim_2012.jpg"]
   ["Larry Ellison"
    52.2
-   "commons/thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
+   "0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Charles Koch" 48.3]
   ["David Koch"
    48.3
-   "commons/thumb/3/36/David_Koch_by_Gage_Skidmore.jpg/220px-David_Koch_by_Gage_Skidmore.jpg"]
+   "3/36/David_Koch_by_Gage_Skidmore.jpg/220px-David_Koch_by_Gage_Skidmore.jpg"]
   ["Michael Bloomberg" 47.5]
   ["Bernard Arnault"
    41.5
-   "commons/thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
+   "d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Larry Page"
    40.7
-   "commons/thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
+   "e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Sergey Brin"
    39.8
-   "commons/thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
+   "a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
   ["Liliane Bettencourt" 39.5]
   ["S. Robson Walton"
    34.1
-   "commons/thumb/b/b1/S._Robson_Walton_by_Gage_Skidmore.jpg/220px-S._Robson_Walton_by_Gage_Skidmore.jpg"]
+   "b/b1/S._Robson_Walton_by_Gage_Skidmore.jpg/220px-S._Robson_Walton_by_Gage_Skidmore.jpg"]
   ["Jim Walton"
    34.0
-   "commons/thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
+   "b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
   ["Alice Walton"
    33.8
-   "commons/thumb/e/e1/Alice_Walton_%28cropped%29.jpg/240px-Alice_Walton_%28cropped%29.jpg"]
+   "e/e1/Alice_Walton_%28cropped%29.jpg/240px-Alice_Walton_%28cropped%29.jpg"]
   ["Wang Jianlin"
    31.3
-   "commons/thumb/9/9f/Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg/220px-Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg"]
-  ["Li Ka-shing"
-   31.2
-   "commons/thumb/e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
+   "9/9f/Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg/220px-Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg"]
+  ["Li Ka-shing" 31.2 "e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
   ["Sheldon Adelson"
    30.4
-   "commons/thumb/f/f9/Sheldon_Adelson_crop.jpg/220px-Sheldon_Adelson_crop.jpg"]
+   "f/f9/Sheldon_Adelson_crop.jpg/220px-Sheldon_Adelson_crop.jpg"]
   ["Steve Ballmer"
    30.0
-   "commons/thumb/2/21/Steve_Ballmer_at_CES_2010_cropped.jpg/220px-Steve_Ballmer_at_CES_2010_cropped.jpg"]
+   "2/21/Steve_Ballmer_at_CES_2010_cropped.jpg/220px-Steve_Ballmer_at_CES_2010_cropped.jpg"]
   ["Jorge Paulo Lemann"
    29.2
-   "commons/thumb/7/7e/Jorge_Paulo_Lemann_em_fevereiro_de_2012.png/220px-Jorge_Paulo_Lemann_em_fevereiro_de_2012.png"]
+   "7/7e/Jorge_Paulo_Lemann_em_fevereiro_de_2012.png/220px-Jorge_Paulo_Lemann_em_fevereiro_de_2012.png"]
   ["Jack Ma"
    28.3
-   "commons/thumb/e/ec/Ma_Yun_%282017-10-19%29_-1.jpg/220px-Ma_Yun_%282017-10-19%29_-1.jpg"]
+   "e/ec/Ma_Yun_%282017-10-19%29_-1.jpg/220px-Ma_Yun_%282017-10-19%29_-1.jpg"]
   ["Beate Heister & Karl Albrecht Jr." 27.2]
   ["David Thomson" 27.2]
   ["Jacqueline Mars" 27.0]
   ["John Mars" 27.0]
   ["Phil Knight"
    26.2
-   "commons/thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
+   "b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
   ["Maria Franca Fissolo" 25.2]
   ["George Soros"
    25.2
-   "commons/thumb/5/51/George_Soros_47th_Munich_Security_Conference_2011_crop.jpg/230px-George_Soros_47th_Munich_Security_Conference_2011_crop.jpg"]
+   "5/51/George_Soros_47th_Munich_Security_Conference_2011_crop.jpg/230px-George_Soros_47th_Munich_Security_Conference_2011_crop.jpg"]
   ["Ma Huateng" 24.9]
-  ["Lee Shau Kee"
-   24.4
-   "commons/thumb/e/e9/LEE_Shau_Kee.JPG/220px-LEE_Shau_Kee.JPG"]
+  ["Lee Shau Kee" 24.4 "e/e9/LEE_Shau_Kee.JPG/220px-LEE_Shau_Kee.JPG"]
   ["Mukesh Ambani"
    23.2
-   "commons/thumb/6/69/Mukesh_Ambani.jpg/220px-Mukesh_Ambani.jpg"]
+   "6/69/Mukesh_Ambani.jpg/220px-Mukesh_Ambani.jpg"]
   ["Masayoshi Son"
    21.2
-   "commons/thumb/a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]
+   "a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]
   ["Kjeld Kirk Kristiansen" 21.1]
   ["Georg Schaeffler" 20.7]
   ["Joseph Safra" 20.5]
   ["Michael Dell"
    20.4
-   "commons/thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
+   "c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
   ["Susanne Klatten"
    20.4
-   "commons/thumb/9/9c/2017-09-12_IAA_2017_Susanne_Klatten_bei_BMW_by_Olaf_Kosinsky-10.jpg/220px-2017-09-12_IAA_2017_Susanne_Klatten_bei_BMW_by_Olaf_Kosinsky-10.jpg"]
+   "9/9c/2017-09-12_IAA_2017_Susanne_Klatten_bei_BMW_by_Olaf_Kosinsky-10.jpg/220px-2017-09-12_IAA_2017_Susanne_Klatten_bei_BMW_by_Olaf_Kosinsky-10.jpg"]
   ["Len Blavatnik" 20.0]
   ["Laurene Powell Jobs"
    20.0
-   "commons/thumb/9/97/Laurene_Powell_Jobs.jpg/220px-Laurene_Powell_Jobs.jpg"]
-  ["Paul Allen"
-   19.9
-   "commons/thumb/c/c4/Paul_G._Allen.jpg/220px-Paul_G._Allen.jpg"]
+   "9/97/Laurene_Powell_Jobs.jpg/220px-Laurene_Powell_Jobs.jpg"]
+  ["Paul Allen" 19.9 "c/c4/Paul_G._Allen.jpg/220px-Paul_G._Allen.jpg"]
   ["Stefan Persson" 19.6]
   ["Theo Albrecht, Jr." 18.8]
   ["Prince Alwaleed Bin Talal Alsaud" 18.7]
   ["Leonid Mikhelson"
    18.4
-   "commons/thumb/c/cc/Leonid_Mikhelson.jpg/220px-Leonid_Mikhelson.jpg"]
+   "c/cc/Leonid_Mikhelson.jpg/220px-Leonid_Mikhelson.jpg"]
   ["Charles Ergen" 18.3]
   ["Stefan Quandt"
    18.3
-   "commons/thumb/8/81/Blickachsen-10-Eroeffnung-Stefan-Quandt-2015-HG-789.jpg/220px-Blickachsen-10-Eroeffnung-Stefan-Quandt-2015-HG-789.jpg"]
+   "8/81/Blickachsen-10-Eroeffnung-Stefan-Quandt-2015-HG-789.jpg/220px-Blickachsen-10-Eroeffnung-Stefan-Quandt-2015-HG-789.jpg"]
   ["James Simons"
    18.0
-   "commons/thumb/b/b4/James_Simons_2007.jpg/220px-James_Simons_2007.jpg"]
+   "b/b4/James_Simons_2007.jpg/220px-James_Simons_2007.jpg"]
   ["Leonardo Del Vecchio"
    17.9
-   "commons/thumb/5/58/Leonardo_Del_Vecchio%2C_2011.jpeg/220px-Leonardo_Del_Vecchio%2C_2011.jpeg"]])
+   "5/58/Leonardo_Del_Vecchio%2C_2011.jpeg/220px-Leonardo_Del_Vecchio%2C_2011.jpeg"]])

@@ -1,7 +1,7 @@
 (ns gilded-gauge.data
   (:require [gilded-gauge.rankings :as rankings]))
 
-(def img-url-root "https://upload.wikimedia.org/wikipedia/")
+(def img-url-root "https://upload.wikimedia.org/wikipedia/commons/thumb/")
 
 (def ranked
   (mapv
