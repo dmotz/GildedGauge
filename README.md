@@ -18,7 +18,7 @@ question, down to the exact dollar.
 Open a dev server on `3449`:
 
 ```
-$ lein figwheel
+$ ./scripts/start
 ```
 
 Watch and recompile style source:
