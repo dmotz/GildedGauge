@@ -1,11 +1,11 @@
 preview: true
 
 tasks:
-  lein cljsbuild once min:
+  ./scripts/js-build.sh:
     - gilded-gauge.min.js
     - js/gilded-gauge.min.js
 
-  stylus -u nib -c resources/public/css/style.styl:
+  ./scripts/style-build.sh:
     - resources/public/css/style.css
     - css/gilded-gauge.css
 
