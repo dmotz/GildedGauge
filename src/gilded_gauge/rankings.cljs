@@ -6,25 +6,23 @@
    "6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
   ["Bill Gates"
    90.0
-   "1/19/Bill_Gates_June_2015.jpg/220px-Bill_Gates_June_2015.jpg"]
+   "a/a0/Bill_Gates_2018.jpg/220px-Bill_Gates_2018.jpg"]
   ["Warren Buffett"
    84.0
-   "a/af/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit.jpg/220px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit.jpg"]
+   "5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
   ["Bernard Arnault"
    72.0
    "d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Mark Zuckerberg"
    71.0
-   "f/fa/Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg"]
+   "b/b5/Mark_Zuckerberg_cropped.jpg/220px-Mark_Zuckerberg_cropped.jpg"]
   ["Amancio Ortega"
    70.0
    "5/59/Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["Carlos Slim Helu"
    67.1
    "f/f6/Carlos_Slim_2012.jpg/220px-Carlos_Slim_2012.jpg"]
-  ["Charles Koch"
-   60.0
-   "0/03/Charles_Koch_in_2016.jpg/220px-Charles_Koch_in_2016.jpg"]
+  ["Charles Koch" 60.0]
   ["David Koch"
    60.0
    "3/36/David_Koch_by_Gage_Skidmore.jpg/220px-David_Koch_by_Gage_Skidmore.jpg"]
@@ -54,7 +52,7 @@
    "6/69/Mukesh_Ambani.jpg/220px-Mukesh_Ambani.jpg"]
   ["Jack Ma"
    39.0
-   "7/7e/Jack_Ma_Yun%2C_Tianjin%2C_2008_%28cropped%29.jpg/220px-Jack_Ma_Yun%2C_Tianjin%2C_2008_%28cropped%29.jpg"]
+   "a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
   ["Sheldon Adelson"
    38.5
    "f/f9/Sheldon_Adelson_crop.jpg/220px-Sheldon_Adelson_crop.jpg"]
@@ -66,7 +64,7 @@
   ["Lee Shau Kee" 30.3 "e/e9/LEE_Shau_Kee.JPG/220px-LEE_Shau_Kee.JPG"]
   ["Wang Jianlin"
    30.0
-   "9/9f/Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg/220px-Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg"]
+   "9/9f/Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg/250px-Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg"]
   ["Beate Heister & Karl Albrecht Jr." 29.8]
   ["Phil Knight"
    29.6
@@ -86,9 +84,7 @@
   ["John Mars" 23.6]
   ["Joseph Safra" 23.5]
   ["Giovanni Ferrero" 23.0]
-  ["Dietrich Mateschitz"
-   23.0
-   "0/08/Dietrich_Mateschitz_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Dietrich_Mateschitz_Painting_Collage_By_Danor_Shtruzman.jpg"]
+  ["Dietrich Mateschitz" 23.0]
   ["Michael Dell"
    22.7
    "c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
