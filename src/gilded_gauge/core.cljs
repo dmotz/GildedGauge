@@ -43,8 +43,9 @@
       (reify
         om/IDidMount
         (did-mount [_]
-          (let [w     (/ (.-innerWidth js/window) 2)
-                h     (.-innerHeight js/window)
+          (let [el    (om/get-node owner "root")
+                w     (/ (.-offsetWidth el) 2)
+                h     (.-offsetHeight el)
                 left  (emoji/init (om/get-node owner "canvas-left") w h)
                 right (emoji/init (om/get-node owner "canvas-right") w h)]
 
@@ -55,13 +56,23 @@
               "resize"
               (fn []
                 (kill-timeout! @resize-timeout)
-                (reset! resize-timeout (set-timeout! 100 #(emoji/resize! left right))))
+                (reset!
+                 resize-timeout
+                 (set-timeout!
+                   100
+                   #(emoji/resize!
+                     left
+                     right
+                     (.-offsetWidth el)
+                     (.-offsetHeight el)))))
               false)
             (rain! amount equiv)))
 
         om/IDidUpdate
         (did-update [_ prev-props _]
-          (if (some #(not= (% prev-props) (% props)) [:net-worth :amount :current-person])
+          (if (some
+               #(not= (% prev-props) (% props))
+               [:net-worth :amount :current-person])
             (rain! amount equiv)
             (when (or
                     (not= (:menagerie1 prev-props) (:menagerie1 props))
@@ -72,7 +83,7 @@
         om/IRender
         (render [_]
           (html
-            [:div
+            [:div {:ref "root"}
               [:div#canvas-left.canvas {:ref "canvas-left"}]
               [:div#canvas-right.canvas {:ref "canvas-right"}]
               [:div#person-list

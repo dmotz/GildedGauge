@@ -15,6 +15,7 @@
 (def Bodies (.-Bodies M))
 (def Composite (.-Composite M))
 (def Vector (.-Vector M))
+(def last-size (atom))
 
 
 (defn add-wall [world x y w h]
@@ -51,18 +52,18 @@
                            :pixiOptions #js {:transparent true}}})]
     (->
       (.-world engine)
-      (add-wall (/ w 2) (+ h 20) 10000 100)
+      (add-wall (/ w 2) (+ h 50) 10000 100)
       (add-wall -50 (- (/ h 2) 50) 100 (+ h 100))
       (add-wall (+ w 50) (- (/ h 2) 50) 100 (+ h 100)))
 
     (.run Engine engine)
+    (reset! last-size [w h])
     engine))
 
-(def last-size (atom [(/ js/innerWidth 2) js/innerHeight]))
 
-(defn resize! [left right]
-  (let [w (/ (max js/innerWidth min-width) 2)
-        h (max js/innerHeight min-height)
+(defn resize! [left right width height]
+  (let [w (/ (max width min-width) 2)
+        h (max height min-height)
         [last-w last-h] @last-size]
 
     (doseq [engine [left right]]
