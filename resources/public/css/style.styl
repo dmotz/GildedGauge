@@ -45,7 +45,6 @@ html
 body
   margin 0
   background-color #222
-  border 2.4rem solid $gold
   position absolute
   top 0
   bottom 0
@@ -61,6 +60,18 @@ body
 
 a
   outline none
+
+
+#app
+  border 2.4rem solid $gold
+
+
+#app, #app > div
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
 
 
 #loading
@@ -83,10 +94,11 @@ a
   line-height 1
   margin-bottom 2rem
   cursor pointer
-  position absolute
   z-index 1
   transition color .2s ease-out, border-color .2s ease-out, background-color .2s ease-out
   font-weight normal
+  margin-top 3rem
+  margin-left 3rem
 
   &.glimmer
     animation glimmer 3s
