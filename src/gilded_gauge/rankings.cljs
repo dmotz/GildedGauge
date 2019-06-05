@@ -24,7 +24,7 @@
    "0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Mark Zuckerberg"
    62.3
-   "b/b5/Mark_Zuckerberg_cropped.jpg/220px-Mark_Zuckerberg_cropped.jpg"]
+   "1/14/Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg/220px-Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg"]
   ["Michael Bloomberg" 55.5]
   ["Larry Page"
    50.8
@@ -50,9 +50,7 @@
   ["Steve Ballmer"
    41.2
    "2/21/Steve_Ballmer_at_CES_2010_cropped.jpg/220px-Steve_Ballmer_at_CES_2010_cropped.jpg"]
-  ["Ma Huateng"
-   38.8
-   "8/85/Ma_Huateng_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Ma_Huateng_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
+  ["Ma Huateng" 38.8 "d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
   ["Jack Ma"
    37.3
    "a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
@@ -79,7 +77,9 @@
   ["Leonid Mikhelson"
    24.0
    "c/cc/Leonid_Mikhelson.jpg/220px-Leonid_Mikhelson.jpg"]
-  ["Jacqueline Mars" 23.9]
+  ["Jacqueline Mars"
+   23.9
+   "5/5c/Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["John Mars" 23.9]
   ["Jorge Paulo Lemann"
    22.8
