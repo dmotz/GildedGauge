@@ -50,20 +50,18 @@
 
 (def threshold 0.0033)
 
+(defn item-total [items k]
+  [(* (k items) (second (k objects))) k])
+
 (defn create-menagerie [budget]
   (loop [total 0 budget-left budget items {}]
     (if (>= total budget)
       (into
-        (sorted-map-by
-          (fn [k1 k2]
-            (compare
-              [(* (k2 items) (second (k2 objects))) k2]
-              [(* (k1 items) (second (k1 objects))) k1])))
-        items)
+       (sorted-map-by #(compare (item-total items %2) (item-total items %)))
+       items)
 
-      (let [key   (rand-nth obj-keys)
-            item  (key objects)
-            price (second item)]
+      (let [key (rand-nth obj-keys)
+            [_ price] (key objects)]
         (if (and (>= (/ price budget-left) threshold) (<= price budget-left))
           (recur
             (+ total price)
