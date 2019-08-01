@@ -6,7 +6,7 @@
    "6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
   ["Bill Gates"
    96.5
-   "a/a0/Bill_Gates_2018.jpg/220px-Bill_Gates_2018.jpg"]
+   "0/01/Bill_Gates_July_2014.jpg/220px-Bill_Gates_July_2014.jpg"]
   ["Warren Buffett"
    82.5
    "5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
@@ -29,7 +29,9 @@
   ["Larry Page"
    50.8
    "e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
-  ["Charles Koch" 50.5]
+  ["Charles Koch"
+   50.5
+   "5/5c/Charles_Koch_Portrait.jpg/220px-Charles_Koch_Portrait.jpg"]
   ["David Koch"
    50.5
    "3/36/David_Koch_by_Gage_Skidmore.jpg/220px-David_Koch_by_Gage_Skidmore.jpg"]
@@ -49,7 +51,7 @@
   ["Rob Walton" 44.3]
   ["Steve Ballmer"
    41.2
-   "2/21/Steve_Ballmer_at_CES_2010_cropped.jpg/220px-Steve_Ballmer_at_CES_2010_cropped.jpg"]
+   "b/b2/Steve_Balmer_2014.jpg/220px-Steve_Balmer_2014.jpg"]
   ["Ma Huateng" 38.8 "d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
   ["Jack Ma"
    37.3
@@ -87,7 +89,9 @@
   ["Azim Premji"
    22.6
    "e/e6/Azim_H._Premji_World_Economic_Forum_2013.jpg/220px-Azim_H._Premji_World_Economic_Forum_2013.jpg"]
-  ["Dieter Schwarz" 22.6]
+  ["Dieter Schwarz"
+   22.6
+   "7/7c/Dieter_Schwarz_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Dieter_Schwarz_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["Wang Jianlin"
    22.6
    "9/9f/Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg/250px-Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg"]
