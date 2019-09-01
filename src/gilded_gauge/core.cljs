@@ -1,8 +1,6 @@
 (ns gilded-gauge.core
   (:require [om.core :as om :include-macros true]
-            [om.dom :as dom :include-macros true]
-            [sablono.core :refer-macros [html]]
-            [gilded-gauge.state :refer [app]]
+            [sablono.core :as html :refer-macros [html]]
             [gilded-gauge.data :as data]
             [gilded-gauge.presets :as presets]
             [gilded-gauge.components :refer [stats preset-list input
@@ -10,7 +8,7 @@
                                              menagerie-list link]]
             [gilded-gauge.utils :refer [calc-equiv get-initials format-number
                                         calc-year-paid set-timeout! kill-timeout!]]
-            [gilded-gauge.state :refer [update-num! toggle-person-select!
+            [gilded-gauge.state :refer [app update-num! toggle-person-select!
                                         select-person! update-menageries!
                                         toggle-about-view! hide-person-select!]]
             [gilded-gauge.emoji :as emoji]))

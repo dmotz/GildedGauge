@@ -1,7 +1,6 @@
 (ns gilded-gauge.emoji
   (:require [cljsjs.pixi]
             [cljsjs.matter]
-            [gilded-gauge.objects :refer [objects create-menagerie]]
             [gilded-gauge.utils :refer [set-timeout!]]))
 
 (def body-radius 14)
