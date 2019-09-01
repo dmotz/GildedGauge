@@ -16,10 +16,10 @@
 (enable-console-print!)
 
 (def throttle-ms    100)
-(def timeout        (atom))
-(def engine-left    (atom))
-(def engine-right   (atom))
-(def resize-timeout (atom))
+(def timeout        (atom nil))
+(def engine-left    (atom nil))
+(def engine-right   (atom nil))
+(def resize-timeout (atom nil))
 
 (defn rain! [amount equiv]
   (kill-timeout! @timeout)

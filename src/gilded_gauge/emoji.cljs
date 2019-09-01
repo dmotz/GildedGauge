@@ -14,7 +14,7 @@
 (def Bodies (.-Bodies M))
 (def Composite (.-Composite M))
 (def Vector (.-Vector M))
-(def last-size (atom))
+(def last-size (atom nil))
 
 
 (defn add-wall [world x y w h]
