@@ -5,9 +5,9 @@
 
 (def ranked
   (mapv
-    (fn [[name worth img]]
-      {:name name :worth worth :img (when img (str img-url-root img))})
-    rankings/rankings))
+   (fn [[name worth img]]
+     {:name name :worth worth :img (when img (str img-url-root img))})
+   rankings/rankings))
 
 (def median-us-income 53657)
 (def median-global-income 9733)

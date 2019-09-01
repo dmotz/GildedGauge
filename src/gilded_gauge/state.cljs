@@ -44,8 +44,8 @@
 
 (defn update-menageries! [a1 a2]
   (swap!
-    app
-    assoc
-    :menagerie1 (create-menagerie a1)
-    :menagerie2 (create-menagerie a2))
+   app
+   assoc
+   :menagerie1 (create-menagerie a1)
+   :menagerie2 (create-menagerie a2))
   (swap! app update :iterations inc))

@@ -64,9 +64,9 @@
             [_ price] (key objects)]
         (if (and (>= (/ price budget-left) threshold) (<= price budget-left))
           (recur
-            (+ total price)
-            (- budget-left price)
-            (update items key inc))
+           (+ total price)
+           (- budget-left price)
+           (update items key inc))
           (recur total budget-left items))))))
 
 
