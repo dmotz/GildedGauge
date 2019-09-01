@@ -31,7 +31,7 @@
    "e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Charles Koch"
    50.5
-   "5/5c/Charles_Koch_Portrait.jpg/220px-Charles_Koch_Portrait.jpg"]
+   "2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
   ["David Koch"
    50.5
    "3/36/David_Koch_by_Gage_Skidmore.jpg/220px-David_Koch_by_Gage_Skidmore.jpg"]
@@ -51,7 +51,7 @@
   ["Rob Walton" 44.3]
   ["Steve Ballmer"
    41.2
-   "b/b2/Steve_Balmer_2014.jpg/220px-Steve_Balmer_2014.jpg"]
+   "4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
   ["Ma Huateng" 38.8 "d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
   ["Jack Ma"
    37.3
