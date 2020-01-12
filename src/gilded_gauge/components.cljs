@@ -18,7 +18,7 @@
             (str
              (if (< ratio 1)
                (.toFixed ratio 2)
-               (format-number (Math.round ratio)))
+               (format-number (js/Math.round ratio)))
              " "
              (first words))])
          (str " " (apply str (interpose " " (rest words))))]))
