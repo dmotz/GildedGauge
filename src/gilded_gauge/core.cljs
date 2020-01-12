@@ -6,9 +6,9 @@
             [gilded-gauge.components :refer [stats preset-list input
                                              timeline-point portrait
                                              menagerie-list link]]
-            [gilded-gauge.utils :refer [calc-equiv get-initials format-number
+            [gilded-gauge.utils :refer [calc-equiv format-number
                                         calc-year-paid set-timeout! kill-timeout!]]
-            [gilded-gauge.state :refer [app update-num! toggle-person-select!
+            [gilded-gauge.state :refer [app toggle-person-select!
                                         select-person! update-menageries!
                                         toggle-about-view! hide-person-select!]]
             [gilded-gauge.emoji :as emoji]))
