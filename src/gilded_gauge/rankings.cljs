@@ -6,7 +6,7 @@
    "6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
   ["Bill Gates"
    96.5
-   "0/01/Bill_Gates_July_2014.jpg/220px-Bill_Gates_July_2014.jpg"]
+   "2/2d/Bill_Gates_2014.jpg/220px-Bill_Gates_2014.jpg"]
   ["Warren Buffett"
    82.5
    "5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
