@@ -24,7 +24,7 @@
    "0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Mark Zuckerberg"
    62.3
-   "1/14/Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg/220px-Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg"]
+   "f/fa/Mark_Zuckerberg_%287979903201%29.jpg/220px-Mark_Zuckerberg_%287979903201%29.jpg"]
   ["Michael Bloomberg" 55.5]
   ["Larry Page"
    50.8
@@ -37,7 +37,7 @@
    "3/36/David_Koch_by_Gage_Skidmore.jpg/220px-David_Koch_by_Gage_Skidmore.jpg"]
   ["Mukesh Ambani"
    50.0
-   "6/69/Mukesh_Ambani.jpg/220px-Mukesh_Ambani.jpg"]
+   "8/8b/Mukesh_Ambani_1.jpg/220px-Mukesh_Ambani_1.jpg"]
   ["Sergey Brin"
    49.8
    "a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
@@ -94,7 +94,7 @@
    "7/7c/Dieter_Schwarz_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Dieter_Schwarz_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["Wang Jianlin"
    22.6
-   "9/9f/Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg/250px-Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg"]
+   "9/9f/Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg/220px-Wang_Jianlin_-_Annual_Meeting_of_the_New_Champions_Dalian_2009.jpg"]
   ["Giovanni Ferrero" 22.4]
   ["Elon Musk"
    22.3
