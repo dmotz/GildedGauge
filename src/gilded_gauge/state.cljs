@@ -1,6 +1,29 @@
 (ns gilded-gauge.state
   (:require [gilded-gauge.utils :refer [parse-event]]
-            [gilded-gauge.objects :refer [create-menagerie]]))
+            [gilded-gauge.objects :refer [create-menagerie]]
+            [gilded-gauge.rankings :refer [rankings]]))
+
+(def preset-names #{"Jeff Bezos"
+                    "Bill Gates"
+                    "Warren Buffet"
+                    "Mark Zuckerberg"
+                    "Larry Page"
+                    "Sergey Brin"
+                    "Steve Ballmer"
+                    "Carlos Slim"
+                    "Larry Ellison"
+                    "Charles Koch"
+                    "Mukesh Ambani"
+                    "Jim Walton"
+                    "Alice Walton"
+                    "Jack Ma"
+                    "MacKenzie Bezos"
+                    "Elon Musk"
+                    "Sheldon Adelson"
+                    "Phil Knight"
+                    "Michael Dell"
+                    "Laurene Powell Jobs"})
+
 
 (def preset-indices [0 1 2 4 6 7 9 11 12 13 15 16 18 20 23 24 25 39])
 
