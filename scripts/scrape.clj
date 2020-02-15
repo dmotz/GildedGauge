@@ -28,6 +28,10 @@
 (defn scale [n]
   (/ n 1000))
 
+(defn add-headers [req]
+  (dorun (map (fn [[k v]] (.setRequestProperty req k v)) headers))
+  req)
+
 (defn parse-ranking [url]
   (with-open
    [stream (->> url
