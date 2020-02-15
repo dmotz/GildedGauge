@@ -24,8 +24,11 @@
                     "Michael Dell"
                     "Laurene Powell Jobs"})
 
-
-(def preset-indices [0 1 2 4 6 7 9 11 12 13 15 16 18 20 23 24 25 39])
+(def preset-indices (->>
+                     rankings
+                     (map vector (range))
+                     (filter (fn [[_ [name]]] (preset-names name)))
+                     (map first)))
 
 (defonce app
   (atom {:current-person     (rand-nth preset-indices)
