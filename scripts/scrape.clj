@@ -92,16 +92,11 @@
       (pop v)
       v)))
 
-
 (with-open [w (-> output-path io/file io/writer)]
   (binding [*out* w]
     (let [rankings
           (->>
-           (json/read-str (slurp ranking-url) :key-fn keyword)
-           (filter pred)
-           (sort-by :position)
-           (map #(select-keys % [:name :worth]))
-           (map #(update % :worth scale))
+           (parse-ranking ranking-url)
            (map get-image)
            doall
            (map <!!)
