@@ -23,6 +23,31 @@
 (defn scale [n]
   (/ n 1000))
 
+(defn parse-ranking [url]
+  (with-open
+   [stream (->> url
+                java.net.URL.
+                .openConnection
+                add-headers
+                .getContent)]
+    (->
+     stream
+     html-resource
+     (select [:.table-row])
+     (->>
+      (take take-n)
+      (map #(do {:name  (-> % (select [:.t-name :a]) first text str/trim)
+                 :worth (->
+                         %
+                         (select [:.t-nw])
+                         first
+                         text
+                         (->>
+                          str/trim
+                          (drop 1)
+                          butlast
+                          (apply str)
+                          Float/parseFloat))}))))))
 
 (defn get-image [m]
   (go
