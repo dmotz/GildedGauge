@@ -45,7 +45,14 @@
      (select [:.table-row])
      (->>
       (take take-n)
-      (map #(do {:name  (-> % (select [:.t-name :a]) first text str/trim)
+      (map #(do {:name  (->
+                         %
+                         (select [:.t-name :a])
+                         first
+                         text
+                         str/trim
+                         (str/replace #"(\w )(\w )(\w)" "$1$3"))
+
                  :worth (->
                          %
                          (select [:.t-nw])
