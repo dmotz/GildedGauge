@@ -9,7 +9,7 @@
 (def output-path  "src/gilded_gauge/rankings.cljs")
 (def ranking-url  "https://www.bloomberg.com/billionaires/")
 (def wiki-url     "https://en.wikipedia.org/wiki/")
-(def thumb-prefix "//upload.wikimedia.org/wikipedia/commons/thumb/")
+(def thumb-prefix "//upload.wikimedia.org/wikipedia/commons/")
 
 (def headers {"user-agent"      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36"
               "accept"          "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
