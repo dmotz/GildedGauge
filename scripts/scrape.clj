@@ -1,5 +1,5 @@
 (ns gilded-gauge.scrape
-  (:require [net.cgrand.enlive-html :refer [html-resource select]]
+  (:require [net.cgrand.enlive-html :refer [html-resource select text]]
             [clojure.core.async :refer [go <!!]]
             [clojure.string :as str]
             [clojure.data.json :as json]
