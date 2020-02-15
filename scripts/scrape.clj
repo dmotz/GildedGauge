@@ -39,24 +39,21 @@
      (->>
       (take take-n)
       (map #(do {:name  (->
-                         %
-                         (select [:.t-name :a])
+                         (select % [:.t-name :a])
                          first
                          text
                          str/trim
                          (str/replace #"(\w )(\w )(\w)" "$1$3"))
 
-                 :worth (->
-                         %
-                         (select [:.t-nw])
+                 :worth (->>
+                         (select % [:.t-nw])
                          first
                          text
-                         (->>
-                          str/trim
-                          (drop 1)
-                          butlast
-                          (apply str)
-                          Float/parseFloat))}))))))
+                         str/trim
+                         (drop 1)
+                         butlast
+                         (apply str)
+                         Float/parseFloat)}))))))
 
 
 (defn get-image [m]
