@@ -20,17 +20,11 @@
 (def prefix-n (count thumb-prefix))
 (def take-n   50)
 
-(defn pred [m]
-  (when-let [p (:position m)]
-    (<= p take-n)))
-
-
-(defn scale [n]
-  (/ n 1000))
 
 (defn add-headers [req]
   (dorun (map (fn [[k v]] (.setRequestProperty req k v)) headers))
   req)
+
 
 (defn parse-ranking [url]
   (with-open
@@ -64,6 +58,7 @@
                           butlast
                           (apply str)
                           Float/parseFloat))}))))))
+
 
 (defn get-image [m]
   (go
