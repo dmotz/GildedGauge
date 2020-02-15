@@ -2,7 +2,6 @@
   (:require [net.cgrand.enlive-html :refer [html-resource select text]]
             [clojure.core.async :refer [go <!!]]
             [clojure.string :as str]
-            [clojure.data.json :as json]
             [clojure.java.io :as io]
             [clojure.pprint :refer [pprint]]))
 
