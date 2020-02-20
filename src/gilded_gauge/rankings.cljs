@@ -17,7 +17,7 @@
    "thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
   ["Mark Zuckerberg"
    81.7
-   "thumb/f/fa/Mark_Zuckerberg_%287979903201%29.jpg/220px-Mark_Zuckerberg_%287979903201%29.jpg"]
+   "thumb/9/97/151893386CF011_TechCrunch_C_%287979903201%29.jpg/220px-151893386CF011_TechCrunch_C_%287979903201%29.jpg"]
   ["Amancio Ortega"
    73.2
    "thumb/5/59/Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
