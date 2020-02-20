@@ -3,7 +3,8 @@
             [clojure.core.async :refer [go <!!]]
             [clojure.string :as str]
             [clojure.java.io :as io]
-            [clojure.pprint :refer [pprint]]))
+            [clojure.pprint :refer [pprint]])
+  (:import  (java.net HttpURLConnection)))
 
 
 (def output-path  "src/gilded_gauge/rankings.cljs")
@@ -21,7 +22,8 @@
 
 
 (defn add-headers [req]
-  (dorun (map (fn [[k v]] (.setRequestProperty req k v)) headers))
+  (dorun (map (fn [[k v]]
+                (.setRequestProperty ^HttpURLConnection req k v)) headers))
   req)
 
 
