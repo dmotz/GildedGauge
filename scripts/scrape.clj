@@ -33,7 +33,7 @@
                 java.net.URL.
                 .openConnection
                 add-headers
-                .getContent)]
+                (#(.getContent ^HttpURLConnection %)))]
     (->
      stream
      html-resource
