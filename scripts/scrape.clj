@@ -27,6 +27,8 @@
                 (.setRequestProperty ^HttpURLConnection req k v)) headers))
   req)
 
+(defn str->float [s]
+  (->> s str/trim (drop 1) butlast (apply str) Float/parseFloat))
 
 (defn parse-ranking [url]
   (with-open
