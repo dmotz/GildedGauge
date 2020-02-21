@@ -30,35 +30,43 @@
 (defn str->float [s]
   (->> s str/trim (drop 1) butlast (apply str) Float/parseFloat))
 
-(defn parse-ranking [url]
-  (with-open
-   [stream (->> url
-                java.net.URL.
-                .openConnection
-                add-headers
-                (#(.getContent ^HttpURLConnection %)))]
-    (->
-     stream
-     html-resource
-     (select [:.table-row])
-     (->>
-      (take take-n)
-      (map #(do {:name  (->
-                         (select % [:.t-name :a])
-                         first
-                         text
-                         str/trim
-                         (str/replace #"(\w )(\w )(\w)" "$1$3"))
 
-                 :worth (->>
-                         (select % [:.t-nw])
-                         first
-                         text
-                         str/trim
-                         (drop 1)
-                         butlast
-                         (apply str)
-                         Float/parseFloat)}))))))
+(defn parse-ranking [url1 url2]
+  (conj
+   (with-open
+    [stream (->> url1
+                 java.net.URL.
+                 .openConnection
+                 add-headers
+                 (#(.getContent ^HttpURLConnection %)))]
+     (->
+      stream
+      html-resource
+      (select [:.table-row])
+      (->>
+       (take take-n)
+       (map #(do {:name  (->
+                          (select % [:.t-name :a])
+                          first
+                          text
+                          str/trim
+                          (str/replace #"(\w )(\w )(\w)" "$1$3"))
+
+                  :worth (->>
+                          (select % [:.t-nw])
+                          first
+                          text
+                          str->float)})))))
+
+   {:name  "Michael Bloomberg"
+    :worth (->
+            url2
+            java.net.URL.
+            html-resource
+            (select [:.profile-info__item-value])
+            first
+            text
+            str->float)}))
 
 
 (defn get-image [m]
