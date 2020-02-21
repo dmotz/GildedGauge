@@ -92,7 +92,9 @@
 
 (defn drop-nil-img [v]
   (let [img (nth v 2)]
-    (if (or (nil? img) (.contains img ".svg"))
+    (if (or (nil? img)
+            (.contains img ".svg")
+            (.contains img "signature"))
       (pop v)
       v)))
 
