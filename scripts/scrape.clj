@@ -79,7 +79,7 @@
         (str wiki-url (str/replace (:name m) #"\s" "_"))
         java.net.URL.
         html-resource
-        (select [:.biography :img])
+        (select [:.infobox :img])
         first
         :attrs
         :src
