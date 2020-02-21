@@ -9,6 +9,7 @@
 
 (def output-path  "src/gilded_gauge/rankings.cljs")
 (def ranking-url  "https://www.bloomberg.com/billionaires/")
+(def ranking-url2 "https://www.forbes.com/profile/michael-bloomberg/")
 (def wiki-url     "https://en.wikipedia.org/wiki/")
 (def thumb-prefix "//upload.wikimedia.org/wikipedia/commons/")
 
