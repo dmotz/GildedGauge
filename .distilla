@@ -1,4 +1,4 @@
-preview: true
+preview: false
 
 tasks:
   ./scripts/js-build.sh:
