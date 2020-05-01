@@ -4,114 +4,112 @@
 (def
  rankings
  [["Jeff Bezos"
-   149.0
+   139.0
    "thumb/4/45/Jeff_Bezos_2016_%28cropped%29.jpg/220px-Jeff_Bezos_2016_%28cropped%29.jpg"]
   ["Bill Gates"
-   106.0
-   "thumb/5/5c/Bill_Gates_June_2015.png/220px-Bill_Gates_June_2015.png"]
+   105.0
+   "thumb/a/a0/Bill_Gates_2018.jpg/220px-Bill_Gates_2018.jpg"]
   ["Bernard Arnault"
-   80.7
+   80.8
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Mark Zuckerberg"
-   77.8
+   77.1
    "thumb/1/14/Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg/220px-Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg"]
   ["Warren Buffett"
-   74.1
+   72.0
    "thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
-  ["Steve Ballmer"
-   64.9
-   "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
   ["Larry Page"
-   64.6
+   63.4
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
+  ["Steve Ballmer"
+   63.4
+   "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
   ["Sergey Brin"
-   62.6
+   61.5
    "thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
   ["Larry Ellison"
-   59.7
+   58.3
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
+  ["Francoise Bettencourt Meyers" 57.9]
   ["Michael Bloomberg"
-   57.9
+   56.8
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
-  ["Francoise Bettencourt Meyers" 57.8]
-  ["Rob Walton" 53.8]
-  ["Amancio Ortega"
-   53.6
-   "thumb/5/59/Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
+  ["Rob Walton" 54.3]
   ["Jim Walton"
-   53.6
+   54.1
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
-  ["Mukesh Ambani"
+  ["Amancio Ortega"
    53.5
-   "thumb/8/8b/Mukesh_Ambani_1.jpg/220px-Mukesh_Ambani_1.jpg"]
+   "thumb/5/59/Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["Alice Walton"
-   53.0
+   53.5
    "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
-  ["MacKenzie Bezos" 49.0 "5/5c/MacKenzie_Bezos.png"]
-  ["Julia Flesher Koch" 48.9]
+  ["Mukesh Ambani"
+   53.1
+   "thumb/8/8b/Mukesh_Ambani_1.jpg/220px-Mukesh_Ambani_1.jpg"]
+  ["Julia Flesher Koch" 48.0]
   ["Charles Koch"
-   48.9
+   48.0
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
+  ["MacKenzie Bezos" 45.3 "5/5c/MacKenzie_Bezos.png"]
   ["Jack Ma"
-   45.0
+   43.9
    "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
-  ["Carlos Slim"
-   42.6
-   "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
   ["Pony Ma" 42.4 "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
-  ["Elon Musk"
-   39.0
-   "thumb/e/ed/Elon_Musk_Royal_Society.jpg/220px-Elon_Musk_Royal_Society.jpg"]
-  ["John Mars" 37.6]
+  ["Carlos Slim"
+   42.0
+   "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
+  ["John Mars" 37.3]
   ["Jacqueline Mars"
-   37.6
+   37.3
    "thumb/5/5c/Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
+  ["Elon Musk"
+   35.9
+   "thumb/e/ed/Elon_Musk_Royal_Society.jpg/220px-Elon_Musk_Royal_Society.jpg"]
   ["Francois Pinault"
    33.4
    "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
   ["Phil Knight"
-   32.3
+   31.8
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
   ["Sheldon Adelson"
-   28.6
+   27.6
    "thumb/f/f9/Sheldon_Adelson_crop.jpg/220px-Sheldon_Adelson_crop.jpg"]
-  ["Giovanni Ferrero" 27.4]
-  ["Michael Dell"
-   26.8
-   "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
+  ["Giovanni Ferrero" 27.3]
   ["Li Ka-Shing"
    26.1
    "thumb/e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
-  ["Vladimir Potanin" 26.0 "7/7d/Vladimir_Potanin.jpg"]
-  ["Gerard Wertheimer" 25.2]
-  ["Alain Wertheimer" 25.2]
+  ["Vladimir Potanin" 25.8 "7/7d/Vladimir_Potanin.jpg"]
+  ["Michael Dell"
+   25.7
+   "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
+  ["Gerard Wertheimer" 25.5]
+  ["Alain Wertheimer" 25.5]
   ["Tadashi Yanai"
-   24.9
+   24.6
    "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
-  ["Yang Huiyan" 24.7]
-  ["Colin Huang" 24.6]
+  ["Yang Huiyan" 24.6]
+  ["Colin Huang" 23.6]
   ["Laurene Powell Jobs"
-   23.9
+   23.5
    "thumb/9/97/Laurene_Powell_Jobs.jpg/220px-Laurene_Powell_Jobs.jpg"]
   ["Len Blavatnik"
-   22.7
+   22.5
    "thumb/e/ea/Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg/220px-Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg"]
   ["Dieter Schwarz"
-   22.2
+   21.9
    "thumb/7/7c/Dieter_Schwarz_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Dieter_Schwarz_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["He Xiangjian" 21.3]
   ["Jim Simons" 21.1]
-  ["Takemitsu Takizaki" 21.0]
+  ["Takemitsu Takizaki" 21.1]
   ["Hui Ka Yan" 21.0]
   ["Lee Shau Kee"
    20.9
    "thumb/e/e9/LEE_Shau_Kee.JPG/220px-LEE_Shau_Kee.JPG"]
-  ["William Ding" 20.8]
-  ["Leonard  Lauder" 19.7]
+  ["William Ding" 19.7]
+  ["Leonard  Lauder" 19.3]
   ["Leonardo del Vecchio"
    19.1
    "thumb/5/58/Leonardo_Del_Vecchio%2C_2011.jpeg/220px-Leonardo_Del_Vecchio%2C_2011.jpeg"]
-  ["Ken Griffin" 19.0]
-  ["Klaus-Michael Kuehne"
-   18.6
-   "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]])
+  ["Ken Griffin" 18.8]
+  ["Lukas Walton" 18.6]])
