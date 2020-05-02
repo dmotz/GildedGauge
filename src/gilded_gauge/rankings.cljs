@@ -8,7 +8,7 @@
    "thumb/4/45/Jeff_Bezos_2016_%28cropped%29.jpg/220px-Jeff_Bezos_2016_%28cropped%29.jpg"]
   ["Bill Gates"
    105.0
-   "thumb/a/a0/Bill_Gates_2018.jpg/220px-Bill_Gates_2018.jpg"]
+   "thumb/5/5c/Bill_Gates_June_2015.png/220px-Bill_Gates_June_2015.png"]
   ["Bernard Arnault"
    80.8
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
@@ -32,7 +32,7 @@
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Francoise Bettencourt Meyers" 57.9]
   ["Michael Bloomberg"
-   56.8
+   55.8
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
   ["Rob Walton" 54.3]
   ["Jim Walton"
