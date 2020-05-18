@@ -31,7 +31,7 @@
    59.7
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Michael Bloomberg"
-   58.5
+   58.6
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
   ["Rob Walton" 55.4]
   ["Jim Walton"
