@@ -4,112 +4,112 @@
 (def
  rankings
  [["Jeff Bezos"
-   188.0
+   185.0
    "thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
   ["Bill Gates"
-   118.0
+   120.0
    "thumb/a/a0/Bill_Gates_2018.jpg/220px-Bill_Gates_2018.jpg"]
   ["Mark Zuckerberg"
-   96.2
+   95.5
    "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Bernard Arnault"
-   80.7
+   82.2
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
-  ["Mukesh Ambani"
-   77.8
-   "thumb/6/69/Mukesh_Ambani.jpg/220px-Mukesh_Ambani.jpg"]
-  ["Warren Buffett"
-   74.1
-   "thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
   ["Steve Ballmer"
-   73.9
+   77.7
    "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
+  ["Warren Buffett"
+   75.3
+   "thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
+  ["Mukesh Ambani"
+   75.2
+   "thumb/6/69/Mukesh_Ambani.jpg/220px-Mukesh_Ambani.jpg"]
   ["Larry Page"
-   70.8
+   70.6
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
-  ["Sergey Brin"
-   68.6
-   "thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
   ["Elon Musk"
-   67.7
+   70.0
    "thumb/e/ed/Elon_Musk_Royal_Society.jpg/220px-Elon_Musk_Royal_Society.jpg"]
-  ["Francoise Bettencourt Meyers" 66.7]
+  ["Sergey Brin"
+   68.4
+   "thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
+  ["Francoise Bettencourt Meyers" 65.6]
   ["Larry Ellison"
-   64.5
+   65.2
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
-  ["MacKenzie Scott" 60.8]
-  ["Rob Walton" 57.5]
+  ["MacKenzie Scott" 59.8]
+  ["Rob Walton" 57.6]
   ["Jim Walton"
    57.3
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
   ["Alice Walton"
-   56.7
+   56.8
    "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
   ["Amancio Ortega"
-   56.5
+   56.3
    "thumb/5/59/Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Amancio_Ortega_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["Michael Bloomberg"
    54.9
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
-  ["Pony Ma" 53.5 "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
+  ["Pony Ma" 54.0 "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
+  ["Julia Flesher Koch" 53.7]
   ["Charles Koch"
-   53.3
+   53.7
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
-  ["Julia Flesher Koch" 53.3]
   ["Jack Ma"
-   50.6
+   51.4
    "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
   ["Carlos Slim"
-   45.3
+   44.9
    "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
-  ["John Mars" 41.0]
+  ["John Mars" 41.4]
   ["Jacqueline Mars"
-   41.0
+   41.4
    "thumb/5/5c/Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["Francois Pinault"
-   37.8
+   38.3
    "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
   ["Phil Knight"
-   35.9
+   36.1
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
   ["Michael Dell"
-   34.1
+   34.4
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
-  ["Colin Huang" 32.4]
-  ["Hui Ka Yan" 32.2]
+  ["Colin Huang" 33.8]
   ["Len Blavatnik"
-   32.1
+   32.0
    "thumb/e/ea/Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg/220px-Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg"]
-  ["Giovanni Ferrero" 31.4]
-  ["Gerard Wertheimer" 30.0]
-  ["Alain Wertheimer" 30.0]
+  ["Hui Ka Yan" 31.8]
+  ["Giovanni Ferrero" 31.6]
   ["Laurene Powell Jobs"
-   29.9
+   30.4
    "thumb/9/97/Laurene_Powell_Jobs.jpg/220px-Laurene_Powell_Jobs.jpg"]
+  ["Gerard Wertheimer" 30.1]
+  ["Alain Wertheimer" 30.1]
+  ["Abby  Johnson" 29.5]
   ["Li Ka-Shing"
-   27.8
+   28.1
    "thumb/e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
-  ["He Xiangjian" 27.6]
-  ["William Ding" 27.5]
   ["Tadashi Yanai"
-   27.4
+   28.1
    "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
+  ["William Ding" 28.1]
+  ["He Xiangjian" 27.8]
   ["Sheldon Adelson"
-   27.3
+   27.5
    "thumb/f/f9/Sheldon_Adelson_crop.jpg/220px-Sheldon_Adelson_crop.jpg"]
-  ["Yang Huiyan" 26.7]
-  ["Vladimir Potanin" 26.5 "7/7d/Vladimir_Potanin.jpg"]
-  ["Takemitsu Takizaki" 24.2]
+  ["Vladimir Potanin" 27.0 "7/7d/Vladimir_Potanin.jpg"]
+  ["Yang Huiyan" 26.8]
+  ["Takemitsu Takizaki" 23.3]
   ["Zhang Zhidong"
-   23.0
+   23.2
    "thumb/5/50/%E5%BC%B5%E4%B9%8B%E6%B4%9E%E6%9C%9D%E6%9C%8D%E7%85%A7.jpg/200px-%E5%BC%B5%E4%B9%8B%E6%B4%9E%E6%9C%9D%E6%9C%8D%E7%85%A7.jpg"]
-  ["Qin Yinglin" 22.8]
-  ["Jim Simons" 21.9]
-  ["Pang Kang" 21.8]
-  ["Leonard  Lauder" 21.8]
-  ["Gina Rinehart"
-   21.7
-   "thumb/2/21/Gina_Rinehart_June_2015.jpg/220px-Gina_Rinehart_June_2015.jpg"]
+  ["Qin Yinglin" 23.2]
   ["Masayoshi Son"
-   21.5
-   "thumb/a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]])
+   22.5
+   "thumb/a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]
+  ["Jim Simons" 22.0]
+  ["Leonard  Lauder" 21.9]
+  ["Gina Rinehart"
+   21.9
+   "thumb/2/21/Gina_Rinehart_June_2015.jpg/220px-Gina_Rinehart_June_2015.jpg"]])
