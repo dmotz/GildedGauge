@@ -89,9 +89,7 @@
   ["Colin Huang" 30.8]
   ["Gerard Wertheimer" 30.3]
   ["Alain Wertheimer" 30.3]
-  ["Sheldon Adelson"
-   29.1
-   "thumb/f/f9/Sheldon_Adelson_crop.jpg/220px-Sheldon_Adelson_crop.jpg"]
+  ["Sheldon Adelson" 29.1 "1/1e/Sheldon_Adelson_2019.jpg"]
   ["Abby  Johnson" 29.0]
   ["Tadashi Yanai"
    28.8
