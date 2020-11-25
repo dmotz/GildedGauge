@@ -2,6 +2,7 @@
 
 (def objects
   {:apple      ["apple?" 0.5]
+   :avocado    ["avocado?" 1]
    :banana     ["banana?" 0.5]
    :beer       ["beer?" 6]
    :bicycle    ["bicycle?" 300]
