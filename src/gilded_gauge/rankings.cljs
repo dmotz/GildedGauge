@@ -5,7 +5,7 @@
  rankings
  [["Jeff Bezos"
    183.0
-   "thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
+   "thumb/9/9e/Jeff_Bezos_%28cropped%29.jpg/220px-Jeff_Bezos_%28cropped%29.jpg"]
   ["Elon Musk"
    148.0
    "thumb/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg/220px-Elon_Musk_Royal_Society_%28crop1%29.jpg"]
