@@ -24,6 +24,7 @@ jobs:
       - name: fetch
         run: ./scripts/get-rankings.sh
       - name: commit
+        if: git status --porcelain --untracked-files=no
         run: |
           git config --global user.email "dan@oxism.com"
           git config --global user.name "Dan Motzenbecker"
