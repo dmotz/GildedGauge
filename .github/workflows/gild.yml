@@ -9,7 +9,7 @@ jobs:
   rebuild:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@latest
+      - uses: actions/checkout@v2
       - uses: actions/setup-node@latest
       - uses: actions/setup-java@latest
       - uses: DeLaGuardo/setup-clojure@master
