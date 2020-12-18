@@ -12,7 +12,8 @@
                  [enlive "1.1.6"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]
-            [lein-figwheel "0.5.19"]]
+            [lein-figwheel "0.5.19"]
+            [lein-exec "0.3.7"]]
 
   :source-paths ["src"]
 
