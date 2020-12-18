@@ -19,6 +19,7 @@ jobs:
           lein: 2.9.5
       - run: |
           cd $GITHUB_WORKSPACE
+          lein deps
           ./scripts/get-rankings.sh
           git config --global user.email "dan@oxism.com"
           git config --global user.name "Dan Motzenbecker"
