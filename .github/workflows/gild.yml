@@ -4,19 +4,21 @@ on:
   schedule:
     - cron: '0 23 * * 1-5'
 
-steps:
-  - uses: actions/checkout@latest
-  - uses: actions/setup-node@latest
-  - uses: actions/setup-java@latest
-  - uses: DeLaGuardo/setup-clojure@master
-    with:
-      lein: 2.9.5
-  - run: |
-      cd $GITHUB_WORKSPACE
-      ./scripts/get-rankings.sh
-      git config --global user.email "dan@oxism.com"
-      git config --global user.name "Dan Motzenbecker"
-      git add src/gilded_gauge/rankings.cljs
-      git commit -m 'update ranking'
-      git push origin master
-      npx distilla
+jobs:
+  rebuild:
+    steps:
+      - uses: actions/checkout@latest
+      - uses: actions/setup-node@latest
+      - uses: actions/setup-java@latest
+      - uses: DeLaGuardo/setup-clojure@master
+        with:
+          lein: 2.9.5
+      - run: |
+          cd $GITHUB_WORKSPACE
+          ./scripts/get-rankings.sh
+          git config --global user.email "dan@oxism.com"
+          git config --global user.name "Dan Motzenbecker"
+          git add src/gilded_gauge/rankings.cljs
+          git commit -m 'update ranking'
+          git push origin master
+          npx distilla
