@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-npx stylus -u nib -c -w $(dirname $0)/../resources/public/css
+npx stylus -c -w $(dirname $0)/../resources/public/css
