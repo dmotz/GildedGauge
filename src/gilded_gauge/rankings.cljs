@@ -4,116 +4,116 @@
 (def
  rankings
  [["Elon Musk"
-   203.0
+   201.0
    "thumb/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg/220px-Elon_Musk_Royal_Society_%28crop1%29.jpg"]
   ["Jeff Bezos"
-   191.0
+   193.0
    "thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
   ["Bill Gates"
    134.0
    "thumb/a/a0/Bill_Gates_2018.jpg/220px-Bill_Gates_2018.jpg"]
   ["Bernard Arnault"
-   110.0
+   112.0
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Mark Zuckerberg"
-   101.0
+   103.0
    "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Zhong Shanshan"
-   91.5
+   91.1
    "thumb/8/87/Zhong_Shanshan.jpg/220px-Zhong_Shanshan.jpg"]
   ["Warren Buffett"
-   88.9
+   89.2
    "thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
   ["Larry Page"
-   87.8
+   88.0
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Sergey Brin"
-   85.0
+   85.2
    "thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
   ["Steve Ballmer"
-   81.1
+   81.3
    "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
   ["Mukesh Ambani"
-   79.5
+   81.2
    "thumb/6/69/Mukesh_Ambani.jpg/220px-Mukesh_Ambani.jpg"]
   ["Larry Ellison"
-   79.3
+   79.1
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
-  ["Francoise Bettencourt Meyers" 71.3]
-  ["Pony Ma" 67.1 "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
-  ["Amancio Ortega" 65.9]
-  ["Rob Walton" 63.6]
+  ["Francoise Bettencourt Meyers" 71.8]
+  ["Pony Ma" 67.4 "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
+  ["Amancio Ortega" 65.7]
+  ["Rob Walton" 63.3]
   ["Jim Walton"
-   63.4
+   63.2
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
   ["Alice Walton"
-   63.2
+   63.0
    "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
   ["Colin Huang"
-   60.3
+   60.9
    "thumb/0/09/Colin_Zheng_Huang%2C_Pinduoduo.jpg/220px-Colin_Zheng_Huang%2C_Pinduoduo.jpg"]
-  ["MacKenzie Scott" 58.7]
-  ["Julia Flesher Koch" 58.4]
+  ["MacKenzie Scott" 59.5]
+  ["Julia Flesher Koch" 58.2]
   ["Charles Koch"
-   58.4
+   58.2
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
   ["Carlos Slim"
-   56.1
+   55.5
    "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
   ["Michael Bloomberg"
    54.9
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
-  ["Jack Ma"
-   54.5
-   "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
   ["Phil Knight"
-   54.5
+   54.2
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
+  ["Jack Ma"
+   53.9
+   "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
+  ["Tadashi Yanai"
+   44.9
+   "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
   ["Francois Pinault"
    44.9
    "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
-  ["Tadashi Yanai"
-   44.5
-   "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
   ["Michael Dell"
-   41.8
+   41.7
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
-  ["John Mars" 40.8]
+  ["John Mars" 40.5]
   ["Jacqueline Mars"
-   40.8
+   40.5
    "thumb/5/5c/Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["Len Blavatnik"
    39.3
    "thumb/e/ea/Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg/220px-Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg"]
-  ["Gerard Wertheimer" 38.1]
-  ["Alain Wertheimer" 38.1]
-  ["He Xiangjian" 36.7]
-  ["William Ding" 35.6]
+  ["He Xiangjian" 37.9]
+  ["Gerard Wertheimer" 37.9]
+  ["Alain Wertheimer" 37.9]
+  ["William Ding" 36.5]
   ["Gautam Adani"
-   35.0
+   35.2
    "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
-  ["Zeng Yuqun" 34.8]
-  ["Giovanni Ferrero" 33.4]
+  ["Zeng Yuqun" 34.9]
   ["Li Ka-Shing"
    33.4
    "thumb/e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
-  ["Yang Huiyan" 32.8]
+  ["Giovanni Ferrero" 33.3]
   ["Dan Gilbert"
-   32.8
+   33.0
    "thumb/b/b6/Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg/220px-Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg"]
   ["Vladimir Potanin" 32.8 "7/7d/Vladimir_Potanin.jpg"]
-  ["Pang Kang" 32.2]
-  ["Takemitsu Takizaki" 31.5]
-  ["Lei Jun"
-   30.6
-   "thumb/9/9b/%E9%9B%B7%E5%86%9B%E4%BA%8E%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%91%A8%E5%B9%B4%E7%9A%84%E6%BC%94%E8%AE%B2_2020-8-11.jpg/250px-%E9%9B%B7%E5%86%9B%E4%BA%8E%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%91%A8%E5%B9%B4%E7%9A%84%E6%BC%94%E8%AE%B2_2020-8-11.jpg"]
-  ["Jay Lee" 29.9]
+  ["Pang Kang" 32.6]
+  ["Yang Huiyan" 32.2]
+  ["Takemitsu Takizaki" 31.7]
   ["Masayoshi Son"
-   29.9
+   30.8
    "thumb/a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]
+  ["Jay Lee" 30.5]
   ["Gina Rinehart"
    29.9
    "thumb/2/21/Gina_Rinehart_June_2015.jpg/220px-Gina_Rinehart_June_2015.jpg"]
+  ["Lei Jun"
+   29.7
+   "thumb/9/9b/%E9%9B%B7%E5%86%9B%E4%BA%8E%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%91%A8%E5%B9%B4%E7%9A%84%E6%BC%94%E8%AE%B2_2020-8-11.jpg/250px-%E9%9B%B7%E5%86%9B%E4%BA%8E%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%91%A8%E5%B9%B4%E7%9A%84%E6%BC%94%E8%AE%B2_2020-8-11.jpg"]
   ["Zhang Zhidong"
-   29.1
+   29.2
    "thumb/5/50/%E5%BC%B5%E4%B9%8B%E6%B4%9E%E6%9C%9D%E6%9C%8D%E7%85%A7.jpg/200px-%E5%BC%B5%E4%B9%8B%E6%B4%9E%E6%9C%9D%E6%9C%8D%E7%85%A7.jpg"]])
