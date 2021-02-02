@@ -18,9 +18,7 @@
   ["Mark Zuckerberg"
    98.1
    "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
-  ["Zhong Shanshan"
-   89.0
-   "thumb/8/87/Zhong_Shanshan.jpg/220px-Zhong_Shanshan.jpg"]
+  ["Zhong Shanshan" 89.0]
   ["Warren Buffett"
    86.7
    "thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg"]
@@ -51,9 +49,7 @@
   ["Alice Walton"
    61.3
    "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
-  ["Colin Huang"
-   58.4
-   "thumb/0/09/Colin_Zheng_Huang%2C_Pinduoduo.jpg/220px-Colin_Zheng_Huang%2C_Pinduoduo.jpg"]
+  ["Colin Huang" 58.4]
   ["MacKenzie Scott" 57.5]
   ["Julia Flesher Koch & family" 57.2]
   ["Charles Koch"
@@ -111,9 +107,7 @@
    29.2
    "thumb/5/50/%E5%BC%B5%E4%B9%8B%E6%B4%9E%E6%9C%9D%E6%9C%8D%E7%85%A7.jpg/200px-%E5%BC%B5%E4%B9%8B%E6%B4%9E%E6%9C%9D%E6%9C%8D%E7%85%A7.jpg"]
   ["Wang Wei" 28.6]
-  ["Lei Jun"
-   28.2
-   "thumb/9/9b/%E9%9B%B7%E5%86%9B%E4%BA%8E%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%91%A8%E5%B9%B4%E7%9A%84%E6%BC%94%E8%AE%B2_2020-8-11.jpg/250px-%E9%9B%B7%E5%86%9B%E4%BA%8E%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%91%A8%E5%B9%B4%E7%9A%84%E6%BC%94%E8%AE%B2_2020-8-11.jpg"]
+  ["Lei Jun" 28.2]
   ["Masayoshi Son"
    27.6
    "thumb/a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]])
