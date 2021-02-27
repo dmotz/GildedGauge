@@ -57,9 +57,7 @@
   ["Michael Bloomberg"
    54.9
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
-  ["MacKenzie Scott"
-   54.7
-   "thumb/e/ed/Mackenzie_Scott_at_2018_Axel_Springer_Award_in_Berlin.png/220px-Mackenzie_Scott_at_2018_Axel_Springer_Award_in_Berlin.png"]
+  ["MacKenzie Scott" 54.7]
   ["Phil Knight & family" 52.5]
   ["Jack Ma"
    51.8
