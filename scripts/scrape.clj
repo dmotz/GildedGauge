@@ -1,7 +1,7 @@
 (ns gilded-gauge.scrape
   (:require [net.cgrand.enlive-html :refer [html-resource select text]]
             [clojure.core.async :refer [go <!!]]
-            [clojure.string :as str]
+            [clojure.string :refer [replace trim]]
             [clojure.java.io :as io]
             [clojure.pprint :refer [pprint]])
   (:import  (java.net HttpURLConnection)))
@@ -13,8 +13,14 @@
 (def wiki-url     "https://en.wikipedia.org/wiki/")
 (def thumb-prefix "//upload.wikimedia.org/wikipedia/commons/")
 
-(def headers {"user-agent"      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36"
-              "accept"          "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+(def headers {"user-agent" (str
+                            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) "
+                            "AppleWebKit/537.36 (KHTML, like Gecko) "
+                            "Chrome/80.0.3987.87 Safari/537.36")
+              "accept"     (str "text/html,application/xhtml+xml,"
+                                "application/xml;q=0.9,image/webp,image/apng,"
+                                "*/*;q=0.8,application/signed-"
+                                "exchange;v=b3;q=0.9")
               "accept-language" "en-US,en;q=0.9"
               "cache-control"   "max-age=0"})
 
@@ -28,7 +34,7 @@
   req)
 
 (defn str->float [s]
-  (->> s str/trim (drop 1) butlast (apply str) Float/parseFloat))
+  (->> s trim (drop 1) butlast (apply str) Float/parseFloat))
 
 
 (defn parse-ranking [url1 url2]
@@ -49,8 +55,9 @@
                           (select % [:.t-name :a])
                           first
                           text
-                          str/trim
-                          (str/replace #"(\w )(\w )(\w)" "$1$3"))
+                          trim
+                          (replace #"(\w )(\w )(\w)" "$1$3")
+                          (replace #" & family$" ""))
 
                   :worth (->>
                           (select % [:.t-nw])
@@ -76,7 +83,7 @@
        m
        :img
        (some->
-        (str wiki-url (str/replace (:name m) #"\s" "_"))
+        (str wiki-url (replace (:name m) #"\s" "_"))
         java.net.URL.
         html-resource
         (select [:.infobox :img])
