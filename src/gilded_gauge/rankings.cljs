@@ -4,10 +4,10 @@
 (def
  rankings
  [["Jeff Bezos"
-   188.0
+   190.0
    "thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
   ["Elon Musk"
-   164.0
+   161.0
    "thumb/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg/220px-Elon_Musk_Royal_Society_%28crop1%29.jpg"]
   ["Bernard Arnault"
    161.0
@@ -19,10 +19,10 @@
    118.0
    "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Warren Buffett"
-   110.0
+   109.0
    "thumb/5/5a/Warren_Buffett_with_Fisher_College_of_Business_Student_-_4395161160_%28cropped%29.jpg/220px-Warren_Buffett_with_Fisher_College_of_Business_Student_-_4395161160_%28cropped%29.jpg"]
   ["Larry Page"
-   104.0
+   105.0
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Sergey Brin"
    101.0
@@ -31,89 +31,89 @@
    91.1
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Steve Ballmer"
-   89.7
+   88.7
    "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
-  ["Francoise Bettencourt Meyers" 85.2]
+  ["Francoise Bettencourt Meyers" 86.0]
   ["Amancio Ortega"
-   80.9
+   82.7
    "thumb/e/e4/Amancio_Ortega_2015_Photograph.jpg/220px-Amancio_Ortega_2015_Photograph.jpg"]
   ["Mukesh Ambani"
-   74.3
+   75.2
    "thumb/8/8b/Mukesh_Ambani_1.jpg/200px-Mukesh_Ambani_1.jpg"]
-  ["Julia Flesher Koch" 64.6 "e/ee/Julia_Koch_%28cropped%29.jpg"]
+  ["Julia Flesher Koch" 64.8 "e/ee/Julia_Koch_%28cropped%29.jpg"]
   ["Charles Koch"
-   64.6
+   64.8
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
-  ["Zhong Shanshan" 64.0]
-  ["Jim Walton"
-   62.0
-   "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
-  ["Rob Walton" 61.5]
-  ["Alice Walton"
-   60.1
-   "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
+  ["Zhong Shanshan" 63.9]
   ["Gautam Adani"
-   59.8
+   63.1
    "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
+  ["Jim Walton"
+   61.8
+   "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
+  ["Rob Walton" 61.3]
+  ["Ma Huateng"
+   59.9
+   "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
+  ["Alice Walton"
+   59.8
+   "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
   ["Michael Bloomberg"
    59.0
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
-  ["Ma Huateng"
-   58.2
-   "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
-  ["MacKenzie Scott" 57.0]
+  ["MacKenzie Scott" 57.8]
   ["Carlos Slim"
-   56.1
+   56.4
    "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
   ["Francois Pinault"
-   54.5
+   54.6
    "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
   ["Phil Knight"
-   52.8
+   53.0
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
   ["Michael Dell"
    50.6
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
   ["Jack Ma"
-   48.3
+   48.5
    "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
-  ["John Mars" 45.2]
   ["Jacqueline Badger Mars"
-   45.2
+   45.5
    "thumb/5/5c/Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
+  ["John Mars" 45.5]
   ["Zhang Yiming" 44.5]
-  ["Gerard Wertheimer" 44.3]
-  ["Alain Wertheimer" 44.3]
-  ["Colin Huang" 41.7]
+  ["Gerard Wertheimer" 44.4]
+  ["Alain Wertheimer" 44.4]
+  ["Colin Huang" 41.6]
   ["Tadashi Yanai"
-   40.4
+   40.1
    "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
   ["Len Blavatnik"
-   39.3
+   39.9
    "thumb/e/ea/Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg/220px-Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg"]
-  ["Giovanni Ferrero" 35.3]
+  ["Giovanni Ferrero" 35.5]
   ["Miriam Adelson"
-   34.6
+   34.1
    "thumb/6/61/Miriam_Adelson_June_2019.jpg/220px-Miriam_Adelson_June_2019.jpg"]
-  ["Vladimir Potanin" 33.5 "3/3f/2021_Vladimir_Potanin_1.png"]
-  ["William Ding" 33.4]
+  ["Vladimir Potanin" 33.7 "3/3f/2021_Vladimir_Potanin_1.png"]
+  ["Zeng Yuqun" 33.4]
+  ["William Ding" 33.3]
   ["Klaus-Michael Kuehne"
-   32.9
+   33.2
    "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]
   ["Li Ka-shing"
-   32.8
+   33.1
    "thumb/e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
-  ["Zeng Yuqun" 32.1]
-  ["Yang Huiyan" 32.0]
+  ["Yang Huiyan" 32.2]
+  ["Dan Gilbert"
+   31.3
+   "thumb/b/b6/Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg/220px-Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg"]
+  ["He Xiangjian" 31.3]
   ["Leonard Lauder" 30.8]
   ["Azim Premji"
    30.7
    "thumb/e/e6/Azim_H._Premji_World_Economic_Forum_2013.jpg/220px-Azim_H._Premji_World_Economic_Forum_2013.jpg"]
-  ["He Xiangjian" 30.7]
-  ["Dan Gilbert"
-   30.7
-   "thumb/b/b6/Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg/220px-Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg"]
+  ["Qin Yinglin" 30.2]
   ["Masayoshi Son"
-   30.2
-   "thumb/a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]
-  ["Qin Yinglin" 29.7]])
+   29.9
+   "thumb/a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]])
