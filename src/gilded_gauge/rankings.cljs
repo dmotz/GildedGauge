@@ -4,116 +4,116 @@
 (def
  rankings
  [["Jeff Bezos"
-   188.0
+   189.0
    "thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
-  ["Bernard Arnault"
-   159.0
-   "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Elon Musk"
-   157.0
+   163.0
    "thumb/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg/220px-Elon_Musk_Royal_Society_%28crop1%29.jpg"]
+  ["Bernard Arnault"
+   162.0
+   "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Bill Gates"
-   141.0
+   142.0
    "thumb/a/a8/Bill_Gates_2017_%28cropped%29.jpg/220px-Bill_Gates_2017_%28cropped%29.jpg"]
   ["Mark Zuckerberg"
-   117.0
+   119.0
    "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Warren Buffett"
    108.0
    "thumb/5/5a/Warren_Buffett_with_Fisher_College_of_Business_Student_-_4395161160_%28cropped%29.jpg/220px-Warren_Buffett_with_Fisher_College_of_Business_Student_-_4395161160_%28cropped%29.jpg"]
   ["Larry Page"
-   104.0
+   106.0
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Sergey Brin"
-   101.0
+   102.0
    "thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
   ["Larry Ellison"
-   90.6
+   91.2
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Steve Ballmer"
-   88.1
+   89.2
    "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
-  ["Francoise Bettencourt Meyers" 85.0]
+  ["Francoise Bettencourt Meyers" 87.3]
   ["Amancio Ortega"
-   82.3
+   82.4
    "thumb/e/e4/Amancio_Ortega_2015_Photograph.jpg/220px-Amancio_Ortega_2015_Photograph.jpg"]
   ["Mukesh Ambani"
-   76.5
+   76.3
    "thumb/8/8b/Mukesh_Ambani_1.jpg/200px-Mukesh_Ambani_1.jpg"]
   ["Gautam Adani"
-   66.5
+   67.6
    "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
-  ["Julia Flesher Koch" 63.6 "e/ee/Julia_Koch_%28cropped%29.jpg"]
+  ["Zhong Shanshan" 65.6]
+  ["Julia Flesher Koch" 63.8 "e/ee/Julia_Koch_%28cropped%29.jpg"]
   ["Charles Koch"
-   63.6
+   63.8
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
-  ["Zhong Shanshan" 63.6]
   ["Jim Walton"
-   62.8
+   62.9
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
-  ["Rob Walton" 62.3]
+  ["Rob Walton" 62.4]
   ["Alice Walton"
-   60.9
+   61.0
    "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
   ["Ma Huateng"
-   60.5
+   60.7
    "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
   ["Michael Bloomberg"
    59.0
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
-  ["MacKenzie Scott" 57.2]
+  ["MacKenzie Scott" 57.4]
   ["Carlos Slim"
-   56.1
+   56.8
    "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
   ["Francois Pinault"
-   54.6
+   55.3
    "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
   ["Phil Knight"
-   51.9
+   52.0
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
   ["Michael Dell"
-   49.9
+   50.6
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
   ["Jack Ma"
-   48.7
+   49.2
    "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
-  ["John Mars" 45.2]
+  ["Colin Huang" 46.2]
+  ["John Mars" 45.7]
   ["Jacqueline Badger Mars"
-   45.2
+   45.7
    "thumb/5/5c/Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
-  ["Colin Huang" 44.8]
+  ["Alain Wertheimer" 44.7]
+  ["Gerard Wertheimer" 44.7]
   ["Zhang Yiming" 44.5]
-  ["Gerard Wertheimer" 44.2]
-  ["Alain Wertheimer" 44.2]
   ["Tadashi Yanai"
-   40.2
+   40.1
    "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
   ["Len Blavatnik"
-   38.8
+   38.4
    "thumb/e/ea/Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg/220px-Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg"]
-  ["Giovanni Ferrero" 35.4]
-  ["William Ding" 34.8]
-  ["Miriam Adelson"
-   33.8
-   "thumb/6/61/Miriam_Adelson_June_2019.jpg/220px-Miriam_Adelson_June_2019.jpg"]
+  ["William Ding" 37.4]
+  ["Giovanni Ferrero" 35.9]
   ["Klaus-Michael Kuehne"
-   33.8
+   34.7
    "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]
-  ["Zeng Yuqun" 33.6]
-  ["Vladimir Potanin" 33.4 "3/3f/2021_Vladimir_Potanin_1.png"]
-  ["Yang Huiyan" 33.3]
+  ["Miriam Adelson"
+   34.5
+   "thumb/6/61/Miriam_Adelson_June_2019.jpg/220px-Miriam_Adelson_June_2019.jpg"]
+  ["Zeng Yuqun" 33.8]
+  ["Vladimir Potanin" 33.6 "3/3f/2021_Vladimir_Potanin_1.png"]
   ["Li Ka-shing"
-   32.7
+   32.9
    "thumb/e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
+  ["Yang Huiyan" 32.8]
+  ["He Xiangjian" 32.1]
   ["Azim Premji"
-   31.3
+   31.2
    "thumb/e/e6/Azim_H._Premji_World_Economic_Forum_2013.jpg/220px-Azim_H._Premji_World_Economic_Forum_2013.jpg"]
-  ["He Xiangjian" 31.1]
   ["Leonard Lauder" 30.9]
   ["Dan Gilbert"
-   30.4
+   30.6
    "thumb/b/b6/Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg/220px-Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg"]
   ["Masayoshi Son"
-   30.1
+   30.3
    "thumb/a/a8/Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg/220px-Masayoshi_Son_%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29_on_July_11%2C_2008.jpg"]
-  ["Qin Yinglin" 29.8]])
+  ["Qin Yinglin" 30.1]])
