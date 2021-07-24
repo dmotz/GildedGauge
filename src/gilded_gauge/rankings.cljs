@@ -4,61 +4,61 @@
 (def
  rankings
  [["Jeff Bezos"
-   209.0
+   210.0
    "thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
   ["Elon Musk"
-   178.0
+   177.0
    "thumb/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg/220px-Elon_Musk_Royal_Society_%28crop1%29.jpg"]
   ["Bernard Arnault"
-   170.0
+   174.0
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Bill Gates"
-   150.0
+   151.0
    "thumb/a/a8/Bill_Gates_2017_%28cropped%29.jpg/220px-Bill_Gates_2017_%28cropped%29.jpg"]
   ["Mark Zuckerberg"
-   131.0
+   137.0
    "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Larry Page"
-   117.0
+   121.0
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Sergey Brin"
-   113.0
+   117.0
    "thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
-  ["Larry Ellison"
-   103.0
-   "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Steve Ballmer"
-   103.0
+   104.0
    "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
   ["Warren Buffett"
    101.0
    "thumb/5/5a/Warren_Buffett_with_Fisher_College_of_Business_Student_-_4395161160_%28cropped%29.jpg/220px-Warren_Buffett_with_Fisher_College_of_Business_Student_-_4395161160_%28cropped%29.jpg"]
+  ["Larry Ellison"
+   100.0
+   "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Francoise Bettencourt Meyers"
-   88.6
+   90.3
    "thumb/8/86/Screenshot_20210613-140051_Chrome.jpg/220px-Screenshot_20210613-140051_Chrome.jpg"]
   ["Mukesh Ambani"
-   80.3
+   79.8
    "thumb/6/69/Mukesh_Ambani.jpg/200px-Mukesh_Ambani.jpg"]
-  ["Zhong Shanshan"
-   73.1
-   "thumb/5/53/Zhong-Shanshan-Chinas-Richest-Man-Branding-in-Asia.jpg/220px-Zhong-Shanshan-Chinas-Richest-Man-Branding-in-Asia.jpg"]
   ["Amancio Ortega"
-   72.4
+   73.6
    "thumb/e/e4/Amancio_Ortega_2015_Photograph.jpg/220px-Amancio_Ortega_2015_Photograph.jpg"]
-  ["MacKenzie Scott" 64.3]
-  ["Julia Flesher Koch" 64.0 "e/ee/Julia_Koch_%28cropped%29.jpg"]
+  ["Zhong Shanshan"
+   71.0
+   "thumb/5/53/Zhong-Shanshan-Chinas-Richest-Man-Branding-in-Asia.jpg/220px-Zhong-Shanshan-Chinas-Richest-Man-Branding-in-Asia.jpg"]
+  ["Julia Flesher Koch" 64.8 "e/ee/Julia_Koch_%28cropped%29.jpg"]
   ["Charles Koch"
-   64.0
+   64.8
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
+  ["MacKenzie Scott" 64.6]
   ["Jim Walton"
-   62.9
+   63.4
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
-  ["Rob Walton" 62.5]
+  ["Rob Walton" 63.0]
   ["Phil Knight"
-   61.8
+   62.6
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
   ["Alice Walton"
-   61.2
+   61.7
    "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
   ["Michael Bloomberg"
    59.0
@@ -67,61 +67,59 @@
    57.9
    "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
   ["Francois Pinault"
-   55.5
+   56.7
    "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
   ["Ma Huateng"
-   54.9
+   53.7
    "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
   ["Gautam Adani"
-   53.8
+   53.6
    "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
   ["Michael Dell"
-   50.0
+   50.3
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
   ["Jack Ma"
-   49.6
+   48.9
    "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
-  ["Zeng Yuqun" 49.5]
-  ["Gerard Wertheimer" 46.7]
-  ["Alain Wertheimer" 46.7]
-  ["John Mars" 46.4]
+  ["Zeng Yuqun" 48.5]
+  ["Gerard Wertheimer" 47.4]
+  ["Alain Wertheimer" 47.4]
+  ["John Mars" 47.0]
   ["Jacqueline Badger Mars"
-   46.4
+   47.0
    "thumb/5/5c/Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
   ["Zhang Yiming" 44.5]
   ["Len Blavatnik"
-   38.1
+   38.5
    "thumb/e/ea/Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg/220px-Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg"]
-  ["Colin Huang" 37.0]
   ["Klaus-Michael Kuehne"
-   36.9
+   37.5
    "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]
-  ["William Ding" 35.6]
-  ["Giovanni Ferrero" 35.0]
-  ["Tadashi Yanai"
-   35.0
-   "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
   ["Azim Premji"
-   34.8
+   35.5
    "thumb/7/7d/Azim_Premji_-_World_Economic_Forum_Annual_Meeting_Davos_2009_%28crop%29.jpg/220px-Azim_Premji_-_World_Economic_Forum_Annual_Meeting_Davos_2009_%28crop%29.jpg"]
+  ["Giovanni Ferrero" 35.3]
+  ["Tadashi Yanai"
+   34.9
+   "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
+  ["Colin Huang" 34.3]
+  ["Leonard Lauder" 34.2]
   ["Li Ka-shing"
-   33.9
+   33.7
    "thumb/e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
-  ["Leonard Lauder" 33.6]
   ["Stephen Schwarzman"
-   32.9
+   33.2
    "thumb/e/e4/StephenSchwarzman.jpg/220px-StephenSchwarzman.jpg"]
+  ["William Ding" 33.0]
   ["Vladimir Potanin"
    32.9
    "thumb/1/13/Vladimir_Potanin_2018_%28cropped%29.jpg/220px-Vladimir_Potanin_2018_%28cropped%29.jpg"]
   ["Dan Gilbert"
-   31.0
+   30.6
    "thumb/b/b6/Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg/220px-Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg"]
-  ["Yang Huiyan" 30.2]
-  ["Miriam Adelson"
-   29.9
-   "thumb/6/61/Miriam_Adelson_June_2019.jpg/220px-Miriam_Adelson_June_2019.jpg"]
+  ["Li Shu Fu" 29.6]
+  ["Yang Huiyan" 29.5]
   ["Leonid Mikhelson"
-   29.5
+   29.4
    "thumb/9/96/11-03-2020_Leonid_Mikhelson.png/220px-11-03-2020_Leonid_Mikhelson.png"]
-  ["Takemitsu Takizaki" 29.4]])
+  ["Takemitsu Takizaki" 29.3]])
