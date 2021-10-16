@@ -14,13 +14,13 @@
 (def thumb-prefix "//upload.wikimedia.org/wikipedia/commons/")
 
 (def headers {"user-agent" (str
-                            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) "
+                            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                             "AppleWebKit/537.36 (KHTML, like Gecko) "
-                            "Chrome/80.0.3987.87 Safari/537.36")
-              "accept"     (str "text/html,application/xhtml+xml,"
-                                "application/xml;q=0.9,image/webp,image/apng,"
-                                "*/*;q=0.8,application/signed-"
-                                "exchange;v=b3;q=0.9")
+                            "Chrome/94.0.4606.71 Safari/537.36")
+              "accept"     (str
+                            "text/html,application/xhtml+xml,application/xml;"
+                            "q=0.9,image/avif,image/webp,image/apng,*/*;"
+                            "q=0.8,application/signed-exchange;v=b3;q=0.9")
               "accept-language" "en-US,en;q=0.9"
               "cache-control"   "max-age=0"})
 
