@@ -58,7 +58,7 @@
 
 
 (defn update-num! [k e]
-  (if-let [v (parse-event e)]
+  (when-let [v (parse-event e)]
     (let [a @app]
       (when (case k
               :amount    (<= v (:net-worth a))
