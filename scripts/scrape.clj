@@ -116,7 +116,7 @@
             (map (juxt :name :worth :img))
             (map drop-nil-img)
             vec)]
-  (prn (count data))
+
   (when (>= (count data) take-n)
     (with-open [w (-> output-path io/file io/writer)]
       (binding [*out* w]
