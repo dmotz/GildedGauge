@@ -7,119 +7,119 @@
    256.0
    "thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/220px-Elon_Musk_Royal_Society_%28crop2%29.jpg"]
   ["Jeff Bezos"
-   181.0
+   177.0
    "thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/220px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"]
   ["Bernard Arnault"
-   168.0
+   169.0
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Bill Gates"
    131.0
    "thumb/a/a8/Bill_Gates_2017_%28cropped%29.jpg/220px-Bill_Gates_2017_%28cropped%29.jpg"]
   ["Larry Page"
-   121.0
+   119.0
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Mark Zuckerberg"
-   119.0
+   118.0
    "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Sergey Brin"
-   116.0
+   115.0
    "thumb/a/a2/Sergey_Brin_cropped.jpg/220px-Sergey_Brin_cropped.jpg"]
   ["Warren Buffett"
-   114.0
+   113.0
    "thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/220px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg"]
   ["Steve Ballmer"
-   109.0
+   108.0
    "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
   ["Larry Ellison"
-   103.0
+   102.0
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Mukesh Ambani"
-   95.9
+   94.2
    "thumb/6/69/Mukesh_Ambani.jpg/200px-Mukesh_Ambani.jpg"]
   ["Gautam Adani"
-   89.1
+   89.5
    "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
   ["Changpeng Zhao"
-   86.6
+   88.2
    "thumb/4/49/Changpeng_Zhao_%282018%29.jpg/220px-Changpeng_Zhao_%282018%29.jpg"]
-  ["Francoise Bettencourt Meyers" 85.0]
+  ["Francoise Bettencourt Meyers" 85.4]
   ["Zhong Shanshan"
-   70.4
+   71.2
    "thumb/5/53/Zhong-Shanshan-Chinas-Richest-Man-Branding-in-Asia.jpg/220px-Zhong-Shanshan-Chinas-Richest-Man-Branding-in-Asia.jpg"]
-  ["Carlos Slim"
-   70.1
-   "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
   ["Michael Bloomberg"
    70.0
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
+  ["Carlos Slim"
+   69.9
+   "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
   ["Amancio Ortega"
-   67.6
+   67.1
    "thumb/e/e4/Amancio_Ortega_2015_Photograph.jpg/220px-Amancio_Ortega_2015_Photograph.jpg"]
   ["Jim Walton"
-   64.4
+   63.5
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
-  ["Rob Walton" 63.9]
+  ["Rob Walton" 63.1]
   ["Alice Walton"
-   62.4
+   61.6
    "thumb/e/e1/Alice_Walton_%28cropped%29.jpg/220px-Alice_Walton_%28cropped%29.jpg"]
-  ["Julia Flesher Koch" 61.0 "e/ee/Julia_Koch_%28cropped%29.jpg"]
+  ["Julia Flesher Koch" 60.4 "e/ee/Julia_Koch_%28cropped%29.jpg"]
   ["Charles Koch"
-   61.0
+   60.4
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
   ["Michael Dell"
-   56.9
+   56.8
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
   ["Phil Knight"
-   55.6
+   54.9
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
-  ["MacKenzie Scott" 52.6]
   ["Zeng Yuqun" 51.6]
+  ["John Mars" 51.1]
   ["Jacqueline Badger Mars"
-   51.0
+   51.1
    "thumb/5/5c/Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg/220px-Jacqueline_Mars_Portrait_Painting_Collage_By_Danor_Shtruzman.jpg"]
-  ["John Mars" 51.0]
+  ["MacKenzie Scott" 51.0]
   ["Francois Pinault"
    50.6
    "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
   ["Ma Huateng"
-   46.8
+   48.4
    "thumb/d/d9/Pony_Ma_2011.jpg/220px-Pony_Ma_2011.jpg"]
   ["Zhang Yiming" 44.5]
   ["Jack Ma"
-   39.4
+   39.7
    "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
-  ["Len Blavatnik"
-   39.1
-   "thumb/e/ea/Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg/220px-Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg"]
   ["Klaus-Michael Kuehne"
-   38.8
+   39.3
    "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]
+  ["Len Blavatnik"
+   39.2
+   "thumb/e/ea/Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg/220px-Leonard_Blavatnik%2C_February_2018_%284568%29_%28cropped%29.jpg"]
   ["Azim Premji"
-   36.8
+   36.4
    "thumb/7/7d/Azim_Premji_-_World_Economic_Forum_Annual_Meeting_Davos_2009_%28crop%29.jpg/220px-Azim_Premji_-_World_Economic_Forum_Annual_Meeting_Davos_2009_%28crop%29.jpg"]
-  ["Pallonji Mistry" 35.6]
   ["Giovanni Ferrero" 35.6]
+  ["Pallonji Mistry" 35.0]
   ["Stephen Schwarzman"
-   33.8
+   33.6
    "thumb/e/e4/StephenSchwarzman.jpg/220px-StephenSchwarzman.jpg"]
-  ["William Ding" 33.2]
+  ["He Xiangjian" 33.2]
+  ["William Ding" 33.1]
   ["Leonardo Del Vecchio"
-   32.5
+   32.7
    "thumb/5/58/Leonardo_Del_Vecchio%2C_2011.jpeg/220px-Leonardo_Del_Vecchio%2C_2011.jpeg"]
-  ["Leonard Lauder" 32.3]
-  ["He Xiangjian" 32.0]
   ["Leonid Mikhelson"
    31.5
    "thumb/9/96/11-03-2020_Leonid_Mikhelson.png/220px-11-03-2020_Leonid_Mikhelson.png"]
+  ["Leonard Lauder" 31.5]
   ["Li Ka-shing"
    30.9
    "thumb/e/e8/Li_Ka_Shing.jpg/220px-Li_Ka_Shing.jpg"]
   ["Takemitsu Takizaki" 30.8]
-  ["Gerard Wertheimer" 30.6]
-  ["Alain Wertheimer" 30.6]
   ["Tadashi Yanai"
-   30.3
+   30.8
    "thumb/1/10/Tadashi_Yanai.jpg/220px-Tadashi_Yanai.jpg"]
-  ["Shiv Nadar"
-   30.0
-   "thumb/6/67/Shiv_Nadar1.jpg/220px-Shiv_Nadar1.jpg"]])
+  ["Gerard Wertheimer" 30.4]
+  ["Alain Wertheimer" 30.4]
+  ["Vladimir Potanin"
+   30.1
+   "thumb/1/13/Vladimir_Potanin_2018_%28cropped%29.jpg/220px-Vladimir_Potanin_2018_%28cropped%29.jpg"]])
