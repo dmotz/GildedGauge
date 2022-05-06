@@ -12,6 +12,11 @@
 (def ranking-url2 "https://www.forbes.com/profile/michael-bloomberg/")
 (def wiki-url     "https://en.wikipedia.org/wiki/")
 (def thumb-prefix "//upload.wikimedia.org/wikipedia/commons/")
+(def aliases
+  {"Ken Griffin"   "Kenneth C. Griffin"
+   "German Larrea" "German Larrea Mota-Velasco"
+   "John Mars"     "John Franklyn Mars"
+   "Rob Walton"    "S. Robson Walton"})
 
 (def headers {"user-agent" (str
                             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -76,24 +81,25 @@
 
 
 (defn get-image [m]
-  (go
-    (try
-      (assoc
-       m
-       :img
-       (some->
-        (str wiki-url (replace (:name m) #"\s" "_"))
-        java.net.URL.
-        html-resource
-        (select [:.infobox :img])
-        first
-        :attrs
-        :src
-        (->>
-         (drop prefix-n)
-         (apply str))))
-      (catch Exception _
-        m))))
+  (let [name (:name m)]
+    (go
+      (try
+        (assoc
+         m
+         :img
+         (some->
+          (str wiki-url (replace (get aliases name name) #"\s" "_"))
+          java.net.URL.
+          html-resource
+          (select [:.infobox :img])
+          first
+          :attrs
+          :src
+          (->>
+           (drop prefix-n)
+           (apply str))))
+        (catch Exception _
+          m)))))
 
 
 (defn drop-nil-img [v]
