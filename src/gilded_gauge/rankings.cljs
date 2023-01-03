@@ -122,4 +122,6 @@
   ["Leonid Mikhelson"
    24.6
    "thumb/9/96/11-03-2020_Leonid_Mikhelson.png/220px-11-03-2020_Leonid_Mikhelson.png"]
-  ["Shiv Nadar" 24.5]])
+  ["Shiv Nadar"
+   24.5
+   "thumb/4/41/Shiv_Nadar%2C_Founder%2C_HCL_and_Chairman%2C_HCL_Technologies%2C_with_Sir_Richard_Stagg%2C_British_High_Commissioner_to_India_12_October_2009.jpg/220px-Shiv_Nadar%2C_Founder%2C_HCL_and_Chairman%2C_HCL_Technologies%2C_with_Sir_Richard_Stagg%2C_British_High_Commissioner_to_India_12_October_2009.jpg"]])
