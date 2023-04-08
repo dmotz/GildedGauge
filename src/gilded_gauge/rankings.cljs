@@ -9,9 +9,7 @@
   ["Elon Musk"
    171.0
    "thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/220px-Elon_Musk_Royal_Society_%28crop2%29.jpg"]
-  ["Jeff Bezos"
-   126.0
-   "thumb/4/44/Modified_Background_image_of_Jeff_Bezos%2C_taken_originally_by_U.S._Space_Force.png/220px-Modified_Background_image_of_Jeff_Bezos%2C_taken_originally_by_U.S._Space_Force.png"]
+  ["Jeff Bezos" 126.0]
   ["Bill Gates"
    121.0
    "thumb/a/a8/Bill_Gates_2017_%28cropped%29.jpg/220px-Bill_Gates_2017_%28cropped%29.jpg"]
