@@ -4,118 +4,118 @@
 (def
  rankings
  [["Elon Musk"
-   243.0
+   239.0
    "thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/220px-Elon_Musk_Royal_Society_%28crop2%29.jpg"]
   ["Bernard Arnault"
-   193.0
+   194.0
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Jeff Bezos"
-   154.0
+   151.0
    "thumb/0/03/Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg/220px-Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg"]
   ["Bill Gates"
-   133.0
+   132.0
    "thumb/a/a8/Bill_Gates_2017_%28cropped%29.jpg/220px-Bill_Gates_2017_%28cropped%29.jpg"]
   ["Larry Ellison"
    129.0
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Steve Ballmer"
-   117.0
+   115.0
    "thumb/4/44/Steve_Ballmer_2014.jpg/220px-Steve_Ballmer_2014.jpg"]
   ["Warren Buffett"
-   115.0
+   114.0
    "thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/220px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg"]
   ["Larry Page"
-   109.0
+   107.0
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Mark Zuckerberg"
-   106.0
+   107.0
    "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Sergey Brin"
-   104.0
+   101.0
    "thumb/a/ac/Sergey_Brin_Ted_2010.jpg/220px-Sergey_Brin_Ted_2010.jpg"]
   ["Carlos Slim"
-   96.0
+   95.7
    "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
   ["Michael Bloomberg"
    94.5
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
   ["Mukesh Ambani"
-   90.3
+   94.0
    "thumb/6/69/Mukesh_Ambani.jpg/200px-Mukesh_Ambani.jpg"]
-  ["Francoise Bettencourt Meyers" 88.7]
-  ["Amancio Ortega" 75.6]
+  ["Francoise Bettencourt Meyers" 89.6]
+  ["Amancio Ortega" 76.3]
   ["Jim Walton"
-   70.0
+   70.5
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
   ["Rob Walton"
-   68.2
+   68.6
    "thumb/b/b1/S._Robson_Walton_by_Gage_Skidmore.jpg/220px-S._Robson_Walton_by_Gage_Skidmore.jpg"]
   ["Alice Walton"
-   67.1
+   67.6
    "thumb/a/af/Alice_Walton_portrait_%28cropped%29.jpg/220px-Alice_Walton_portrait_%28cropped%29.jpg"]
   ["Julia Flesher Koch"
-   62.0
+   61.9
    "thumb/7/7c/Julia_Koch.jpg/220px-Julia_Koch.jpg"]
   ["Charles Koch"
-   62.0
+   61.9
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
-  ["Zhong Shanshan" 61.4]
+  ["Zhong Shanshan" 61.8]
   ["Gautam Adani"
-   59.2
+   59.5
    "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
-  ["John Mars" 58.4]
-  ["Jacqueline Badger Mars" 58.4]
   ["Michael Dell"
-   58.4
+   59.4
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
-  ["Gerard Wertheimer" 49.6]
-  ["Alain Wertheimer" 49.6]
-  ["Giovanni Ferrero" 43.5]
+  ["John Mars" 58.3]
+  ["Jacqueline Badger Mars" 58.3]
+  ["Gerard Wertheimer" 50.0]
+  ["Alain Wertheimer" 50.0]
+  ["Giovanni Ferrero" 43.6]
   ["Klaus-Michael Kuehne"
-   43.3
+   43.4
    "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]
   ["Zhang Yiming" 42.3]
   ["Phil Knight"
-   40.5
+   40.9
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
-  ["Francois Pinault"
-   39.2
-   "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
   ["Changpeng Zhao"
-   38.5
+   40.9
    "thumb/e/e1/Changpeng_Zhao_in_2022.jpg/220px-Changpeng_Zhao_in_2022.jpg"]
+  ["Francois Pinault"
+   39.5
+   "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
+  ["Tadashi Yanai" 38.0]
   ["Jensen Huang"
-   38.1
+   37.8
    "thumb/8/87/Jen-Hsun_Huang_Headshot_%2815313247387%29.jpg/220px-Jen-Hsun_Huang_Headshot_%2815313247387%29.jpg"]
-  ["Tadashi Yanai" 37.7]
+  ["Ma Huateng"
+   37.6
+   "thumb/d/d6/%E9%A9%AC%E5%8C%96%E8%85%BE_Pony_Ma_2019.jpg/220px-%E9%A9%AC%E5%8C%96%E8%85%BE_Pony_Ma_2019.jpg"]
   ["Len Blavatnik"
    37.5
    "thumb/4/4a/Len_Blavatnik.png/220px-Len_Blavatnik.png"]
-  ["Ma Huateng"
-   37.4
-   "thumb/d/d6/%E9%A9%AC%E5%8C%96%E8%85%BE_Pony_Ma_2019.jpg/220px-%E9%A9%AC%E5%8C%96%E8%85%BE_Pony_Ma_2019.jpg"]
-  ["Ken Griffin"
-   36.2
-   "thumb/e/e8/Kenneth_C._Griffin_photo.jpg/220px-Kenneth_C._Griffin_photo.jpg"]
   ["Miriam Adelson"
-   36.1
+   36.9
    "thumb/6/61/Miriam_Adelson_June_2019.jpg/220px-Miriam_Adelson_June_2019.jpg"]
+  ["Ken Griffin"
+   36.3
+   "thumb/e/e8/Kenneth_C._Griffin_photo.jpg/220px-Kenneth_C._Griffin_photo.jpg"]
   ["Jeff Yass" 34.5]
-  ["Jack Ma"
-   34.1
-   "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
   ["Abigail Johnson"
-   33.0
+   33.4
    "thumb/5/56/Abigail_Johnson_at_the_Boston_Convention_and_Exhibition_Center_on_April_24%2C_2012.jpg/220px-Abigail_Johnson_at_the_Boston_Convention_and_Exhibition_Center_on_April_24%2C_2012.jpg"]
-  ["Zeng Yuqun" 32.2]
+  ["Zeng Yuqun" 33.1]
   ["Stephen Schwarzman"
-   32.0
+   32.4
    "thumb/e/e4/StephenSchwarzman.jpg/220px-StephenSchwarzman.jpg"]
-  ["German Larrea" 31.5]
-  ["Shapoor Mistry" 30.2]
-  ["William Ding" 29.9]
-  ["MacKenzie Scott" 29.7]
+  ["German Larrea" 31.9]
+  ["William Ding" 30.1]
+  ["Shapoor Mistry" 30.0]
+  ["Jack Ma"
+   30.0
+   "thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg"]
   ["Dieter Schwarz" 29.4]
+  ["MacKenzie Scott" 29.0]
   ["Vladimir Potanin"
-   28.4
+   28.7
    "thumb/a/ac/2021_Vladimir_Potanin.jpg/220px-2021_Vladimir_Potanin.jpg"]])
