@@ -72,7 +72,7 @@
   ["Alain Wertheimer" 45.4]
   ["Jensen Huang"
    43.3
-   "thumb/8/87/Jen-Hsun_Huang_Headshot_%2815313247387%29.jpg/220px-Jen-Hsun_Huang_Headshot_%2815313247387%29.jpg"]
+   "thumb/c/c4/Jensen_Huang_%28cropped%29.jpg/220px-Jensen_Huang_%28cropped%29.jpg"]
   ["Klaus-Michael Kuehne"
    42.4
    "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]
