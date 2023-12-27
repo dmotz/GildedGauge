@@ -4,7 +4,7 @@
 (def
  rankings
  [["Elon Musk"
-   232.0
+   235.0
    "thumb/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg/220px-Elon_Musk_Colorado_2022_%28cropped2%29.jpg"]
   ["Bernard Arnault"
    179.0
@@ -34,88 +34,88 @@
    120.0
    "thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/220px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg"]
   ["Carlos Slim"
-   104.0
+   105.0
    "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
-  ["Francoise Bettencourt Meyers" 98.8]
+  ["Francoise Bettencourt Meyers" 99.1]
   ["Michael Bloomberg"
    96.3
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
   ["Mukesh Ambani"
-   95.9
+   96.2
    "thumb/6/69/Mukesh_Ambani.jpg/200px-Mukesh_Ambani.jpg"]
-  ["Amancio Ortega" 86.4]
+  ["Amancio Ortega" 86.7]
   ["Gautam Adani"
-   83.0
+   84.3
    "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
   ["Michael Dell"
-   78.0
+   78.7
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
   ["Jim Walton"
-   72.1
+   72.0
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
   ["Rob Walton"
-   70.8
+   70.7
    "thumb/b/b1/S._Robson_Walton_by_Gage_Skidmore.jpg/220px-S._Robson_Walton_by_Gage_Skidmore.jpg"]
   ["Alice Walton"
-   69.6
+   69.5
    "thumb/a/af/Alice_Walton_portrait_%28cropped%29.jpg/220px-Alice_Walton_portrait_%28cropped%29.jpg"]
+  ["Zhong Shanshan" 67.3]
   ["Julia Flesher Koch"
-   66.4
+   66.8
    "thumb/7/7c/Julia_Koch.jpg/220px-Julia_Koch.jpg"]
-  ["Zhong Shanshan" 65.7]
   ["Charles Koch"
-   62.4
+   62.7
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
-  ["Colin Huang" 50.9]
-  ["Gerard Wertheimer" 46.8]
-  ["Alain Wertheimer" 46.8]
-  ["John Mars" 46.0]
-  ["Jacqueline Badger Mars" 46.0]
+  ["Colin Huang" 51.2]
+  ["Gerard Wertheimer" 46.9]
+  ["Alain Wertheimer" 46.9]
+  ["John Mars" 46.2]
+  ["Jacqueline Badger Mars" 46.2]
   ["Klaus-Michael Kuehne"
-   44.7
+   44.8
    "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]
   ["Jensen Huang"
-   43.4
+   43.8
    "thumb/c/c4/Jensen_Huang_%28cropped%29.jpg/220px-Jensen_Huang_%28cropped%29.jpg"]
+  ["Stephen Schwarzman"
+   42.4
+   "thumb/e/e4/StephenSchwarzman.jpg/220px-StephenSchwarzman.jpg"]
   ["Phil Knight"
    42.3
    "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
   ["Zhang Yiming" 42.3]
-  ["Stephen Schwarzman"
-   42.2
-   "thumb/e/e4/StephenSchwarzman.jpg/220px-StephenSchwarzman.jpg"]
   ["Len Blavatnik"
-   40.6
+   40.7
    "thumb/4/4a/Len_Blavatnik.png/220px-Len_Blavatnik.png"]
-  ["Tadashi Yanai" 38.5]
-  ["Changpeng Zhao"
-   37.2
-   "thumb/e/e1/Changpeng_Zhao_in_2022.jpg/220px-Changpeng_Zhao_in_2022.jpg"]
+  ["Tadashi Yanai" 38.6]
   ["Abigail Johnson"
-   36.4
+   36.6
    "thumb/5/56/Abigail_Johnson_at_the_Boston_Convention_and_Exhibition_Center_on_April_24%2C_2012.jpg/220px-Abigail_Johnson_at_the_Boston_Convention_and_Exhibition_Center_on_April_24%2C_2012.jpg"]
   ["Ken Griffin"
-   36.4
+   36.5
    "thumb/e/e8/Kenneth_C._Griffin_photo.jpg/220px-Kenneth_C._Griffin_photo.jpg"]
+  ["Changpeng Zhao"
+   36.2
+   "thumb/e/e1/Changpeng_Zhao_in_2022.jpg/220px-Changpeng_Zhao_in_2022.jpg"]
   ["MacKenzie Scott" 36.1 "1/16/MacKenzie_Scott.jpg"]
-  ["German Larrea" 35.4]
   ["Francois Pinault"
-   35.2
+   35.3
    "thumb/4/48/Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg/220px-Fran%C3%A7ois_Pinault_Stade_rennais_-_Le_Havre_AC_20150708_44.jpg"]
-  ["Shapoor Mistry" 35.1]
+  ["German Larrea" 35.3]
+  ["Shapoor Mistry" 34.9]
   ["Miriam Adelson"
-   34.1
+   34.2
    "thumb/8/8c/Miriam_Adelson_2023.jpg/220px-Miriam_Adelson_2023.jpg"]
-  ["Shiv Nadar" 33.8 "thumb/8/8d/Shiv_Nadar.png/220px-Shiv_Nadar.png"]
-  ["Giovanni Ferrero" 33.3]
+  ["Shiv Nadar" 33.7 "thumb/8/8d/Shiv_Nadar.png/220px-Shiv_Nadar.png"]
+  ["Giovanni Ferrero" 33.5]
   ["Ma Huateng"
-   32.7
+   32.8
    "thumb/d/d6/%E9%A9%AC%E5%8C%96%E8%85%BE_Pony_Ma_2019.jpg/220px-%E9%A9%AC%E5%8C%96%E8%85%BE_Pony_Ma_2019.jpg"]
-  ["Dieter Schwarz" 32.3]
+  ["Dieter Schwarz" 32.4]
   ["Prajogo Pangestu" 31.5]
   ["Vladimir Potanin"
-   30.9
+   30.6
    "thumb/a/ac/2021_Vladimir_Potanin.jpg/220px-2021_Vladimir_Potanin.jpg"]
   ["Dan Gilbert"
-   30.1
+   30.4
    "thumb/b/b6/Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg/220px-Dan_Gilbert_Chairman_of_Quicken_Loans_and_Majority_Owner_of_the_Cleveland_Cavaliers.jpg"]])
