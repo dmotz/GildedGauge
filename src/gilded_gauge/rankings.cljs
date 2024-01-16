@@ -14,7 +14,7 @@
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Bill Gates"
    140.0
-   "thumb/f/fc/Bill_Gates_-_2023_-_P062021-967902_%28cropped%29.jpg/220px-Bill_Gates_-_2023_-_P062021-967902_%28cropped%29.jpg"]
+   "thumb/a/af/Bill_Gates_-_Nov._8%2C_2019.jpg/220px-Bill_Gates_-_Nov._8%2C_2019.jpg"]
   ["Steve Ballmer"
    135.0
    "thumb/5/54/Steve_ballmer_2007_outdoors2-2.jpg/220px-Steve_ballmer_2007_outdoors2-2.jpg"]
