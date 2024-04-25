@@ -7,115 +7,115 @@
    220.0
    "thumb/d/de/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg/220px-Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg"]
   ["Jeff Bezos"
-   202.0
+   199.0
    "thumb/0/03/Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg/220px-Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg"]
-  ["Mark Zuckerberg"
-   176.0
-   "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Elon Musk"
-   166.0
+   179.0
    "thumb/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg/220px-Elon_Musk_Colorado_2022_%28cropped2%29.jpg"]
+  ["Mark Zuckerberg"
+   175.0
+   "thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"]
   ["Bill Gates"
-   149.0
+   150.0
    "thumb/f/fc/Bill_Gates_-_2023_-_P062021-967902_%28cropped%29.jpg/220px-Bill_Gates_-_2023_-_P062021-967902_%28cropped%29.jpg"]
   ["Larry Page"
-   142.0
+   143.0
    "thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"]
   ["Steve Ballmer"
-   141.0
+   142.0
    "thumb/5/54/Steve_ballmer_2007_outdoors2-2.jpg/220px-Steve_ballmer_2007_outdoors2-2.jpg"]
-  ["Warren Buffett"
-   135.0
-   "thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/220px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg"]
   ["Sergey Brin"
-   134.0
+   135.0
    "thumb/d/d3/Sergey_Brin_Ted_2010_%28cropped%29.jpg/220px-Sergey_Brin_Ted_2010_%28cropped%29.jpg"]
+  ["Warren Buffett"
+   134.0
+   "thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/220px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg"]
   ["Larry Ellison"
-   128.0
+   129.0
    "thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png"]
   ["Mukesh Ambani"
-   113.0
+   112.0
    "thumb/6/69/Mukesh_Ambani.jpg/200px-Mukesh_Ambani.jpg"]
   ["Michael Bloomberg"
    106.2
    "thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"]
-  ["Carlos Slim"
-   101.0
-   "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
-  ["Gautam Adani"
-   99.4
-   "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
   ["Michael Dell"
-   99.1
+   99.4
    "thumb/c/ce/Michael_Dell_2010.jpg/220px-Michael_Dell_2010.jpg"]
-  ["Amancio Ortega" 96.9]
-  ["Francoise Bettencourt Meyers" 94.8]
+  ["Gautam Adani"
+   98.8
+   "thumb/f/ff/Gautam_Adani.jpg/220px-Gautam_Adani.jpg"]
+  ["Carlos Slim"
+   98.4
+   "thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/220px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg"]
+  ["Amancio Ortega" 95.1]
+  ["Francoise Bettencourt Meyers" 94.9]
   ["Jim Walton"
-   80.0
+   81.1
    "thumb/b/bb/Jim_Walton_attends_shareholders_meeting.jpg/220px-Jim_Walton_attends_shareholders_meeting.jpg"]
   ["Rob Walton"
-   78.5
+   79.5
    "thumb/b/b1/S._Robson_Walton_by_Gage_Skidmore.jpg/220px-S._Robson_Walton_by_Gage_Skidmore.jpg"]
   ["Alice Walton"
-   77.5
+   78.5
    "thumb/a/af/Alice_Walton_portrait_%28cropped%29.jpg/220px-Alice_Walton_portrait_%28cropped%29.jpg"]
-  ["Jensen Huang"
-   72.7
-   "thumb/c/c4/Jensen_Huang_%28cropped%29.jpg/220px-Jensen_Huang_%28cropped%29.jpg"]
   ["Julia Flesher Koch"
-   70.7
+   70.9
    "thumb/7/7c/Julia_Koch.jpg/220px-Julia_Koch.jpg"]
+  ["Jensen Huang"
+   70.3
+   "thumb/c/c4/Jensen_Huang_%28cropped%29.jpg/220px-Jensen_Huang_%28cropped%29.jpg"]
   ["Charles Koch"
-   66.3
+   66.4
    "thumb/2/20/Charles_Koch_portrait_%28cropped%29.jpg/220px-Charles_Koch_portrait_%28cropped%29.jpg"]
-  ["Zhong Shanshan" 65.2]
-  ["Gerard Wertheimer" 50.0]
-  ["Alain Wertheimer" 50.0]
-  ["John Mars" 45.6]
-  ["Jacqueline Badger Mars" 45.6]
-  ["Colin Huang" 45.1]
-  ["Changpeng Zhao"
-   42.6
-   "thumb/e/e1/Changpeng_Zhao_in_2022.jpg/220px-Changpeng_Zhao_in_2022.jpg"]
+  ["Zhong Shanshan" 65.5]
+  ["Gerard Wertheimer" 49.8]
+  ["Alain Wertheimer" 49.8]
+  ["John Mars" 45.8]
+  ["Jacqueline Badger Mars" 45.8]
+  ["Colin Huang" 45.0]
   ["Tadashi Yanai"
-   41.5
+   42.2
    "thumb/f/f4/Tadashi_Yanai_Portrait.png/220px-Tadashi_Yanai_Portrait.png"]
   ["Stephen Schwarzman"
    41.4
    "thumb/d/d3/2019_-_Centre_Stage_-_Day_1_DF1_8596_%2849019247387%29_%28cropped%29.jpg/220px-2019_-_Centre_Stage_-_Day_1_DF1_8596_%2849019247387%29_%28cropped%29.jpg"]
-  ["Jeff Yass" 41.0]
-  ["Giovanni Ferrero" 40.4]
+  ["Jeff Yass" 41.2]
+  ["Changpeng Zhao"
+   41.1
+   "thumb/e/e1/Changpeng_Zhao_in_2022.jpg/220px-Changpeng_Zhao_in_2022.jpg"]
+  ["Giovanni Ferrero" 40.6]
   ["Zhang Yiming" 40.2]
-  ["Len Blavatnik"
-   39.7
-   "thumb/4/4a/Len_Blavatnik.png/220px-Len_Blavatnik.png"]
   ["Klaus-Michael Kuehne"
-   39.7
+   40.0
    "thumb/a/a2/Kuehne_Taufe.jpg/220px-Kuehne_Taufe.jpg"]
-  ["Phil Knight"
-   38.5
-   "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
   ["Ma Huateng"
-   38.5
+   39.8
    "thumb/d/d6/%E9%A9%AC%E5%8C%96%E8%85%BE_Pony_Ma_2019.jpg/220px-%E9%A9%AC%E5%8C%96%E8%85%BE_Pony_Ma_2019.jpg"]
-  ["German Larrea" 37.8]
-  ["Shapoor Mistry" 37.5]
-  ["MacKenzie Scott" 37.2 "1/16/MacKenzie_Scott.jpg"]
+  ["Len Blavatnik"
+   39.6
+   "thumb/4/4a/Len_Blavatnik.png/220px-Len_Blavatnik.png"]
+  ["Phil Knight"
+   38.8
+   "thumb/b/bc/Philknightfootball.jpg/200px-Philknightfootball.jpg"]
+  ["German Larrea" 38.0]
+  ["Shapoor Mistry" 37.4]
   ["Ken Griffin"
-   37.2
+   37.1
    "thumb/e/e8/Kenneth_C._Griffin_photo.jpg/220px-Kenneth_C._Griffin_photo.jpg"]
+  ["MacKenzie Scott" 36.6 "1/16/MacKenzie_Scott.jpg"]
   ["Thomas Peterffy"
-   34.9
+   35.2
    "thumb/a/a4/Thomas_Peterffy_Painting_Portrait_By_Artist_Danor_Shtruzman_-_Art_Drawings_%28100_Richest_By_Forbes_2017_List%29.jpg/220px-Thomas_Peterffy_Painting_Portrait_By_Artist_Danor_Shtruzman_-_Art_Drawings_%28100_Richest_By_Forbes_2017_List%29.jpg"]
-  ["Shiv Nadar" 34.7 "thumb/8/8d/Shiv_Nadar.png/220px-Shiv_Nadar.png"]
+  ["Shiv Nadar" 34.5 "thumb/8/8d/Shiv_Nadar.png/220px-Shiv_Nadar.png"]
   ["Abigail Johnson"
-   33.8
+   33.6
    "thumb/5/56/Abigail_Johnson_at_the_Boston_Convention_and_Exhibition_Center_on_April_24%2C_2012.jpg/220px-Abigail_Johnson_at_the_Boston_Convention_and_Exhibition_Center_on_April_24%2C_2012.jpg"]
   ["Miriam Adelson"
-   33.3
+   33.4
    "thumb/8/8c/Miriam_Adelson_2023.jpg/220px-Miriam_Adelson_2023.jpg"]
-  ["Iris Fontbona" 32.5]
-  ["Savitri Jindal" 31.5]
+  ["Iris Fontbona" 32.8]
+  ["Savitri Jindal" 32.0]
   ["Vladimir Potanin"
-   31.3
+   31.6
    "thumb/a/ac/2021_Vladimir_Potanin.jpg/220px-2021_Vladimir_Potanin.jpg"]])
