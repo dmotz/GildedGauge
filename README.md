@@ -1,8 +1,8 @@
-![Gilded Gauge](http://gildedgauge.club/gildedgauge.gif)
-
-# [Gilded Gauge](http://gildedgauge.club)
+# [Gilded Gauge](https://oxism.com/GildedGauge/)
 
 #### by [Dan Motzenbecker](http://oxism.com)
+
+https://github.com/dmotz/GildedGauge/assets/302080/7b86bf70-3997-4323-8763-0eff83f6ecc8
 
 _Gilded Gauge_ is an experiment in visualizing relative wealth in terms viewers
 may find more natural to grasp.
