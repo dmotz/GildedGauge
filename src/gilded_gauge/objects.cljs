@@ -72,4 +72,4 @@
 
 
 (doseq [k obj-keys]
-  (set! (.-src (js/Image.)) (str "/images/" (name k) ".png")))
+  (set! (.-src (js/Image.)) (str "images/" (name k) ".png")))

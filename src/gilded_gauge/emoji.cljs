@@ -38,7 +38,7 @@
                 :render
                 #js {:sprite
                      #js {:yOffset 0
-                          :texture (str "/images/" (name sprite) ".png")}}}))))
+                          :texture (str "images/" (name sprite) ".png")}}}))))
 
 
 (defn init [el w h]
