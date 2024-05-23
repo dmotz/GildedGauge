@@ -4,7 +4,8 @@
             [clojure.string :refer [replace trim]]
             [clojure.java.io :as io]
             [clojure.pprint :refer [pprint]])
-  (:import  (java.net HttpURLConnection)))
+  (:import  (java.net HttpURLConnection))
+  (:refer-clojure :exclude [replace]))
 
 
 (def output-path  "src/gilded_gauge/rankings.cljs")
