@@ -1,0 +1,5 @@
+figwheel_server.log
+target/
+.lsp/
+.clj-kondo/
+resources/public/js/
