@@ -22,11 +22,11 @@
 (def headers {"user-agent" (str
                             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                             "AppleWebKit/537.36 (KHTML, like Gecko) "
-                            "Chrome/94.0.4606.71 Safari/537.36")
+                            "Chrome/125.0.0.0 Safari/537.36")
               "accept"     (str
                             "text/html,application/xhtml+xml,application/xml;"
                             "q=0.9,image/avif,image/webp,image/apng,*/*;"
-                            "q=0.8,application/signed-exchange;v=b3;q=0.9")
+                            "q=0.8,application/signed-exchange;v=b3;q=0.7")
               "cookie"     (-> "./scripts/biscuit" slurp trim)})
 
 (def prefix-n (count thumb-prefix))
