@@ -1,4 +1,4 @@
-(ns gilded-gauge.scrape
+(ns scrape
   (:require [net.cgrand.enlive-html :refer [html-resource select text]]
             [clojure.core.async :refer [go <!!]]
             [clojure.string :refer [replace trim]]
