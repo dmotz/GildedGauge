@@ -1,7 +1,6 @@
 (ns gilded-gauge.state
   (:require [gilded-gauge.utils :refer [parse-event]]
-            [gilded-gauge.objects :refer [create-menagerie]]
-            [gilded-gauge.rankings :refer [rankings]]))
+            [gilded-gauge.objects :refer [create-menagerie]]))
 
 (def preset-names #{"Jeff Bezos"
                     "Bill Gates"
@@ -24,22 +23,38 @@
                     "Michael Dell"
                     "Laurene Powell Jobs"})
 
-(def preset-indices (->>
-                     rankings
-                     (map vector (range))
-                     (filter (fn [[_ [name]]] (preset-names name)))
-                     (map first)))
 
 (defonce app
-  (atom {:current-person     (rand-nth preset-indices)
+  (atom {:current-person     nil
          :net-worth          45000
          :amount             50
          :show-person-select false
          :show-about-view    false
          :menagerie1         {}
          :menagerie2         {}
-         :iterations         0}))
+         :iterations         0
+         :ranking            nil}))
 
+
+(defn fetch-ranking! []
+  (->
+   (js/fetch "ranking.json")
+   (.then #(.json %))
+   (.then js->clj)
+   (.then #(swap! app assoc
+                  :ranking (mapv
+                            (fn [[name worth img]]
+                              {:name name
+                               :worth worth
+                               :img (when img
+                                      (str "https://upload.wikimedia.org/wikipedia/commons/" img))})
+                            %)
+                  :current-person (->>
+                                   %
+                                   (map vector (range))
+                                   (filter (fn [[_ [name]]] (preset-names name)))
+                                   (map first)
+                                   rand-nth)))))
 
 (defn toggle-person-select! []
   (swap! app update :show-person-select not))

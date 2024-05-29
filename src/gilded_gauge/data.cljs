@@ -1,13 +1,4 @@
-(ns gilded-gauge.data
-  (:require [gilded-gauge.rankings :as rankings]))
-
-(def img-url-root "https://upload.wikimedia.org/wikipedia/commons/")
-
-(def ranked
-  (mapv
-   (fn [[name worth img]]
-     {:name name :worth worth :img (when img (str img-url-root img))})
-   rankings/rankings))
+(ns gilded-gauge.data)
 
 (def median-us-income 53657)
 (def median-global-income 9733)
