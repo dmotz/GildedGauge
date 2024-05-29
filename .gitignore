@@ -3,3 +3,4 @@ target/
 .lsp/
 .clj-kondo/
 resources/public/js/
+ranking.json
