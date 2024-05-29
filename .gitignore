@@ -4,3 +4,4 @@ target/
 .clj-kondo/
 resources/public/js/
 ranking.json
+style.css
