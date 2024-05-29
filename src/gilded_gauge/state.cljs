@@ -67,6 +67,8 @@
 (defn toggle-about-view! []
   (swap! app update :show-about-view not))
 
+(defn hide-about-view! []
+  (swap! app assoc :show-about-view false))
 
 (defn select-person! [i]
   (swap! app assoc :current-person i :show-person-select false))

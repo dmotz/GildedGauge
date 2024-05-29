@@ -10,7 +10,8 @@
                                         calc-year-paid set-timeout! kill-timeout!]]
             [gilded-gauge.state :refer [app fetch-ranking! toggle-person-select!
                                         select-person! update-menageries!
-                                        toggle-about-view! hide-person-select!]]
+                                        toggle-about-view! hide-person-select!
+                                        hide-about-view!]]
             [gilded-gauge.emoji :as emoji]))
 
 (enable-console-print!)
@@ -183,5 +184,5 @@
 
 (.addEventListener js/window "keydown"
                    #(when (= (.-keyCode %) 27)
-                      (fn []
-                        (hide-person-select!))))
+                      (hide-person-select!)
+                      (hide-about-view!)))
