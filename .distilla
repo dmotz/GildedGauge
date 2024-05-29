@@ -9,6 +9,9 @@ tasks:
     - resources/public/css/style.css
     - css/gilded-gauge.css
 
+  cat resources/public/ranking.json:
+    - ranking.json
+
 hashing:
   index.html:
     - js/gilded-gauge.min.js
