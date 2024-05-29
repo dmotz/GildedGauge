@@ -15,22 +15,22 @@ down to the precise dollar.
 
 ### Development
 
+Fetch or update ranking data:
+
+```
+$ ./scripts/get-rankings.sh
+```
+
 Open a dev server on `3449`:
 
 ```
-$ ./scripts/start
+$ ./scripts/start.sh
 ```
 
 Watch and recompile style source:
 
 ```
 $ ./scripts/style-watch.sh
-```
-
-Update ranking data:
-
-```
-$ ./scripts/get-rankings.sh
 ```
 
 ### Production
