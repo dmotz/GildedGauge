@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "nbb": "^1.3.196",
+    "puppeteer": "^24.2.1"
+  }
+}
