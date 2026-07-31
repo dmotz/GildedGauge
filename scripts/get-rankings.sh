@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-npx scripts/scrape.cljs
+npx --yes --prefix scripts nbb scripts/scrape.cljs
