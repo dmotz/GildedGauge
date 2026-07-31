@@ -134,7 +134,9 @@
                _ (.close page)]
 
          (if (>= (count final-data) take-n)
-           (.writeFileSync fs output-path (js/JSON.stringify (clj->js final-data)))
+           (do
+            (.writeFileSync fs output-path (js/JSON.stringify (clj->js final-data)))
+            (println (str "Wrote " (count final-data) " rows to " output-path)))
            (throw (js/Error. (str "Expected at least " take-n " rows, got "
                                    (count final-data))))))
        (fn [] (.close browser))))))
